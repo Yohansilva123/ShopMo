@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="homepage_style.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header"id="top_navigation">
+        <span class="glyphicon glyphicon-th" id="category_icon"></span>
+        <div align="center" class="logo">
+                <img class="logo" src="images/shopmologo.png" alt="Image" >
+        </div>
+        <span class="glyphicon glyphicon-tags" id="promotion_icon"></span>
+
+        <div data-role="navbar" id="search">
+            <ul>
+                <li style="width:85%">
+                    <form class="ui-filterable">
+                        <input id="myFilter" data-type="search" placeholder="Search">
+                    </form>
+                </li>
+                <li id="filter_icon" style="width:15%">
+                    <span class="glyphicon glyphicon-filter"></span>
+                </li>
+            </ul>
+        </div>
+
+  </div>
+
+   <div data-role="main" class="ui-content">
+    <p>Notice that we have added the CSS class of "ui-corner-all" and "ui-shadow" to the header buttons, to make them look a bit more desirable.</p>
+  </div>
+</div>
+
+<!-- $(function () {
+    $('.ui-header .ui-btn', '#pageId').filter (function () {
+        return $.trim($(this).find('span.ui-btn-text').text()) == 'Close'; 
+    }).hide();
+}); -->
+
+</body>
+</html>

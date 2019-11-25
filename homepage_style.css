@@ -1,0 +1,37 @@
+#top_navigation {
+  background-color: white;
+  height: 140px;
+}
+.logo{   
+    top: 10px;
+    height: 80px;
+}
+#category_icon {
+    position: absolute;
+    top: 25px;
+    left: 28px;
+    color: #6c7075;
+    font-size: 25px;
+}
+
+#promotion_icon {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    color: #f28500;
+    font-size: 25px;
+}
+
+.ui-filterable{
+    width: auto;
+    margin-left: 18px;
+    box-shadow: #428fe5;
+
+}
+
+#filter_icon {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #6c7075;
+}
