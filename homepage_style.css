@@ -1,0 +1,186 @@
+/* Top nav styling */
+#top_navigation {
+    background-color: white;
+    height: 135px;
+}
+
+.logo {
+    top: 10px;
+    height: 80px;
+}
+
+#category_icon {
+    position: absolute;
+    top: 25px;
+    left: 28px;
+    color: #6c7075;
+    font-size: 25px;
+}
+
+#promotion_icon {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    color: #f28500;
+    font-size: 25px;
+}
+
+.ui-filterable {
+    width: auto;
+    margin-left: 18px;
+    box-shadow: #428fe5;
+}
+
+#filter_icon {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #6c7075;
+}
+
+/* Bottom nav styling */
+
+#bottom_nav {
+    height: 50px;
+    background: white;
+}
+
+#qrcode_icon, #cart_icon, #home_icon, #user_icon, #other_icon {
+    color: #6c7075;
+    font-size: 20px;
+    border: 10px solid white;
+    background: white;
+    text-align: center;
+
+}
+
+/* Home Page content styling */
+
+#promo_title, #category_title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Categories scroll view styling */
+
+.categories_menu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+
+}
+
+.categories_menu a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#categories_type {
+
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 14px;
+    color: #6c7075;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+}
+
+.circle-icon {
+    background: #f28500;
+    color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 18px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* Promotion overview card sliders styling*/
+
+@media (width: 768px ) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+        margin-bottom: 50px;
+    }
+
+
+
+    /* left or forward direction */
+    /*.active.carousel-item-left + .carousel-item-next.carousel-item-left,*/
+    /*.carousel-item-next.carousel-item-left + .carousel-item,*/
+    /*.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,*/
+    /*.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {*/
+        /*position: relative;*/
+        /*transform: translate3d(-100%, 0, 0);*/
+
+    /*}*/
+
+    /*!* farthest right hidden item must be also position for animations *!*/
+    /*.carousel-inner .carousel-item-prev.carousel-item-right {*/
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*z-index: -1;*/
+        /*display: block;*/
+        /*visibility: visible;*/
+
+    /*}*/
+
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
+    .container-fluid {
+    bottom: 30px
+
+    }
+
+    #myCarousel {
+        bottom: 30px;
+        padding: 30px;
+    }
+
+
+/*Items tab view styling*/
+
+    #most-popular {
+
+        font-size: larger;
+    }
+
+}
