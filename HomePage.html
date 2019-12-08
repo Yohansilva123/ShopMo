@@ -1,48 +1,329 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="homepage_style.css">
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="Style/homepage_style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<div data-role="page">
-  <div data-role="header"id="top_navigation">
-        <span class="glyphicon glyphicon-th" id="category_icon"></span>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body style="background-color: white">
+
+
+<div data-role="page" data-position="fixed">
+
+    <!-- Top Navigation -->
+    <div data-role="header" id="top_navigation">
+        <i class="fas fa-th" id="category_icon"></i>
         <div align="center" class="logo">
-                <img class="logo" src="images/shopmologo.png" alt="Image" >
+            <img class="logo" src="images/shopmologo.png" alt="Image">
+            <i class="fa fa-tags" id="promotion_icon"></i>
         </div>
-        <span class="glyphicon glyphicon-tags" id="promotion_icon"></span>
 
         <div data-role="navbar" id="search">
             <ul>
                 <li style="width:85%">
+
                     <form class="ui-filterable">
-                        <input id="myFilter" data-type="search" placeholder="Search">
+                        <input id="myFilter" data-type="search" placeholder="Search for items..">
                     </form>
                 </li>
                 <li id="filter_icon" style="width:15%">
-                    <span class="glyphicon glyphicon-filter"></span>
+                    <i class="fas fa-filter"></i>
                 </li>
             </ul>
         </div>
+    </div>
 
-  </div>
+    <!-- Promotion Slideshow -->
+    <div data-role="main" class="ui-content">
+        <p id="promo_title"><b> FEATURED PROMOTIONS </b></p>
+        <div id="promo_slides" class="carousel slide" data-ride="carousel">
 
-   <div data-role="main" class="ui-content">
-    <p>Notice that we have added the CSS class of "ui-corner-all" and "ui-shadow" to the header buttons, to make them look a bit more desirable.</p>
-  </div>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#promo_slides" data-slide-to="0" class="active"></li>
+                <li data-target="#promo_slides" data-slide-to="1"></li>
+                <li data-target="#promo_slides" data-slide-to="2"></li>
+                <li data-target="#promo_slides" data-slide-to="3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/promo1.jpg" alt="promo 1" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/4PROMO.jpg" alt="promo 2" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/promo1.jpg" alt="promo 3" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/4PROMO.jpg" alt="promo 3" width="1100" height="500">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div data-role="main" class="ui-content">
+        <p id="category_title"><b> CATEGORIES </b></p>
+        <div class="categories_menu">
+            <span class="fas fa-ice-cream fa-3x circle-icon"></span>
+            <span class="fas fa-notes-medical fa-3x circle-icon"> </span>
+            <span class="fas fa-shopping-bag fa-3x circle-icon"></span>
+            <span class="fas fa-chair fa-3x circle-icon"></span>
+            <span class="fas fa-glass-martini-alt fa-3x circle-icon"></span>
+            <span class="fas fa-wine-bottle fa-3x circle-icon"></span>
+            <span class="fas fa-utensils fa-3x circle-icon"></span>
+            <span class="fas fa-icicles fa-3x circle-icon"></span>
+            <span class="fas fa-carrot fa-3x circle-icon"></span>
+            <span class="fas fa-drumstick-bite fa-3x circle-icon"></span>
+            <span class="fas fa-fish fa-3x circle-icon"></span>
+            <span class="fas fa-apple-alt fa-3x circle-icon"></span>
+            <br>
+            <p id="categories_type"> Frozen food &emsp;Pharmacy&emsp;&emsp; Grocery&emsp;&emsp;&emsp;
+                Household&emsp;&emsp;&emsp;Liqour &emsp;&emsp;Beverages&emsp; &emsp;
+                Homeware&emsp;&emsp;chilled&emsp;&emsp;&emsp; Vegitables &emsp;&emsp;&emsp;Meat&emsp;&emsp;&emsp;&emsp;
+                Fish&emsp;&emsp;&emsp;&emsp;&emsp;Fruits</p>
+
+        </div>
+    </div>
+
+    <!-- Promotion overview card sliders -->
+    <div class="container-fluid"  style="background-color: lightgrey"  >
+        <br><br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner row w-100 mx-auto">
+                <div class="carousel-item col-md-4 active">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="images/food.jpg" alt="Food image">
+                        <div class="card-body">
+                            <h4 class="card-title">Healthy Food</h4>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="images/cosmetics.jpeg" alt="Cosmetics image">
+                        <div class="card-body">
+                            <h4 class="card-title">Cosmetics</h4>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="images/medicine.jpeg" alt="Medicine image">
+                        <div class="card-body">
+                            <h4 class="card-title">Medicine</h4>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="images/electrical.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Electronics</h4>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br><br>
+    </div>
+
+    <!--Items Tab view-->
+    <div data-role="tabs"  >
+        <br>
+        <div data-role="navbar" class="item-tabs">
+            <ul>
+                <li ><a href="#one" data-ajax="false">Most Popular</a></li>
+                <li><a href="#two" data-ajax="false">New Arrivals</a></li>
+                <li><a href="#three" data-ajax="false">Our promotions</a></li>
+            </ul>
+        </div>
+        <div id="one" class="ui-body-d ui-content">
+
+
+            <div class="widget">
+                <ul class="widget-list" id="most-popular">
+                    <li>
+                        <a class="widget-list-link">
+                            <img src="http://www.gravatar.com/avatar/47?f=y&amp;s=64&amp;d=identicon">
+                            Manager #1 <span>481 followers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="widget-list-link">
+                            <img src="http://www.gravatar.com/avatar/47?f=y&amp;s=64&amp;d=identicon">
+                            Manager #2 <span>5162 followers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="widget-list-link">
+                            <img src="http://www.gravatar.com/avatar/47?f=y&amp;s=64&amp;d=identicon">
+                            Manager #3 <span>342 followers</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="two" class="ui-body-d ui-content">
+
+
+            <div class="widget">
+                <ul class="widget-list" id="new-arrivals">
+                    <li>
+                        <a class="widget-list-link">
+                            <img src="http://www.gravatar.com/avatar/5?f=y&amp;s=64&amp;d=identicon">
+                            Designer #1 <span>481 followers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="widget-list-link">
+                            <img src="http://www.gravatar.com/avatar/5?f=y&amp;s=64&amp;d=identicon">
+                            Designer #2 <span>5162 followers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="widget-list-link">
+                            <img src="http://www.gravatar.com/avatar/5?f=y&amp;s=64&amp;d=identicon">
+                            Designer #3 <span>342 followers</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="three" class="ui-body-d ui-content">
+
+
+            <div class="widget">
+                <ul class="widget-list" id="promos">
+                    <li>
+                        <a class="widget-list-link">
+                            <img src="http://www.gravatar.com/avatar/47?f=y&amp;s=64&amp;d=identicon">
+                            Manager #1 <span>481 followers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="widget-list-link">
+                            <img src="http://www.gravatar.com/avatar/47?f=y&amp;s=64&amp;d=identicon">
+                            Manager #2 <span>5162 followers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="widget-list-link">
+                            <img src="http://www.gravatar.com/avatar/47?f=y&amp;s=64&amp;d=identicon">
+                            Manager #3 <span>342 followers</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar" id="bottom_nav">
+            <ul>
+                <li id="qrcode_icon" style="width:20%">
+                    <i class="fas fa-qrcode"></i>
+                </li>
+                <li id="cart_icon" style="width:20% ">
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+                <li id="home_icon" style="width:20%">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li id="user_icon" style="width:20%">
+                    <i class="fas fa-user"></i>
+                </li>
+                <li id="other_icon" style="width:20%">
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
 </div>
 
-<!-- $(function () {
-    $('.ui-header .ui-btn', '#pageId').filter (function () {
-        return $.trim($(this).find('span.ui-btn-text').text()) == 'Close'; 
-    }).hide();
-}); -->
+
+<script>
+    $(document).ready(function () {
+        $("#myCarousel").on("slide.bs.carousel", function (e) {
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 3;
+            var totalItems = $(".carousel-item").length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+// append slides to end
+                    if (e.direction == "left") {
+                        $(".carousel-item")
+                            .eq(i)
+                            .appendTo(".carousel-inner");
+                    } else {
+                        $(".carousel-item")
+                            .eq(0)
+                            .appendTo($(this).find(".carousel-inner"));
+                    }
+                }
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
