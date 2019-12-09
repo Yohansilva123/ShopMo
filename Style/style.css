@@ -5,106 +5,126 @@
 }
 
 .banner{
-    padding: 30px;
+    text-align: center;
+    padding: 27px;
     background-color: #f28500;
 }
 
-#lock_icon{
-
-    height: 30px;
-    left: 20px;
+#promotion_icon {
     color: white;
-    font-size: 40px;
+    font-size: 80px;
+    text-align: center;
 }
-
 .slogan{
     color: white;
-    font-size: 10px;
-    text-align: right;
-    padding: 30px;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body{
-    background-color: white;
-    font-family: monstrat;
-}
 
-#footer{
-    align-content: end;
-}
-
-/*.ui-content{*/
-/*    font-size: 10px;*/
-/*    text-align: left;*/
-/*    padding: 30px;*/
+/*#name, #password, #remember{*/
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    /*text-align: left;*/
+    /*padding: 10px;*/
+    /*font-size: 14px;*/
 /*}*/
 
-.headings{
-    text-align: left;
-    font-size: 30px;
-    color: #f28500;
+/*#name-label, #pword-label  {*/
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    /*text-align: left;*/
+    /*padding: 15px 40px;*/
+    /*font-size: 14px;*/
+    /*background-color: white;*/
+    /*color: black;*/
+/*}*/
+
+#namelabel, #passwordlabel{
+    width: 100%;
+    margin-bottom: 18px;
+    text-align: center;
+
 }
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 5px;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 20px;*/
-    /*box-sizing: border-box;*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    resize: vertical;
-    font-size: 14px;
 
-}input[type=date], select, textarea {
-    width: 100%;
-    padding: 5px;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 20px;*/
-    /*box-sizing: border-box;*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    resize: vertical;
-    font-size: 14px;
+.ui-field-contain {
+    margin: 15px;
+    text-align: center;
 
-}input[type=email], select, textarea {
-    width: 100%;
-    padding: 5px;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 20px;*/
-    /*box-sizing: border-box;*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    resize: vertical;
+}
+
+#name, #password {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding: 10px;
     font-size: 14px;
-}input[type=password], select, textarea {
+}
+
+#remember-label {
     width: 100%;
-    padding: 5px;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 20px;*/
-    /*box-sizing: border-box;*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    resize: vertical;
-    font-size: 14px;
+    margin-top: 18px;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 #submit{
-    /*width: 100%;*/
-    /*font-size: 16px;*/
-    color: blue;
-    /*border: none;*/
-    /*outline: none;*/
-    /*padding: 14px 16px;*/
-    /*background-color: blue;*/
-    /*border-radius:4px;*/
-    /*transition: all 0.4s ease;*/
-    /*right:600px;*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: large;
+    background-color: #428fe5;
+    color: white;
+    text-align: center;
+
 }
 
+.login-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: larger;
+    color: #f28500;
+    margin: 20px;
 
 
-.textLabel1{
-    padding: 10px;
 }
 
+#para{
+    margin-top: -5px;
+    margin-left: 20px;
+}
+#para1 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+#register-here {
+    color: #f28500;
+}
+#login-btn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: large;
+    background-color: #428fe5;
+    color: white;
+}
 
+/* Bottom nav styling */
+
+#bottom_nav {
+    height: 50px;
+    background: white;
+}
+
+#qrcode_icon, #cart_icon, #home_icon, #user_icon, #other_icon {
+    color: #6c7075;
+    font-size: 20px;
+    border: 10px solid white;
+    background: white;
+    text-align: center;
+
+}
