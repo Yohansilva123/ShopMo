@@ -38,6 +38,24 @@
     color: #6c7075;
 }
 
+/*Main Content*/
+
+#addtocart-btn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: large;
+    background-color: #428fe5;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.fieldGroup {
+    display: flex;
+}
+
 /* Bottom nav styling */
 
 #bottom_nav {

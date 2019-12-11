@@ -28,60 +28,54 @@
         <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" >
     </div>
 
-    <div class="banner">
-        <table>
-            <tr>
-                <td>
-                    <span class="glyphicon glyphicon-lock" id="lock_icon"></span>
-                </td>
-                <td>
-                    <div class="slogan">DEBT OF ULTIMATE MARKETING</div>
-                </td>
-            </tr>
-        </table>
-    </div>
 
 
-
-    <div data-role="main" class="ui-content">
-
-        <h1 class="headings"><b>Register</b></h1>
-
-        <form action="/action_page.php">
-            <div class="form-group">
-                <label for="text">Name:</label>
-                <input type="text" class="form-control" id="text" placeholder="Enter Name" name="email">
+    <!--Main Content-->
+    <div data-role="main" class="ui-content" >
+        <form method="post" action="demoform.asp" id="form">
+            <h1 class="register-title"><b>Register</b></h1>
+            <p id = "para">Fill out the details </p>
+            <div class="ui-field-contain">
+                <label for="name" id="namelabel"></label>
+                <input type="text" name="name" id="name" placeholder="Username">
+                <label for="email" id="emaillabel"></label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="password" id="passwordlabel"></label>
+                <input type="password" name="password" id="password"  placeholder="Password">
+                <label for="phoneNo" id="numberlabel"></label>
+                <input type="password" name="phoneNo" id="phoneNo"  placeholder="Telephone number">
+                <label for="agree" id="agree-label">Remember me</label>
+                <input type="checkbox" name="agree" id="agree">
+                <br>
+                <button class="btn warning" id="register-btn">Register</button>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-            </div>
-            <button type="submit" class="btn btn-primary">Register</button>
-
-            <div></div>
         </form>
-
-<!--        <form method="post" action="demoform.asp" >-->
-<!--            <div class="ui-field-contain">-->
-<!--                <label for="fullname" class="textLabel1">Full name:</label>-->
-<!--                <input type="text" name="fullname" id="fullname" >-->
-<!--                <label for="bday" class="textLabel1">Date of Birth:</label>-->
-<!--                <input type="date" name="bday" id="bday">-->
-<!--                <label for="email" class="textLabel1">E-mail:</label>-->
-<!--                <input type="email" name="email" id="email" placeholder="Your email..">-->
-<!--            </div>-->
-<!--            <input type="submit" id="submit" value="Submit">-->
-<!--        </form>-->
     </div>
 
 
 
-    <div data-role="footer" id="footer">
-        <h1>Insert Footer Text Here</h1>
+    <!-- Bottom Navigation -->
+    <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar" id="bottom_nav">
+            <ul>
+                <li id="qrcode_icon" style="width:20%">
+                    <i class="fas fa-qrcode"></i>
+                </li>
+                <li id="cart_icon" style="width:20% ">
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+                <li id="home_icon" style="width:20%">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li id="user_icon" style="width:20%">
+                    <i class="fas fa-user"></i>
+                </li>
+                <li id="other_icon" style="width:20%">
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+
+            </ul>
+        </div>
     </div>
 </div>
 

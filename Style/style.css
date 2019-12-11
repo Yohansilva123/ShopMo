@@ -27,24 +27,9 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*Main content*/
 
-/*#name, #password, #remember{*/
-    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
-    /*text-align: left;*/
-    /*padding: 10px;*/
-    /*font-size: 14px;*/
-/*}*/
-
-/*#name-label, #pword-label  {*/
-    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
-    /*text-align: left;*/
-    /*padding: 15px 40px;*/
-    /*font-size: 14px;*/
-    /*background-color: white;*/
-    /*color: black;*/
-/*}*/
-
-#namelabel, #passwordlabel{
+#namelabel, #passwordlabel, #emaillabel, #numberlabel {
     width: 100%;
     margin-bottom: 18px;
     text-align: center;
@@ -52,19 +37,21 @@
 }
 
 .ui-field-contain {
+    width: 100%;
     margin: 15px;
     text-align: center;
 
 }
 
-#name, #password {
+#name, #password, #email, #phoneNo {
+    width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
+    text-align: center;
     padding: 10px;
     font-size: 14px;
 }
 
-#remember-label {
+#remember-label, #agree-label {
     width: 100%;
     margin-top: 18px;
     background-color: aliceblue;
@@ -72,23 +59,12 @@
     text-align: center;
 }
 
-#submit{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 100%;
-    font-size: large;
-    background-color: #428fe5;
-    color: white;
-    text-align: center;
-
-}
-
-.login-title {
+.login-title, .register-title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
     font-size: larger;
     color: #f28500;
     margin: 20px;
-
 
 }
 
@@ -100,12 +76,12 @@
     margin-top: 20px;
     font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
+    text-align: center;
 }
 #register-here {
     color: #f28500;
 }
-#login-btn {
+#login-btn, #register-btn {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
     font-size: large;
