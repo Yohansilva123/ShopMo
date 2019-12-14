@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="Style/cartpage_style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+
+<div data-role="page" data-position="fixed">
+
+    <!-- Top Navigation -->
+    <div data-role="header" id="top_navigation">
+        <i class="fas fa-th" id="category_icon"></i>
+        <div align="center" class="logo">
+            <img class="logo" src="images/shopmologo.png" alt="Image">
+            <i class="fa fa-tags" id="promotion_icon"></i>
+        </div>
+
+        <div data-role="navbar" id="search">
+            <ul>
+                <li style="width:85%">
+
+                    <form class="ui-filterable">
+                        <input id="myFilter" data-type="search" placeholder="Search for items..">
+                    </form>
+                </li>
+                <li id="filter_icon" style="width:15%">
+                    <i class="fas fa-filter"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <button class="btn warning" id="addtocart-btn">Add to Cart</button>
+
+    <form method="post" action="">
+        <div class="cardBox">
+            <a class="add">[ADD block]</a>
+        </div>
+    </form>
+
+    <!-- TAKIT: Created templates here, so that HTML stays in HTML -->
+    <div class="hidden" id="Templates">
+        <!-- TAKIT: block template -->
+        <div class="block">
+            <div class="card">
+                <!-- TAKIT: field template -->
+                <div class="fieldGroup">
+                    <input type="text" name="name[]" class="form-control" placeholder="Enter name" />
+                    <a href="javascript:void(0)" class="btn btn-success addMore"><span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span>Add</a>
+                </div>
+                <div class="fieldGroup">
+                    <input type="text" name="" class="form-control" placeholder="Enter Your Question" />
+                    <a href="javascript:void(0)" class="btn btn-danger removeField"><span class="glyphicon glyphicon glyphicon-plus" aria-hidden="true"></span>Remove</a>
+                </div>
+            </div>
+            <br><!-- TAKIT: Added, just because -->
+        </div>
+    </div>
+    <script>
+    var maxGroup = 50;
+
+    // TAKIT: Added these variables to use the "templates" I added in HTML
+    var blockTemplate = $('#Templates > .block')[0].outerHTML;
+    var fieldTemplate = $('#Templates .fieldGroup:last')[0].outerHTML;
+
+    // Add another block
+    $('.add').click(function() {
+    $('form .add').before(blockTemplate); // TAKIT: Modified
+    // TAKIT: Removed the $(document).ready that was here ! What was that?
+    });
+
+    // TAKIT: Modified this function, too
+    // Add field
+    $('.cardBox').on('click', '.addMore', function() {
+    if ($('form .fieldGroup').length > maxGroup) {
+    alert('Maximum ' + maxGroup + ' groups are allowed.');
+    return; // Exit
+    }
+    $(this).closest(".card").find('.fieldGroup:last').after(fieldTemplate); // TAKIT: Modified here
+    });
+
+    // Remove field
+    $('.cardBox').on('click', '.removeField', function() {
+    $(this).parent().remove();
+    });
+
+    // TAKIT: Add a block on load
+    $('.add').trigger('click');
+</script>
+    <!-- Bottom Navigation -->
+    <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar" id="bottom_nav">
+            <ul>
+                <li id="qrcode_icon" style="width:20%">
+                    <i class="fas fa-qrcode"></i>
+                </li>
+                <li id="cart_icon" style="width:20% ">
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+                <li id="home_icon" style="width:20%">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li id="user_icon" style="width:20%">
+                    <i class="fas fa-user"></i>
+                </li>
+                <li id="other_icon" style="width:20%">
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="Style/deliverypage_style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+
+
+<div data-role="page" data-position="fixed">
+
+    <!-- Top Navigation -->
+    <div data-role="header" id="top_navigation">
+        <i class="fas fa-th" id="category_icon"></i>
+        <div align="center" class="logo">
+            <img class="logo" src="images/shopmologo.png" alt="Image">
+            <i class="fa fa-tags" id="promotion_icon"></i>
+        </div>
+
+        <div data-role="navbar" id="search">
+            <ul>
+                <li style="width:85%">
+
+                    <form class="ui-filterable">
+                        <input id="myFilter" data-type="search" placeholder="Search for items..">
+                    </form>
+                </li>
+                <li id="filter_icon" style="width:15%">
+                    <i class="fas fa-filter"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Main content-->
+    <div data-role="main" class="ui-content">
+        <p id="delivery_title"><b>Delivery Information </b></p>
+
+
+        <div data-role="main" class="ui-content" >
+            <form method="post" action="demoform.asp" id="form">
+                <p id="recipientInfo_title"><b>Recipient's Information </b></p>
+                <div class="ui-field-contain">
+                    <label for="fullname" id="namelabel"></label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Recipient's Name">
+                    <label for="mobileNo" id="mobileNolabel"></label>
+                    <input type="number" name="mobileNo" id="mobileNo"  placeholder="Recipient's Mobile Number">
+                    <label for="adress" id="adresslabel"></label>
+                    <input type="text" name="adress" id="adress"  placeholder="Recipient's Adress">
+
+                </div>
+                <p id="deliveryInfo_title"><b>Delivery Information </b></p>
+                <br>
+                <fieldset data-role="controlgroup" id="deliveryInfo-group">
+                    <label for="pickup" id="pickup-label">Pick Up from Outlet Store</label>
+                    <input type="radio" name="pickup" id="pickup" value="pickup">
+                    <label for="homeDel" id="homeDel-label">Home Delivery</label>
+                    <input type="radio" name="homeDel" id="homeDel" value="homeDel">
+
+                </fieldset>
+                <label for="citylabel" id="citylabel"></label>
+                <input type="text" name="citylabel" id="city" placeholder="Nearest City">
+                <p id="map-title"><b>Please set the marker to the delivery location to locate the address</b></p>
+
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var colombo = {lat: 6.9271, lng: 79.8612};
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), {zoom: 13, center: colombo});
+                        var marker = new google.maps.Marker({position: colombo, map: map});
+                    }
+
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT_MGk3BYvAUMt0Wcj6gn5zVFPIGUdzfM&callback=initMap"
+                        async defer></script>
+
+                <label for="deliveryDate" id="delDate-label"></label>
+                <input placeholder="Delivery Date" class="textbox-n" type="text" onfocus="(this.type='date')"
+                       onblur="(this.type='text')" name="deliveryDate" id="deliveryDate">
+
+                <label for="deliveryTime" id="delTime-label"></label>
+                <input placeholder="Delivery Time" class="textbox-n" type="text" onfocus="(this.type='time')"
+                       onblur="(this.type='text')" name="deliveryTime" id="deliveryTime">
+
+                <label for="callOption" id="callOption-label">Call before Delivery</label>
+                <input type="checkbox" name="favcolor" id="callOption">
+
+                <div class="ui-field-contain">
+                    <label for="comments" id="comments-label"></label>
+                    <textarea name="addinfo" id="comments" placeholder="Comments"></textarea>
+                </div>
+
+                <p id="text"> *It is a long established fact that a reader will
+                    be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+
+                <button class="btn info" id="back-btn">Proceed Payment</button>
+                <button class="btn warning" id="payment-btn">Back</button>
+                <!--<input type="submit" data-inline="true" value="Back" id="back-btn">-->
+                <!--<input type="submit" data-inline="true" value="Proceed Payment" id="payment-btn">-->
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar" id="bottom_nav">
+            <ul>
+                <li id="qrcode_icon" style="width:20%">
+                    <i class="fas fa-qrcode"></i>
+                </li>
+                <li id="cart_icon" style="width:20% ">
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+                <li id="home_icon" style="width:20%">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li id="user_icon" style="width:20%">
+                    <i class="fas fa-user"></i>
+                </li>
+                <li id="other_icon" style="width:20%">
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

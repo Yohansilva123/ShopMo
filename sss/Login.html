@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+    <div align="center" class="header">
+        <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60">
+    </div>
+    <!--Top Banner-->
+    <div class="banner">
+        <table>
+            <tr>
+                <td>
+                    <i class="fas fa-shopping-bag" id="promotion_icon"></i>
+                </td>
+                <td>
+                    <div class="slogan">DEBUT OF ULTIMATE MARKETING</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--Main Content-->
+    <section class="login_box_area section-margin">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<div class="hover">
+							<h4>New to our website?</h4>
+							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+							<a class="button button-account" href="register.html">Create an Account</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="login_form_inner">
+						<h3>Log in to enter</h3>
+						<form class="row login_form" action="#/" id="contactForm" >
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+							</div>
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+							</div>
+							<div class="col-md-12 form-group">
+								<div class="creat_account">
+									<input type="checkbox" id="f-option2" name="selector">
+									<label for="f-option2">Keep me logged in</label>
+								</div>
+							</div>
+							<div class="col-md-12 form-group">
+								<button type="submit" value="submit" class="button button-login w-100">Log In</button>
+								<a href="#">Forgot Password?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Bottom Navigation -->
+    <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar" id="bottom_nav">
+            <ul>
+                <li id="qrcode_icon" style="width:20%">
+                    <i class="fas fa-qrcode"></i>
+                </li>
+                <li id="cart_icon" style="width:20% ">
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+                <li id="home_icon" style="width:20%">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li id="user_icon" style="width:20%">
+                    <i class="fas fa-user"></i>
+                </li>
+                <li id="other_icon" style="width:20%">
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
