@@ -44,36 +44,61 @@
 
     <!--Main content-->
     <div data-role="main" class="ui-content">
-        <p id="delivery_title"><b>Delivery Information </b></p>
+            <p id="paymentInfo_title"><b>Payment Information</b></p>
 
 
         <div data-role="main" class="ui-content" >
-            <p id="recipientInfo_title"><b>Recipient's Information </b></p>
-            <br>
-            <form method="post" action="demoform.asp">
+            <form method="post" action="demoform.asp" id="form">
+                <p id="paymentMethod-title"><b>Payment Method </b></p>
+                <table align="center">
+                    <tr>
+                        <td>
+                        <i class="fab fa-cc-visa  fa-3x  fa-border" id="visa_icon" ></i>
+                        </td>
+                        <td>
+                        <i class="fab fa-cc-amex fa-3x  fa-border" id="amex_icon" ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <i class="fab fa-cc-mastercard fa-3x  fa-border" id="mastercard_icon" ></i>
+                        </td>
+                        <td>
+                            <!--<i class="fas fa-coins"></i>-->
+                        <i class="fas fa-coins fa-3x  fa-border" id="cash_icon"></i>
+                        </td>
+                    </tr>
 
-                    <label for="fullname" id="namelabel"></label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Recipient's Name">
-                    <label for="mobileNo" id="mobileNolabel"></label>
-                    <input type="number" name="mobileNo" id="mobileNo"  placeholder="Recipient's Mobile Number">
-                    <label for="adress" id="adresslabel"></label>
-                    <input type="text" name="adress" id="adress"  placeholder="Recipient's Adress">
+                </table>
 
-                <p id="deliveryInfo_title"><b>Delivery Information </b></p>
+                <p id="paymentDetail-title"><b>Payment Details</b></p>
+                    <label for="cardType" id="cardType-label"></label>
+                    <input type="text" name="cardType" id="cardType" placeholder="Card Type">
+                    <label for="cardNo" id="cardNo-label"></label>
+                    <input type="number" name="cardNo" id="cardNo"  placeholder="Card Number">
+                    <label for="nameInCard" id="nameInCard-label"></label>
+                    <input type="text" name="nameInCard" id="nameInCard"  placeholder="Name On card">
+
+                    <table>
+                        <tr>
+                            <td> <label for="expiryDate" id="expiryDate-label"></label>
+                                <input placeholder="Expiry Date" class="textbox-n" type="text" onfocus="(this.type='date')"
+                                       onblur="(this.type='text')" name="expiryDate" id="expiryDate">
+                            </td>
+                            <td>
+                                <label for="cvv" id="cvv-label"></label>
+                                <input type="number" name="cvv" id="cvv"  placeholder="CVV">
+                            </td>
+                        </tr>
+                    </table>
+
+
+                <label for="rememberOption" id="rememberOption-label">Remember me</label>
+                <input type="checkbox" name="favcolor" id="rememberOption">
+
                 <br>
-                <fieldset data-role="controlgroup" id="deliveryInfo-group">
-                    <label for="pickup" id="pickup-label">Pick Up from Outlet Store</label>
-                    <input type="radio" name="pickup" id="pickup" value="pickup">
-                    <label for="homeDel" id="homeDel-label">Home Delivery</label>
-                    <input type="radio" name="homeDel" id="homeDel" value="homeDel">
-
-                </fieldset>
-
-                <br>
-                <button class="btn info" id="back-btn">Proceed Payment</button>
-                <button class="btn warning" id="payment-btn">Back</button>
-
-
+                <button class="btn info" id="back-btn">Back</button>
+                <button class="btn warning" id="payment-btn">Confirm Purchase</button>
             </form>
         </div>
     </div>
@@ -86,6 +111,7 @@
                     <i class="fas fa-qrcode"></i>
                 </li>
                 <li id="cart_icon" style="width:20% ">
+
                     <i class="fas fa-shopping-cart"></i>
                 </li>
                 <li id="home_icon" style="width:20%">

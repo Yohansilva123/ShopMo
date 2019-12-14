@@ -17,7 +17,7 @@
 <body>
 
 
-<div data-role="page" >
+<div data-role="page" data-position="fixed">
 
     <!-- Top Navigation -->
     <div data-role="header" id="top_navigation" data-position="fixed">
@@ -44,35 +44,34 @@
 
     <!--Main content-->
     <div data-role="main" class="ui-content">
-        <p id="delivery_title"><b>Delivery Information </b></p>
 
 
         <div data-role="main" class="ui-content" >
-            <p id="recipientInfo_title"><b>Recipient's Information </b></p>
-            <br>
-            <form method="post" action="demoform.asp">
+            <form method="post" action="demoform.asp" id="form">
 
-                    <label for="fullname" id="namelabel"></label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Recipient's Name">
-                    <label for="mobileNo" id="mobileNolabel"></label>
-                    <input type="number" name="mobileNo" id="mobileNo"  placeholder="Recipient's Mobile Number">
-                    <label for="adress" id="adresslabel"></label>
-                    <input type="text" name="adress" id="adress"  placeholder="Recipient's Adress">
-
-                <p id="deliveryInfo_title"><b>Delivery Information </b></p>
+                <p id="storePick_title"><b>  Store Pickup Information </b></p>
                 <br>
-                <fieldset data-role="controlgroup" id="deliveryInfo-group">
-                    <label for="pickup" id="pickup-label">Pick Up from Outlet Store</label>
-                    <input type="radio" name="pickup" id="pickup" value="pickup">
-                    <label for="homeDel" id="homeDel-label">Home Delivery</label>
-                    <input type="radio" name="homeDel" id="homeDel" value="homeDel">
+                <label for="deliveryDate" id="delDate-label"></label>
+                <input placeholder="Delivery Date" class="textbox-n" type="text" onfocus="(this.type='date')"
+                       onblur="(this.type='text')" name="deliveryDate" id="deliveryDate">
 
-                </fieldset>
+                <label for="deliveryTime" id="delTime-label"></label>
+                <input placeholder="Delivery Time" class="textbox-n" type="text" onfocus="(this.type='time')"
+                       onblur="(this.type='text')" name="deliveryTime" id="deliveryTime">
 
-                <br>
+                <label for="callOption" id="callOption-label">Call before PickUp</label>
+                <input type="checkbox" name="favcolor" id="callOption">
+
+
+                    <label for="comments" id="comments-label"></label>
+                    <textarea name="addinfo" id="comments" placeholder="Comments"></textarea>
+
+                <p id="text"> <b>Important! </b> Your pickup date should be within 7 days starting from today</p>
+
                 <button class="btn info" id="back-btn">Proceed Payment</button>
                 <button class="btn warning" id="payment-btn">Back</button>
-
+                <!--<input type="submit" data-inline="true" value="Back" id="back-btn">-->
+                <!--<input type="submit" data-inline="true" value="Proceed Payment" id="payment-btn">-->
 
             </form>
         </div>

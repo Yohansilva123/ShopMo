@@ -17,10 +17,10 @@
 <body>
 
 
-<div data-role="page" >
+<div data-role="page" data-position="fixed">
 
     <!-- Top Navigation -->
-    <div data-role="header" id="top_navigation" data-position="fixed">
+    <div data-role="header" id="top_navigation">
         <i class="fas fa-th" id="category_icon"></i>
         <div align="center" class="logo">
             <img class="logo" src="images/shopmologo.png" alt="Image">
@@ -44,35 +44,49 @@
 
     <!--Main content-->
     <div data-role="main" class="ui-content">
-        <p id="delivery_title"><b>Delivery Information </b></p>
-
-
         <div data-role="main" class="ui-content" >
-            <p id="recipientInfo_title"><b>Recipient's Information </b></p>
-            <br>
-            <form method="post" action="demoform.asp">
-
-                    <label for="fullname" id="namelabel"></label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Recipient's Name">
-                    <label for="mobileNo" id="mobileNolabel"></label>
-                    <input type="number" name="mobileNo" id="mobileNo"  placeholder="Recipient's Mobile Number">
-                    <label for="adress" id="adresslabel"></label>
-                    <input type="text" name="adress" id="adress"  placeholder="Recipient's Adress">
-
-                <p id="deliveryInfo_title"><b>Delivery Information </b></p>
+            <form method="post" action="demoform.asp" id="form">
+                <p id="homeDelivery_title"><b>Home Delivery Information </b></p>
                 <br>
-                <fieldset data-role="controlgroup" id="deliveryInfo-group">
-                    <label for="pickup" id="pickup-label">Pick Up from Outlet Store</label>
-                    <input type="radio" name="pickup" id="pickup" value="pickup">
-                    <label for="homeDel" id="homeDel-label">Home Delivery</label>
-                    <input type="radio" name="homeDel" id="homeDel" value="homeDel">
 
-                </fieldset>
+                  <p id="map-title">Please set the marker to the delivery location to locate the address</p>
+
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var colombo = {lat: 6.9271, lng: 79.8612};
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), {zoom: 13, center: colombo});
+                        var marker = new google.maps.Marker({position: colombo, map: map});
+                    }
+
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT_MGk3BYvAUMt0Wcj6gn5zVFPIGUdzfM&callback=initMap"
+                        async defer></script>
+
+                <label for="citylabel" id="citylabel"></label>
+                <input type="text" name="citylabel" id="city" placeholder="Nearest City">
+
+                <label for="deliveryDate" id="delDate-label"></label>
+                <input placeholder="Delivery Date" class="textbox-n" type="text" onfocus="(this.type='date')"
+                       onblur="(this.type='text')" name="deliveryDate" id="deliveryDate">
+
+                <label for="deliveryTime" id="delTime-label"></label>
+                <input placeholder="Delivery Time" class="textbox-n" type="text" onfocus="(this.type='time')"
+                       onblur="(this.type='text')" name="deliveryTime" id="deliveryTime">
+
+                <label for="callOption" id="callOption-label">Call before Delivery</label>
+                <input type="checkbox" name="favcolor" id="callOption">
+
+                <label for="comments" id="comments-label"></label>
+                <textarea name="addinfo" id="comments" placeholder="Comments"></textarea>
+
+                <p id="text"> *It is a long established fact that a reader will
+                    be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
 
                 <br>
                 <button class="btn info" id="back-btn">Proceed Payment</button>
                 <button class="btn warning" id="payment-btn">Back</button>
-
 
             </form>
         </div>
