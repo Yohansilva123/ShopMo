@@ -17,7 +17,9 @@
 <body>
 <div data-role="page" id="pageone">
     <div align="center" class="header">
-        <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60">
+        <a href="HomePage.html">
+            <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60">
+        </a>
     </div>
     <!--Top Banner-->
     <div class="banner">
@@ -38,7 +40,7 @@
         <form method="post" action="demoform.asp" id="form">
             <h1 class="login-title"><b>Login</b></h1>
             <p id = "para">Let's get started </p>
-            <div class="ui-field-contain">
+<!--            <div class="ui-field-contain">-->
                 <label for="name" id="namelabel"></label>
                 <input type="text" name="name" id="name" placeholder="Username">
                 <label for="password" id="passwordlabel"></label>
@@ -46,11 +48,15 @@
                 <label for="remember" id="remember-label">Remember me</label>
                 <input type="checkbox" name="remember" id="remember">
 
-            </div>
-            <div class="ui-field-contain">
+<!--            </div>-->
+<!--            <div class="ui-field-contain">-->
                 <button class="btn warning" id="login-btn">Login</button>
-                <p id = "para1">Dont have an account already ?  <u id="register-here"> Register here </u> </p>
-            </div>
+                <p id = "para1">Dont have an account already ?
+                    <a href="Register.html">
+                    <u id="register-here"> Register here </u>
+                    </a>
+                </p>
+<!--            </div>-->
         </form>
     </div>
 

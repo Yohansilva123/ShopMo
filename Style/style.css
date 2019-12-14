@@ -1,37 +1,83 @@
+/* For portrait*/
 
-.header {
-    padding-top: 30px;
-    padding-bottom: 10px;
+@media screen and (orientation: portrait) {
+    .logo {
+        top: 10px;
+        height: 65px;
+    }
+
+    .header {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .banner{
+        text-align: center;
+        padding: 27px;
+        background-color: #f28500;
+    }
+
+    #promotion_icon {
+        color: white;
+        font-size: 60px;
+        text-align: center;
+    }
+    .slogan{
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
 
-.banner{
-    text-align: center;
-    padding: 27px;
-    background-color: #f28500;
-}
+/* For landscape */
 
-#promotion_icon {
-    color: white;
-    font-size: 80px;
-    text-align: center;
-}
-.slogan{
-    color: white;
-    font-size: 15px;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@media screen and (orientation: landscape) {
+    .logo {
+        top: 10px;
+        height: 50px;
+    }
+
+    .header {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .banner{
+        text-align: center;
+        padding: 17px;
+        background-color: #f28500;
+    }
+
+    #promotion_icon {
+        color: white;
+        font-size: 45px;
+        text-align: center;
+    }
+    .slogan{
+        color: white;
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
 
 /*Main content*/
 
 #namelabel, #passwordlabel, #emaillabel, #numberlabel {
     margin-bottom: 18px;
-    text-align: center;
+    align-content: center;
+    text-align: left;
 
 }
 
@@ -85,6 +131,10 @@
     color: white;
 }
 
+form{
+
+}
+
 /* Bottom nav styling */
 
 #bottom_nav {
@@ -92,11 +142,19 @@
     background: white;
 }
 
-#qrcode_icon, #cart_icon, #home_icon, #user_icon, #other_icon {
+#qrcode_icon, #cart_icon, #home_icon, #other_icon {
     color: #6c7075;
     font-size: 20px;
     border: 10px solid white;
     background: white;
     text-align: center;
 
+}
+
+#user_icon{
+    color: #f28500;
+    font-size: 20px;
+    border: 10px solid white;
+    background: white;
+    text-align: center;
 }
