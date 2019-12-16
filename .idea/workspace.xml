@@ -2,21 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f06ec39-db5e-42f5-8fcd-d5c6b504380d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Promotions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Style/promo_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Style/products_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/1PROMO2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/3PROMO2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/61Xj1A6WCTL._SX569_.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/NTBPromo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/chili.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/kitkat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/milk.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/noodles.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/noodles.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/phone1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pringles.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/rice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sauce.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sugar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/qrcode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/images/shopmo logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/LoginPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RegisterPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/RegisterPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Promotions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Promotions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style/homepage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/homepage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/promo_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/promo_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/4PROMO.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/4PROMO.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/promo1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/promo1.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,25 +60,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1UyQzDnmd9vnI7x8ZMgB7q9pnht" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Style" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive - Wiley/IIT BIS/year 4/Mobile UI UX/Online-Grocery-Store-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\Style" />
-      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo" />
-      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\images" />
-      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\Style" />
       <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo" />
       <recent name="$PROJECT_DIR$/Style" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo" />
+      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\Style" />
+      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\images" />
+      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -63,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.DeliveryPage.html">
+  <component name="RunManager" selected="JavaScript Debug.HomePage.html">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -78,19 +110,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeliveryPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/DeliveryPage.html" useBuiltInWebServerPort="true">
+    <configuration name="HomePage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/HomePage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="HomePage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Shopmo/HomePage.html">
+    <configuration name="LoginPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/LoginPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/Login.html">
+    <configuration name="Login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/sss/Login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="PaymentPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/PaymentPage.html" useBuiltInWebServerPort="true">
+    <configuration name="Products.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/Products.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/Register.html" useBuiltInWebServerPort="true">
+    <configuration name="Promotions.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/Promotions.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
@@ -104,19 +136,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.HomePage.html" />
+      <item itemvalue="JavaScript Debug.LoginPage.html" />
       <item itemvalue="JavaScript Debug.Login.html" />
-      <item itemvalue="JavaScript Debug.Register.html" />
-      <item itemvalue="JavaScript Debug.PaymentPage.html" />
-      <item itemvalue="JavaScript Debug.DeliveryPage.html" />
+      <item itemvalue="JavaScript Debug.Promotions.html" />
+      <item itemvalue="JavaScript Debug.HomePage.html" />
+      <item itemvalue="JavaScript Debug.Products.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.DeliveryPage.html" />
-        <item itemvalue="JavaScript Debug.PaymentPage.html" />
         <item itemvalue="JavaScript Debug.HomePage.html" />
+        <item itemvalue="JavaScript Debug.Products.html" />
+        <item itemvalue="JavaScript Debug.Promotions.html" />
         <item itemvalue="JavaScript Debug.Login.html" />
-        <item itemvalue="JavaScript Debug.Register.html" />
+        <item itemvalue="JavaScript Debug.LoginPage.html" />
       </list>
     </recent_temporary>
   </component>
@@ -150,11 +182,38 @@
       <workItem from="1575310542807" duration="4557000" />
       <workItem from="1575362403857" duration="2951000" />
       <workItem from="1575452363999" duration="20813000" />
+      <workItem from="1576326617008" duration="1946000" />
+      <workItem from="1576329309681" duration="36840000" />
     </task>
+    <task id="LOCAL-00001" summary="latest code">
+      <created>1576323687820</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576323687821</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="latest code" />
+    <option name="LAST_COMMIT_MESSAGE" value="latest code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -162,6 +221,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/DeliveryPage.html</url>
           <line>76</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Promotions.html</url>
+          <line>211</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

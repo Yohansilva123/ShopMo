@@ -110,7 +110,7 @@
     }
 
     .carousel-inner img {
-        width: 50%;
+        width: 100%;
         height: 100%;
         text-align: center;
     }
@@ -128,8 +128,17 @@
     background: white;
 }
 
-#qrcode_icon, #cart_icon, #home_icon, #user_icon, #other_icon {
+#qrcode_icon, #cart_icon,  #user_icon, #other_icon {
     color: #6c7075;
+    font-size: 20px;
+    border: 10px solid white;
+    background: white;
+    text-align: center;
+
+}
+
+#home_icon{
+    color: #f28500;
     font-size: 20px;
     border: 10px solid white;
     background: white;
