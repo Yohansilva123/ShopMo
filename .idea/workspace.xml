@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f06ec39-db5e-42f5-8fcd-d5c6b504380d" name="Default" comment="">
+    <list default="true" id="4f06ec39-db5e-42f5-8fcd-d5c6b504380d" name="Default" comment="latest code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CartPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/CartPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeliveryPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/DeliveryPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeDelivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomeDelivery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Promotions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Promotions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style/cartpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/cartpage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/deliverypage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/deliverypage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/homepage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/homepage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/1PROMO.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/1PROMO.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/2PROMO.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/2PROMO.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.ProductPage.html">
+  <component name="RunManager" selected="JavaScript Debug.LoginPage.html">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -97,19 +88,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/CartPage.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="DeliveryPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/DeliveryPage.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="HomeDelivery.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/HomeDelivery.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="LoginPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/LoginPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/sss/Login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="ProductPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/ProductPage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/sss/html5-js-shopping-cart-source-files/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
@@ -124,18 +115,18 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Login.html" />
-      <item itemvalue="JavaScript Debug.CartPage.html" />
-      <item itemvalue="JavaScript Debug.DeliveryPage.html" />
       <item itemvalue="JavaScript Debug.HomeDelivery.html" />
       <item itemvalue="JavaScript Debug.ProductPage.html" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.LoginPage.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.LoginPage.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.Login.html" />
         <item itemvalue="JavaScript Debug.ProductPage.html" />
         <item itemvalue="JavaScript Debug.HomeDelivery.html" />
-        <item itemvalue="JavaScript Debug.DeliveryPage.html" />
-        <item itemvalue="JavaScript Debug.Login.html" />
-        <item itemvalue="JavaScript Debug.CartPage.html" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576493922142</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="latest code">
+      <created>1576511625092</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576511625092</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
