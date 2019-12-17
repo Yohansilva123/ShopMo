@@ -1,35 +1,91 @@
-/* Top nav styling */
+/* For portrait*/
 
-#top_navigation {
-    background-color: white;
-    height: 135px;
+@media screen and (orientation: portrait) {
+    /* Top nav styling */
+    #top_navigation {
+        background-color: white;
+        height: 122px;
+        padding-top: 10px;
+    }
+
+    .logo {
+        top: 10px;
+        height: 52px;
+    }
+
+    #category_icon {
+        position: absolute;
+        top: 25px;
+        left: 28px;
+        color: #6c7075;
+        font-size: 25px;
+    }
+
+    #promotion_icon {
+        position: absolute;
+        top: 25px;
+        right: 28px;
+        color: #f28500;
+        font-size: 25px;
+    }
+
+    .ui-filterable {
+        width: auto;
+        margin-left: 25px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 25px;
+    }
+
+    #filter_icon {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #6c7075;
+    }
 }
+/*landscape*/
+@media screen and (orientation: landscape) {
+    /* Top nav styling */
+    #top_navigation {
+        background-color: white;
+        height: 105px;
+        padding-top: 10px;
+    }
 
-.logo {
-    top: 10px;
-    height: 80px;
-}
+    .logo {
+        top: 10px;
+        height: 40px;
+    }
 
-#category_icon {
-    position: absolute;
-    top: 25px;
-    left: 28px;
-    color: #6c7075;
-    font-size: 25px;
-}
+    #category_icon {
+        position: absolute;
+        top: 25px;
+        left: 28px;
+        color: #6c7075;
+        font-size: 20px;
+    }
 
-#promotion_icon {
-    position: absolute;
-    top: 25px;
-    right: 28px;
-    color: #f28500;
-    font-size: 25px;
-}
+    #promotion_icon {
+        position: absolute;
+        top: 25px;
+        right: 28px;
+        color: #f28500;
+        font-size: 20px;
+    }
 
-.ui-filterable {
-    width: auto;
-    margin-left: 18px;
-    box-shadow: #428fe5;
+    .ui-filterable {
+        width: auto;
+        margin-left: 20px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
+    }
+
+    #filter_icon {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #6c7075;
+    }
 }
 
 #filter_icon {
