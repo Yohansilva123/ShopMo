@@ -183,11 +183,12 @@
 }
 
 .circle-icon {
-    background: #f28500;
-    color: white;
+    background: white;
+    color: #f28500;
     width: 75px;
     height: 75px;
     border-radius: 50%;
+    border: 1px solid #f28500;
     text-align: center;
     vertical-align: middle;
     margin-right: 18px;
