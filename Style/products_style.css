@@ -4,13 +4,13 @@
     /* Top nav styling */
     #top_navigation {
         background-color: white;
-        height: 135px;
+        height: 122px;
         padding-top: 10px;
     }
 
     .logo {
         top: 10px;
-        height: 65px;
+        height: 52px;
     }
 
     #category_icon {
@@ -31,8 +31,9 @@
 
     .ui-filterable {
         width: auto;
-        margin-left: 18px;
-        box-shadow: #428fe5;
+        margin-left: 25px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 25px;
     }
 
     #filter_icon {
@@ -71,13 +72,13 @@
     /* Top nav styling */
     #top_navigation {
         background-color: white;
-        height: 115px;
+        height: 105px;
         padding-top: 10px;
     }
 
     .logo {
         top: 10px;
-        height: 45px;
+        height: 40px;
     }
 
     #category_icon {
@@ -85,7 +86,7 @@
         top: 25px;
         left: 28px;
         color: #6c7075;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #promotion_icon {
@@ -93,13 +94,14 @@
         top: 25px;
         right: 28px;
         color: #f28500;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .ui-filterable {
         width: auto;
-        margin-left: 18px;
-        box-shadow: #428fe5;
+        margin-left: 20px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
     }
 
     #filter_icon {
