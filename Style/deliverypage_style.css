@@ -201,6 +201,7 @@
     border-color: #f28500;
     width: 100%;
     color: #f28500;
+    max-width: 300px;
 }
 
 #payment-btn {
@@ -209,6 +210,7 @@
     font-size: large;
     background-color: #428fe5;
     color: white;
+    max-width: 300px;
 }
 
 
