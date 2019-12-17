@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="JavaScript/products.js" async></script>
 
 </head>
 <body style="background-color: white">
@@ -233,50 +234,6 @@
     </div>
 
 </div>
-
-
-<script>
-    $(document).ready(function () {
-        $("#myCarousel").on("slide.bs.carousel", function (e) {
-            var $e = $(e.relatedTarget);
-            var idx = $e.index();
-            var itemsPerSlide = 3;
-            var totalItems = $(".carousel-item").length;
-
-            if (idx >= totalItems - (itemsPerSlide - 1)) {
-                var it = itemsPerSlide - (totalItems - idx);
-                for (var i = 0; i < it; i++) {
-// append slides to end
-                    if (e.direction == "left") {
-                        $(".carousel-item")
-                            .eq(i)
-                            .appendTo(".carousel-inner");
-                    } else {
-                        $(".carousel-item")
-                            .eq(0)
-                            .appendTo($(this).find(".carousel-inner"));
-                    }
-                }
-            }
-        });
-    });
-</script>
-<!--Hide Promotion items-->
-<script>
-    $(document).ready(function(){
-        if($(".c1:visible")){
-            $(".btn").click(function(){
-                $(".c1").hide("slow");
-        });
-        }
-
-        else if($(".c1:hidden")){
-            $(".btn").click(function(){
-                $(".c1").show("slow");
-            });
-        }
-    });
-</script>
 
 </body>
 </html>
