@@ -58,7 +58,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 ">
                         <div class="card text-center card-product products">
                             <div class="card-product__img">
-                                <img class="card-img" src="images/rice.jpg" alt="">
+                                <img class="card-img" src="images/rice.jpg" alt="" onclick="window.location.href='RiceProductPage.html'">
                             </div>
                             <div>
                                 <span class="fa fa-star checked"></span>
@@ -69,6 +69,7 @@
                                 <h5>Daawat Basmati Rice</h5>
                                 <p class = "promo-item-text"><b>LKR 500.00</b></p>
                                 <p class ="promo-off">10% Off</p>
+                                <button class="btn warning" id="cart-btn1">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -86,6 +87,7 @@
                                 <h5>Magee Noodles 200g</h5>
                                 <p class = "promo-item-text"><b>LKR 100.00</b></p>
                                 <p class ="promo-off">10% Off</p>
+                                <button class="btn warning" id="cart-btn2">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -103,6 +105,7 @@
                                 <h5>Heinz Ketchup 500ml</h5>
                                 <p class = "promo-item-text"><b>LKR 800.00</b></p>
                                 <p class ="promo-off">10% Off</p>
+                                <button class="btn warning" id="cart-btn3">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -120,6 +123,7 @@
                                 <h5>Chilly 71g</h5>
                                 <p class = "promo-item-text"><b>LKR 70.00</b></p>
                                 <p class ="promo-off">10% Off</p>
+                                <button class="btn warning" id="cart-btn4">Add to Cart</button>
                             </div>
                         </div>
                     </div>
@@ -173,11 +177,7 @@
             </div>
         </section>
         <!-- ================ trending product section end ================= -->
-
-
     </div>
-
-
 
     <!-- Bottom Navigation -->
     <div data-role="footer" style="text-align:center;" data-position="fixed">
@@ -204,34 +204,6 @@
     </div>
 
 </div>
-
-
-<script>
-    $(document).ready(function () {
-        $("#myCarousel").on("slide.bs.carousel", function (e) {
-            var $e = $(e.relatedTarget);
-            var idx = $e.index();
-            var itemsPerSlide = 3;
-            var totalItems = $(".carousel-item").length;
-
-            if (idx >= totalItems - (itemsPerSlide - 1)) {
-                var it = itemsPerSlide - (totalItems - idx);
-                for (var i = 0; i < it; i++) {
-// append slides to end
-                    if (e.direction == "left") {
-                        $(".carousel-item")
-                            .eq(i)
-                            .appendTo(".carousel-inner");
-                    } else {
-                        $(".carousel-item")
-                            .eq(0)
-                            .appendTo($(this).find(".carousel-inner"));
-                    }
-                }
-            }
-        });
-    });
-</script>
 
 </body>
 </html>

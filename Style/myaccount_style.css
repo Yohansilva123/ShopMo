@@ -177,6 +177,7 @@ margin: 20px;
     font-size: large;
     background-color: #428fe5;
     color: white;
+    max-width: 300px;
 
 }
 
@@ -187,5 +188,6 @@ margin: 20px;
     margin-top: 30px;
     width: 100%;
     color: #f28500;
+    max-width: 300px;
 }
 

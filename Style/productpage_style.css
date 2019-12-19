@@ -95,6 +95,10 @@
     color: #6c7075;
 }
 
+.product-img{
+    width: 100%;
+}
+
 
 
 /* Bottom nav styling */
@@ -104,8 +108,17 @@
     background: white;
 }
 
-#qrcode_icon, #cart_icon, #home_icon, #user_icon, #other_icon {
+#qrcode_icon, #cart_icon, #user_icon, #other_icon {
     color: #6c7075;
+    font-size: 20px;
+    border: 10px solid white;
+    background: white;
+    text-align: center;
+
+}
+
+#home_icon{
+    color: #f28500;
     font-size: 20px;
     border: 10px solid white;
     background: white;
@@ -151,7 +164,58 @@
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: large;
-    border-color: #f28500;
+    background-color: #428fe5;
+    color: white;
     width: 100%;
+    max-width: 300px;
+}
+
+#minus{
+    width: 40px;
+    height: 40px;
+    border-color: #f28500;
     color: #f28500;
+    border-radius: 100%;
+    margin: 5px;
+    font-size: 12px;
+}
+#plus{
+    width: 40px;
+    height: 40px;
+    border-color: #f28500;
+    color: #f28500;
+    border-radius: 100%;
+    margin: 3px;
+    font-size: 12px;
+}
+
+#sst{
+    max-width: 20px
+;
+}
+
+.checked{
+    color: #f28500;
+    text-shadow: 0 0 3px #ffbf00;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.unchecked{
+    color: white;
+    text-shadow: 0 0 3px #222222;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.heart{
+    font-size: 25px;
+    color: #6c7075;
+    margin-right: 8px;
+}
+
+.share{
+    font-size: 25px;
+    color: #f28500;
+    margin-right: 8px;
 }

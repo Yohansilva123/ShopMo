@@ -13,6 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="JavaScript/functions.js" async></script>
 </head>
 <body>
 
@@ -20,7 +21,7 @@
 <div data-role="page" data-position="fixed">
 
     <!-- Top Navigation -->
-    <div data-role="header" id="top_navigation">
+    <div data-role="header" id="top_navigation" data-position="fixed">
         <i class="fas fa-th" id="category_icon"></i>
         <div align="center" class="logo">
             <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" onclick="window.location.href='HomePage.html'">
@@ -45,13 +46,13 @@
     <!--Main content-->
     <div data-role="main" class="ui-content">
         <div data-role="main" class="ui-content" >
-            <form method="post" action="demoform.asp" id="form">
+            <form method="post" action="demoform.asp" id="form" style="text-align: center">
                 <p id="homeDelivery_title"><b>Home Delivery Information </b></p>
                 <br>
 
                   <p id="map-title">Please set the marker to the delivery location to locate the address</p>
 
-                <div id="map"></div>
+                <div id="map" style="max-height: 250px" >
                 <script>
                     function initMap() {
                         var colombo = {lat: 6.9271, lng: 79.8612};
@@ -63,6 +64,7 @@
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT_MGk3BYvAUMt0Wcj6gn5zVFPIGUdzfM&callback=initMap"
                         async defer></script>
+                </div>
 
                 <label for="citylabel" id="citylabel"></label>
                 <input type="text" name="citylabel" id="city" placeholder="Nearest City">
@@ -85,7 +87,8 @@
                     be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
 
                 <br>
-                <button class="btn info" id="back-btn">Proceed Payment</button>
+                <button onclick="goBack()" class="btn info" id="back-btn">Proceed Payment</button>
+                <br>
                 <button class="btn warning" id="payment-btn">Back</button>
 
             </form>
