@@ -13,8 +13,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="JavaScript/products.js" async></script>
-</head>
+    <script src="JavaScript/functions.js" async></script>
+
 <body>
 
 <div data-role="page" >
@@ -40,11 +40,10 @@
     </div>
 
     <!--Main content-->
-    <div data-role="main" class="ui-content">
+    <div data-role="main" class="ui-content" style="text-align: center;">
         <p id="cart-title"><b>Shopping Cart</b></p>
 
-        <div class="cart-items">
-        <div class="card c1">
+        <div class="card c1" id="c1">
             <table>
                 <col width="80">
                 <col width="80">
@@ -166,7 +165,8 @@
 
         </div>
         <button class="btn info" id="back-btn">Continue Shopping</button>
-        <button class="btn warning" id="payment-btn">Back</button>
+        <br>
+        <button onclick="goBack()" class="btn warning" id="payment-btn">Back</button>
     </div>
     <!-- Bottom Navigation -->
     <div data-role="footer" style="text-align:center;" data-position="fixed">
@@ -193,23 +193,5 @@
     </div>
 
 </div>
-
-<script>
-
-    $(document).ready(function(){
-        $("#deletebtn1").click(function(){
-            $(".c1").hide("slow");
-        });
-
-        $("#deletebtn2").click(function(){
-            $(".c2").hide("slow");
-        });
-
-        $("#deletebtn3").click(function(){
-            $(".c3").hide("slow");
-        });
-    });
-
-</script>
 </body>
 </html>

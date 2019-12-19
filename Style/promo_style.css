@@ -186,6 +186,16 @@ h5{
     margin: 10px;
 }
 
+#cart-btn1, #cart-btn2, #cart-btn3, #cart-btn4, #cart-btn5, #cart-btn6, #cart-btn7, #cart-btn8 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: large;
+    background-color: #428fe5;
+    color: white;
+    max-width: 250px;
+    margin-bottom: 15px;
+}
+
 
 /* Bottom nav styling */
 

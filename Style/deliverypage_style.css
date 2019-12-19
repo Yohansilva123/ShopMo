@@ -137,9 +137,10 @@
 
 #storePick_title, #homeDelivery_title{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
+    text-align: center;
     margin-bottom: -15px;
     font-size: large;
+    color: #f28500;
 
 }
 

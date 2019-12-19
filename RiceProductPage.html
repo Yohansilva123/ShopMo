@@ -23,8 +23,8 @@
     <div data-role="header" id="top_navigation" data-position="fixed">
         <i class="fas fa-th" id="category_icon"></i>
         <div align="center" class="logo">
-            <img class="logo" src="images/shopmologo.png" alt="Image">
-            <i class="fa fa-tags" id="promotion_icon"></i>
+            <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" onclick="window.location.href='HomePage.html'">
+            <i class="fa fa-tags" id="promotion_icon" onclick="window.location.href='Promotions.html'"></i>
         </div>
 
         <div data-role="navbar" id="search">
@@ -48,16 +48,28 @@
 
         <div data-role="main" class="ui-content">
             <div class="product_image_area">
-                <img class="img-fluid" src="images/lemon.jpg" alt="">
+                <img class="img-fluid product-img" src="images/rice.jpg" alt="" style="max-width: 380px;">
 
             </div>
             <br>
             <div class="s_product_text">
-                <h3 id="product-title">Faded SkyBlu Denim</h3>
+                <h3 id="product-title">Daawat Rice 1Kg</h3>
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <h4 id="product-price">LKR 500.00</h4>
+                        </td>
+                        <td>
+                            <div align="right">
+                                <span><i class="fas fa-heart heart"></i></span>
+                                <span><i class="fas fa-share-alt share"></i></span>
+                            </div>
+                        </td>
+                    </tr>
 
-                <h4 id="product-price">$149.99</h4>
+                </table>
 
-                <p id="category-text"><span>Category</span> : Household</a></p>
+                <p id="category-text"><span>Category</span> : Grocery</a></p>
                 <p id="availability-text"><span>Availibility</span> : In Stock</a></p>
                 <br>
                 <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking
@@ -65,24 +77,34 @@
                     something that can make your interior look awesome, and at the same time give you the pleasant
                     warm feeling
                     during the winter.</p>
-                <div class="product_count">
-                    <label>Quantity:</label>
-                    <table class="quantity-table">
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                </div>
+                <div class="product_count" style="text-align: center">
+                    <label style="text-align: left"><b>Quantity:</b></label>
+                    <table class="quantity-table" align="center" style="text-align: left">
+                        <col width="50">
+                        <col width="50">
+                        <col width="50">
                         <tr>
-                            <td>
+                            <td align="right">
                                 <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                        class="reduced items-count" type="button"><i class="fas fa-minus"></i>
+                                        class="reduced items-count" id="minus" type="button"><i class="fas fa-minus"></i>
                                 </button>
 
                             </td>
                             <td>
-                                <input type="text" name="qty" id="sst" size="1" maxlength="12" value="1"
+                                <input type="text" name="qty" id="sst" size="1" maxlength="6" value="1"
                                        title="Quantity:"
                                        class="input-text qty">
                             </td>
                             <td>
                                 <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                        class="increase items-count" type="button"><i class="fas fa-plus"></i>
+                                        class="increase items-count" id="plus" type="button"><i class="fas fa-plus"></i>
                                 </button>
 
                             </td>
@@ -90,10 +112,6 @@
                             </td>
                     </table>
                     <button class="btn info" id="addtocart-btn">Add To Cart</button>
-                </div>
-                <div class="card_area d-flex align-items-center">
-                    <a class="heart_btn" href="#"><i class="fas fa-heart"></i></a>
-                    <a class="share_btn" href="#"><i class="fas fa-share-alt "></i></a>
                 </div>
             </div>
         </div>

@@ -12,6 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="JavaScript/functions.js" async></script>
 
 </head>
 <body style="background-color: white">
@@ -129,6 +130,11 @@
                     </td>
 
                     <td class="product-extra-td">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
                         <p class="product-qty">30% Off</p>
                     </td>
                     </td>
@@ -151,6 +157,11 @@
                     </td>
 
                     <td class="product-extra-td">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
                         <p class="product-qty">10% Off</p>
                     </td>
                     </td>
@@ -173,6 +184,11 @@
                     </td>
 
                     <td class="product-extra-td">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
                         <p class="product-qty">40% Off</p>
                     </td>
                     </td>
@@ -372,65 +388,6 @@
     </div>
 
 </div>
-
-
-<script>
-    $(document).ready(function () {
-        $("#myCarousel").on("slide.bs.carousel", function (e) {
-            var $e = $(e.relatedTarget);
-            var idx = $e.index();
-            var itemsPerSlide = 3;
-            var totalItems = $(".carousel-item").length;
-
-            if (idx >= totalItems - (itemsPerSlide - 1)) {
-                var it = itemsPerSlide - (totalItems - idx);
-                for (var i = 0; i < it; i++) {
-// append slides to end
-                    if (e.direction == "left") {
-                        $(".carousel-item")
-                            .eq(i)
-                            .appendTo(".carousel-inner");
-                    } else {
-                        $(".carousel-item")
-                            .eq(0)
-                            .appendTo($(this).find(".carousel-inner"));
-                    }
-                }
-            }
-        });
-    });
-</script>
-
-<script>
-    // Set the date
-    var countDownDate = new Date("Jan 1, 2020 12:00:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-        // today date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time cal for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Output the result in an element with id="demo"
-        document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-        // If the count down is over, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countDown").innerHTML = "EXPIRED";
-        }
-    }, 1000);
-</script>
 
 </body>
 </html>

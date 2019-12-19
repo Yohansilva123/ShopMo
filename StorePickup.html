@@ -13,6 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="JavaScript/functions.js" async></script>
 </head>
 <body>
 
@@ -47,7 +48,7 @@
 
 
         <div data-role="main" class="ui-content" >
-            <form method="post" action="demoform.asp" id="form">
+            <form method="post" action="demoform.asp" id="form" style="text-align: center;">
 
                 <p id="storePick_title"><b>  Store Pickup Information </b></p>
                 <br>
@@ -68,7 +69,8 @@
 
                 <p id="text"> <b>Important! </b> Your pickup date should be within 7 days starting from today</p>
 
-                <button class="btn info" id="back-btn">Proceed Payment</button>
+                <button onclick="goBack()" class="btn info" id="back-btn">Proceed Payment</button>
+                <br>
                 <button class="btn warning" id="payment-btn">Back</button>
                 <!--<input type="submit" data-inline="true" value="Back" id="back-btn">-->
                 <!--<input type="submit" data-inline="true" value="Proceed Payment" id="payment-btn">-->
