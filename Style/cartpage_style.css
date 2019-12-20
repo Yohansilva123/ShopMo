@@ -289,7 +289,7 @@
     color: #f28500;
 }
 
-#payment-btn {
+#payment-btn{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
     font-size: large;
@@ -297,6 +297,16 @@
     color: white;
 }
 
+#share-fav-list{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    font-size: large;
+    background-color: #428fe5;
+    color: white;
+    position: absolute;
+    right:    0;
+    bottom:   0;
+}
 /*buttons styling*/
 
 #back-btn {
@@ -308,7 +318,7 @@
     max-width: 300px;
 }
 
-#payment-btn {
+#payment-btn{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
     font-size: large;

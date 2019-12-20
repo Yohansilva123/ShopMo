@@ -144,6 +144,11 @@
 }
 
 /* Content of Promotions*/
+/*.product-id {*/
+    /*!*visibility: hidden;*!*/
+    /*font-size: xx-small;*/
+
+/*}*/
 .row{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
@@ -259,6 +264,32 @@ h5{
     padding: 10px;
     margin-bottom: 5px;
 }
+
+/*Quatity Table styling*/
+#minus1,#minus2,#minus3,#minus4,#minus5,#minus6,#minus7,#minus8{
+    width: 40px;
+    height: 40px;
+    border-color: #f28500;
+    color: #f28500;
+    border-radius: 100%;
+    margin: 5px;
+    font-size: 12px;
+}
+#plus1,#plus2,#plus3,#plus4,#plus5,#plus6,#plus7,#plus8{
+    width: 40px;
+    height: 40px;
+    border-color: #f28500;
+    color: #f28500;
+    border-radius: 100%;
+    margin: 3px;
+    font-size: 12px;
+}
+
+#sst1,#sst2,#sst3,#sst4,#sst5,#sst6,#sst7,#sst8{
+    max-width: 20px
+;
+}
+
 
 /* Promotion overview card sliders styling*/
 

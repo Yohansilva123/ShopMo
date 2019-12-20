@@ -14,6 +14,8 @@
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="JavaScript/functions.js" async></script>
+    <script src="JavaScript/products.js" async></script>
+    <script src="JavaScript/favourites.js" async></script>
 </head>
 <body>
 
@@ -63,25 +65,29 @@
     </div>
 
 
+
+
     <!--Main content-->
     <div data-role="main" class="ui-content">
 
         <div data-role="main" class="ui-content">
             <div class="product_image_area">
-                <img class="img-fluid product-img" src="images/rice.jpg" alt="" style="max-width: 380px;">
+
 
             </div>
             <br>
             <div class="s_product_text">
-                <h3 id="product-title">Daawat Rice 1Kg</h3>
+                <img class="card-img" src="images/rice.jpg" alt="" style="max-width: 380px;">
+                <h3 class="product-title">Daawat Rice 1Kg</h3>
                 <table style="width: 100%">
                     <tr>
                         <td>
-                            <h4 id="product-price">LKR 500.00</h4>
+                            <h4 class="promo-item-text">LKR 500.00</h4>
+                            <h3 class="discount">10%</h3>
                         </td>
                         <td>
                             <div align="right">
-                                <span><i class="fas fa-heart heart"></i></span>
+                                <span><i class="fas fa-heart heart-button" onclick="window.location.href='WishListPage.html'"></i></span>
                                 <span><i class="fas fa-share-alt share"></i></span>
                             </div>
                         </td>
@@ -105,44 +111,127 @@
                     <span class="fa fa-star unchecked"></span>
                 </div>
                 <div class="product_count" style="text-align: center">
-                    <label style="text-align: left"><b>Quantity:</b></label>
-                    <table class="quantity-table" align="center" style="text-align: left">
-                        <col width="50">
-                        <col width="50">
-                        <col width="50">
-                        <tr>
-                            <td align="right">
-                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                        class="reduced items-count" id="minus" type="button"><i class="fas fa-minus"></i>
-                                </button>
+                <label style="text-align: left"><b>Quantity:</b></label>
+                <table class="quantity-table" align="center" style="text-align: left">
+                    <col width="50">
+                    <col width="50">
+                    <col width="50">
+                    <tr>
+                        <td align="right">
+                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                    class="reduced items-count" id="minus" type="button"><i class="fas fa-minus"></i>
+                            </button>
 
-                            </td>
-                            <td>
-                                <input type="text" name="qty" id="sst" size="1" maxlength="6" value="1"
-                                       title="Quantity:"
-                                       class="input-text qty">
-                            </td>
-                            <td>
-                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                        class="increase items-count" id="plus" type="button"><i class="fas fa-plus"></i>
-                                </button>
+                        </td>
+                        <td>
+                            <input type="text" name="qty" id="sst" size="1" maxlength="6" value="1"
+                                   title="Quantity:"
+                                   class="input-text qty">
+                        </td>
+                        <td>
+                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                    class="increase items-count" id="plus" type="button"><i class="fas fa-plus"></i>
+                            </button>
 
-                            </td>
-                            <td>
-                            </td>
-                    </table>
-                    <button class="btn info" id="addtocart-btn">Add To Cart</button>
-                    <br>
-                    <button onclick="goBack()" class="btn warning" id="back-btn">Back</button>
-                </div>
+                        </td>
+                        <td>
+                        </td>
+                </table>
+                <button class="btn info shop-item-button" id="addtocart-btn">Add To Cart</button>
+            </div>
+<!--                            </td>-->
+<!--                            <td>-->
+<!--                            </td>-->
+<!--                    </table>-->
+<!--                    <button class="btn info" id="addtocart-btn">Add To Cart</button>-->
+<!--                    <br>-->
+<!--                    <button onclick="goBack()" class="btn warning" id="back-btn">Back</button>-->
+<!--                </div>-->
             </div>
         </div>
+
+        <div class="page-footer-class" id="page-footer-id">
+            <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+            <!-- Footer -->
+            <footer class="pt-5 pb-4" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                            <h5 class="mb-4">ABOUT US</h5>
+                            <ul class="f-address">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1"><i class="fas fa-map-marker"></i></div>
+                                        <div class="col-10">
+                                            <p class="mb-3">50/B,MAIN ST,COLOMBO</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1"><i class="far fa-envelope"></i></div>
+                                        <div class="col-10">
+                                            <p class="mb-3">ShopMo1234@Gmail.com</p>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1"><i class="fas fa-phone-volume"></i></div>
+                                        <div class="col-10">
+                                            <p class="mb-3">+94 77 605 3412</p>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                            <h5 class="mb-4">SERVICES</h5>
+                            <p class="mb-3">DELIVERY AND RETURNS</p>
+                            <p class="mb-3">PRIVACY POLICY</p>
+                            <p class="mb-3">TERMS AND CONDITIONS</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                            <h5 class="mb-4">INFORMATION</h5>
+                            <p class="mb-3">ABOUT US</p>
+                            <p class="mb-3">CONTACT US</p>
+                            <p class="mb-3">SHOPMO ON MOBILE</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                            <h5 class="mb-4">CONNECT WITH US</h5>
+                            <div class="input-group">
+                                <img src="images/shopmologo.png" width="50%"  style="margin-left: 70px">
+                            </div>
+                            <ul class="social-pet mt-4">
+                                <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Copyright -->
+            <section class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="text-center text-white">
+                                &copy; 2019 ShopMo. All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-
-<!--================End Single Product Area =================-->
-<!--</div>-->
-<!--</div>-->
-
+ </div>
+    </div>
 <!-- Bottom Navigation -->
 <div data-role="footer" style="text-align:center;" data-position="fixed">
     <div data-role="navbar" id="bottom_nav">
@@ -160,7 +249,7 @@
                 <i class="fas fa-user" onclick="window.location.href='MyAccountPage.html'"></i>
             </li>
             <li id="other_icon" style="width:20%">
-                <i class="fas fa-ellipsis-v"></i>
+                <i class="fas fa-heart heart-button" onclick="window.location.href='WishListPage.html'"></i>
             </li>
 
         </ul>
