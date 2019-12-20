@@ -12,7 +12,7 @@
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <link rel="stylesheet" href="Style/style.css">
-    <link rel="stylesheet" href="Style/deliverypage_style.css">
+    <link rel="stylesheet" href="sss/Style/deliverypage_style.css">
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -25,7 +25,7 @@
 <body>
 <div data-role="page" id="pageone">
     <div align="center" class="header">
-        <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" >
+        <img class="logo" src="sss/images/shopmo%20logo.png" alt="Image" height="60" onclick="window.location.href='HomePage.html'">
     </div>
     <div class="banner">
         <table>
@@ -44,7 +44,6 @@
 		<div class="container h-100">
 			<div class="blog-banner">
 				<div class="text-center">
-					<h1>Register</h1>
 					<nav aria-label="breadcrumb" class="banner-breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -88,12 +87,14 @@
                         </div>
                         <div class="col-md-12 form-group">
                             <div class="creat_account">
-                                <input type="checkbox" id="f-option2" name="selector">
-                                <label for="f-option2">Keep me logged in</label>
+<!--                                <input type="checkbox" id="f-option2" name="selector">-->
+<!--                                <label for="f-option2">Keep me logged in</label>-->
+                                <label for="f-option2" id="pickup-label">Keep me Logged in</label>
+                                <input type="checkbox" name="loggedIn" id="f-option2" value="loggedIn">
                             </div>
                         </div>
                         <div class="col-md-12 form-group">
-                            <button type="submit" value="submit" class="button button-register w-100">Register</button>
+                            <button type="submit" value="submit" class="button button-register w-100" id="login">Register</button>
                         </div>
                     </form>
                 </div>

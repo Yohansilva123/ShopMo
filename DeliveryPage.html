@@ -20,9 +20,28 @@
 
 <div data-role="page" >
 
+    <!--    Categories-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Frozen food</a>
+            <a href="#">Pharmacy</a>
+            <a onclick="window.location.href='Products.html'">Grocery</a>
+            <a href="#">Household</a>
+            <a href="#">Liqour</a>
+            <a href="#">Beverages</a>
+            <a href="#">Homeware</a>
+            <a href="#">chilled</a>
+            <a href="#">Vegitables</a>
+            <a href="#">Meat</a>
+            <a href="#">Fish</a>
+            <a href="#">Fruits</a>
+        </div>
+    </div>
     <!-- Top Navigation -->
+
     <div data-role="header" id="top_navigation" data-position="fixed">
-        <i class="fas fa-th" id="category_icon"></i>
+        <i class="fas fa-th" id="category_icon" onclick="openNav()"></i>
         <div align="center" class="logo">
             <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" onclick="window.location.href='HomePage.html'">
             <i class="fa fa-tags" id="promotion_icon" onclick="window.location.href='Promotions.html'"></i>
@@ -71,9 +90,9 @@
                 </fieldset>
 
                 <br>
-                <button onclick="goBack()" class="btn info" id="back-btn">Proceed Payment</button>
+                <button class="btn info" id="payment-btn">Proceed Payment</button>
                 <br>
-                <button class="btn warning" id="payment-btn">Back</button>
+                <button onclick="goBack()" class="btn warning" id="back-btn" >Back</button>
             </form>
         </div>
     </div>
