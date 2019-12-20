@@ -99,9 +99,9 @@ function addItemsToFavourites(title, price, discount) {
 
     var cardRowContents = `        
             <table>
-                <col width="80">
                 <col width="100">
-                <col width="60">
+                <col width="120">
+                <col width="40">
                 <tr>
                     <td class="product-image-td">
                         <img src="images/rice.jpg" alt="Rice" style="width:100%">

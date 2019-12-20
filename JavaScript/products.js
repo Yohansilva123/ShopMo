@@ -84,8 +84,8 @@ function addItemsToCart(title, price, url, quantity) {
     var cardRowContents = `
             <table>
                 <col width="80">
-                <col width="80">
-                <col width="80">
+                <col width="120">
+                <col width="60">
                 <tr>
                     <td class="product-image-td">
                         <img class="img" src="${url}" alt="Rice" style="width:100%">
@@ -99,7 +99,7 @@ function addItemsToCart(title, price, url, quantity) {
                     <td class="product-extra-td">
                       
                         <i class="fa fa-trash del-item-button" id="deletebtn1"></i>
-                        <p class="product-qty"> Quantity: ${quantity} </p>
+                        <p class="product-qty"> Qty: ${quantity} </p>
                     </td>
                     </td>
                 </tr>
