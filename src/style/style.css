@@ -1,110 +1,160 @@
+/* For portrait*/
 
-.header {
-    padding-top: 30px;
-    padding-bottom: 10px;
+@media screen and (orientation: portrait) {
+    .logo {
+        top: 10px;
+        height: 65px;
+    }
+
+    .header {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .banner{
+        text-align: center;
+        padding: 27px;
+        background-color: #f28500;
+    }
+
+    #promotion_icon {
+        color: white;
+        font-size: 60px;
+        text-align: center;
+    }
+    .slogan{
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
 
-.banner{
-    padding: 30px;
-    background-color: #f28500;
+/* For landscape */
+
+@media screen and (orientation: landscape) {
+    .logo {
+        top: 10px;
+        height: 50px;
+    }
+
+    .header {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .banner{
+        text-align: center;
+        padding: 17px;
+        background-color: #f28500;
+    }
+
+    #promotion_icon {
+        color: white;
+        font-size: 45px;
+        text-align: center;
+    }
+    .slogan{
+        color: white;
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
 
-#lock_icon{
+/*Main content*/
 
-    height: 30px;
-    left: 20px;
-    color: white;
-    font-size: 40px;
-}
-
-.slogan{
-    color: white;
-    font-size: 10px;
-    text-align: right;
-    padding: 30px;
-}
-
-body{
-    background-color: white;
-    font-family: monstrat;
-}
-
-#footer{
-    align-content: end;
-}
-
-/*.ui-content{*/
-/*    font-size: 10px;*/
-/*    text-align: left;*/
-/*    padding: 30px;*/
-/*}*/
-
-.headings{
+#namelabel, #passwordlabel, #emaillabel, #numberlabel {
+    margin-bottom: 18px;
+    align-content: center;
     text-align: left;
-    font-size: 30px;
+
+}
+
+.ui-field-contain {
+    margin: 15px;
+    text-align: center;
+
+}
+
+#name, #password, #email, #phoneNo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#remember-label, #agree-label {
+    margin-top: 18px;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.login-title, .register-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: larger;
+    color: #f28500;
+    margin: 20px;
+
+}
+
+#para{
+    margin-top: -5px;
+    margin-left: 20px;
+}
+#para1 {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#register-here {
     color: #f28500;
 }
-input[type=text], select, textarea {
+#login-btn, #register-btn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
-    padding: 5px;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 20px;*/
-    /*box-sizing: border-box;*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    resize: vertical;
-    font-size: 14px;
-
-}input[type=date], select, textarea {
-    width: 100%;
-    padding: 5px;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 20px;*/
-    /*box-sizing: border-box;*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    resize: vertical;
-    font-size: 14px;
-
-}input[type=email], select, textarea {
-    width: 100%;
-    padding: 5px;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 20px;*/
-    /*box-sizing: border-box;*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    resize: vertical;
-    font-size: 14px;
-}input[type=password], select, textarea {
-    width: 100%;
-    padding: 5px;
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 20px;*/
-    /*box-sizing: border-box;*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    resize: vertical;
-    font-size: 14px;
+    font-size: large;
+    background-color: #428fe5;
+    color: white;
 }
 
-#submit{
-    /*width: 100%;*/
-    /*font-size: 16px;*/
-    color: blue;
-    /*border: none;*/
-    /*outline: none;*/
-    /*padding: 14px 16px;*/
-    /*background-color: blue;*/
-    /*border-radius:4px;*/
-    /*transition: all 0.4s ease;*/
-    /*right:600px;*/
+form{
+
 }
 
+/* Bottom nav styling */
 
-
-.textLabel1{
-    padding: 10px;
+#bottom_nav {
+    height: 50px;
+    background: white;
 }
 
+#qrcode_icon, #cart_icon, #home_icon, #other_icon {
+    color: #6c7075;
+    font-size: 20px;
+    border: 10px solid white;
+    background: white;
+    text-align: center;
 
+}
+
+#user_icon{
+    color: #f28500;
+    font-size: 20px;
+    border: 10px solid white;
+    background: white;
+    text-align: center;
+}

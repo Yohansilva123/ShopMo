@@ -13,31 +13,51 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="JavaScript/functions.js" async></script>
 </head>
 <body>
 
 
 <div data-role="page" data-position="fixed">
 
+    <!--    Categories-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Frozen food</a>
+            <a href="#">Pharmacy</a>
+            <a onclick="window.location.href='Products.html'">Grocery</a>
+            <a href="#">Household</a>
+            <a href="#">Liqour</a>
+            <a href="#">Beverages</a>
+            <a href="#">Homeware</a>
+            <a href="#">chilled</a>
+            <a href="#">Vegitables</a>
+            <a href="#">Meat</a>
+            <a href="#">Fish</a>
+            <a href="#">Fruits</a>
+        </div>
+    </div>
     <!-- Top Navigation -->
-    <div data-role="header" id="top_navigation">
-        <i class="fas fa-th" id="category_icon"></i>
+
+    <div data-role="header" id="top_navigation" data-position="fixed">
+        <i class="fas fa-th" id="category_icon" onclick="openNav()"></i>
         <div align="center" class="logo">
-            <img class="logo" src="images/shopmologo.png" alt="Image">
-            <i class="fa fa-tags" id="promotion_icon"></i>
+            <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" onclick="window.location.href='HomePage.html'">
+            <i class="fa fa-tags" id="promotion_icon" onclick="window.location.href='Promotions.html'"></i>
         </div>
 
         <div data-role="navbar" id="search">
             <ul>
-                <li style="width:85%">
+                <li style="width:100%">
 
                     <form class="ui-filterable">
                         <input id="myFilter" data-type="search" placeholder="Search for items..">
                     </form>
                 </li>
-                <li id="filter_icon" style="width:15%">
-                    <i class="fas fa-filter"></i>
-                </li>
+                <!--                <li id="filter_icon" style="width:15%">-->
+                <!--                    <i class="fas fa-filter"></i>-->
+                <!--                </li>-->
             </ul>
         </div>
     </div>
@@ -45,13 +65,13 @@
     <!--Main content-->
     <div data-role="main" class="ui-content">
         <div data-role="main" class="ui-content" >
-            <form method="post" action="demoform.asp" id="form">
+            <form method="post" action="demoform.asp" id="form" style="text-align: center">
                 <p id="homeDelivery_title"><b>Home Delivery Information </b></p>
                 <br>
 
                   <p id="map-title">Please set the marker to the delivery location to locate the address</p>
 
-                <div id="map"></div>
+                <div id="map" style="max-height: 250px" >
                 <script>
                     function initMap() {
                         var colombo = {lat: 6.9271, lng: 79.8612};
@@ -63,6 +83,7 @@
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT_MGk3BYvAUMt0Wcj6gn5zVFPIGUdzfM&callback=initMap"
                         async defer></script>
+                </div>
 
                 <label for="citylabel" id="citylabel"></label>
                 <input type="text" name="citylabel" id="city" placeholder="Nearest City">
@@ -85,7 +106,8 @@
                     be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
 
                 <br>
-                <button class="btn info" id="back-btn">Proceed Payment</button>
+                <button onclick="goBack()" class="btn info" id="back-btn">Proceed Payment</button>
+                <br>
                 <button class="btn warning" id="payment-btn">Back</button>
 
             </form>
@@ -100,13 +122,13 @@
                     <i class="fas fa-qrcode"></i>
                 </li>
                 <li id="cart_icon" style="width:20% ">
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-shopping-cart" onclick="window.location.href='CartPage.html'"></i>
                 </li>
                 <li id="home_icon" style="width:20%">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-home" onclick="window.location.href='HomePage.html'"></i>
                 </li>
                 <li id="user_icon" style="width:20%">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-user" onclick="window.location.href='MyAccountPage.html'"></i>
                 </li>
                 <li id="other_icon" style="width:20%">
                     <i class="fas fa-ellipsis-v"></i>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <title>Login</title>
+</head>
+<body>
+<div data-role="page" id="pageone">
+    <div align="center" class="header">
+        <a href="../../HomePage.html">
+        <img class="logo" src="../../images/shopmo%20logo.png" alt="Image" height="60">
+        </a>
+    </div>
+
+
+
+    <!--Main Content-->
+    <div data-role="main" class="ui-content" >
+        <form method="post" action="demoform.asp" id="form">
+            <h1 class="register-title"><b>Register</b></h1>
+            <p id = "para">Fill out the details </p>
+<!--            <div class="ui-field-contain">-->
+                <label for="name" id="namelabel"></label>
+                <input type="text" name="name" id="name" placeholder="Username">
+                <label for="email" id="emaillabel"></label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="password" id="passwordlabel"></label>
+                <input type="password" name="password" id="password"  placeholder="Password">
+                <label for="phoneNo" id="numberlabel"></label>
+                <input type="number" name="phoneNo" id="phoneNo"  placeholder="Telephone number">
+                <label for="agree" id="agree-label">Remember me</label>
+                <input type="checkbox" name="agree" id="agree">
+<!--            </div>-->
+<!--            <div class="ui-field-contain">-->
+                <button class="btn warning" id="register-btn">Register</button>
+                <p id = "para1">Already have an account ?
+                    <a href="Login.html">
+                    <u id="register-here"> Login here </u>
+                    </a>
+                </p>
+<!--            </div>-->
+
+        </form>
+    </div>
+
+
+
+    <!-- Bottom Navigation -->
+    <div data-role="footer" style="text-align:center;" data-position="fixed">
+        <div data-role="navbar" id="bottom_nav">
+            <ul>
+                <li>
+                    <i id="qrcode_icon" class="fas fa-qrcode"></i>
+                </li>
+                <li id="cart_icon" style="width:20% ">
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+                <li id="home_icon" style="width:20%">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li id="user_icon" style="width:20%">
+                    <i class="fas fa-user"></i>
+                </li>
+                <li id="other_icon" style="width:20%">
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

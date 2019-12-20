@@ -1,44 +1,93 @@
 
 /*Stylings of Delivery, Payment,Home Delivery and Store Pickup Pages*/
-/* Top nav styling */
+/* For portrait*/
 
-#top_navigation {
-    background-color: white;
-    height: 135px;
+@media screen and (orientation: portrait) {
+    /* Top nav styling */
+    #top_navigation {
+        background-color: white;
+        height: 122px;
+        padding-top: 10px;
+    }
+
+    .logo {
+        top: 10px;
+        height: 52px;
+    }
+
+    #category_icon {
+        position: absolute;
+        top: 25px;
+        left: 28px;
+        color: #6c7075;
+        font-size: 25px;
+    }
+
+    #promotion_icon {
+        position: absolute;
+        top: 25px;
+        right: 28px;
+        color: #f28500;
+        font-size: 25px;
+    }
+
+    .ui-filterable {
+        width: auto;
+        margin-left: 25px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 25px;
+    }
+
+    #filter_icon {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #6c7075;
+    }
 }
+/*landscape*/
+@media screen and (orientation: landscape) {
+    /* Top nav styling */
+    #top_navigation {
+        background-color: white;
+        height: 105px;
+        padding-top: 10px;
+    }
 
-.logo {
-    top: 10px;
-    height: 80px;
-}
+    .logo {
+        top: 10px;
+        height: 40px;
+    }
 
-#category_icon {
-    position: absolute;
-    top: 25px;
-    left: 28px;
-    color: #6c7075;
-    font-size: 25px;
-}
+    #category_icon {
+        position: absolute;
+        top: 25px;
+        left: 28px;
+        color: #6c7075;
+        font-size: 20px;
+    }
 
-#promotion_icon {
-    position: absolute;
-    top: 25px;
-    right: 28px;
-    color: #f28500;
-    font-size: 25px;
-}
+    #promotion_icon {
+        position: absolute;
+        top: 25px;
+        right: 28px;
+        color: #f28500;
+        font-size: 20px;
+    }
 
-.ui-filterable {
-    width: auto;
-    margin-left: 18px;
-    box-shadow: #428fe5;
-}
+    .ui-filterable {
+        width: auto;
+        margin-left: 20px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
+    }
 
-#filter_icon {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
-    color: #6c7075;
+    #filter_icon {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #6c7075;
+    }
 }
 
 
@@ -50,8 +99,17 @@
     background: white;
 }
 
-#qrcode_icon, #cart_icon, #home_icon, #user_icon, #other_icon {
+#qrcode_icon, #home_icon, #user_icon, #other_icon {
     color: #6c7075;
+    font-size: 20px;
+    border: 10px solid white;
+    background: white;
+    text-align: center;
+
+}
+
+#cart_icon {
+    color: #f28500;
     font-size: 20px;
     border: 10px solid white;
     background: white;
@@ -79,9 +137,10 @@
 
 #storePick_title, #homeDelivery_title{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
+    text-align: center;
     margin-bottom: -15px;
     font-size: large;
+    color: #f28500;
 
 }
 
@@ -143,6 +202,7 @@
     border-color: #f28500;
     width: 100%;
     color: #f28500;
+    max-width: 300px;
 }
 
 #payment-btn {
@@ -151,6 +211,7 @@
     font-size: large;
     background-color: #428fe5;
     color: white;
+    max-width: 300px;
 }
 
 
@@ -181,3 +242,54 @@
     /*border-bottom: 1px solid #f28500;*/
     /*position: absolute;*/
 /*}*/
+
+/*Categories icon overlay styling*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    /*background-color: rgba(255,255,255, 0.9);*/
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 73px;
+        right: 30px;
+    }
+}

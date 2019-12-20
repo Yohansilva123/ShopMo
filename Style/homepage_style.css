@@ -4,13 +4,13 @@
     /* Top nav styling */
     #top_navigation {
         background-color: white;
-        height: 135px;
+        height: 122px;
         padding-top: 10px;
     }
 
     .logo {
         top: 10px;
-        height: 65px;
+        height: 52px;
     }
 
     #category_icon {
@@ -31,8 +31,9 @@
 
     .ui-filterable {
         width: auto;
-        margin-left: 18px;
-        box-shadow: #428fe5;
+        margin-left: 25px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 25px;
     }
 
     #filter_icon {
@@ -44,15 +45,34 @@
 
     /* Home Page content styling */
 
-    #promo_title, #category_title {
+    #promo_title, #category_title, #offers_title, #services_title {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        color: black;
     }
 
     .carousel-inner img {
         width: 100%;
         height: 100%;
+        align-content: center;
+    }
+
+    .slides{
+        text-align: center;
+    }
+
+    .flash{
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    #countDown{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: larger;
+        color: white;
+        padding: 5px;
     }
 }
 
@@ -62,13 +82,13 @@
     /* Top nav styling */
     #top_navigation {
         background-color: white;
-        height: 115px;
+        height: 105px;
         padding-top: 10px;
     }
 
     .logo {
         top: 10px;
-        height: 45px;
+        height: 40px;
     }
 
     #category_icon {
@@ -76,7 +96,7 @@
         top: 25px;
         left: 28px;
         color: #6c7075;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #promotion_icon {
@@ -84,13 +104,14 @@
         top: 25px;
         right: 28px;
         color: #f28500;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .ui-filterable {
         width: auto;
-        margin-left: 18px;
-        box-shadow: #428fe5;
+        margin-left: 20px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
     }
 
     #filter_icon {
@@ -102,11 +123,12 @@
 
     /* Home Page content styling */
 
-    #promo_title, #category_title {
+    #promo_title, #category_title, #offers_title, #services_title {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: center;
-        margin-bottom: 20px;
-        font-size: 14px;
+        margin-bottom: 15px;
+        font-size: 22px;
+        color: black;
     }
 
     .carousel-inner img {
@@ -115,10 +137,122 @@
         text-align: center;
     }
 
-    .promo_slides {
+    .slides{
         text-align: center;
     }
+    .flash{
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    #countDown{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: larger;
+        color: white;
+        padding: 5px;
+    }
 
+}
+
+/*flash sales*/
+
+.c1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin:20px 10px;
+    padding: -20px;
+    text-align: center;
+    /*max-width: 500px;*/
+}
+.product-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.product-qty {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: red;
+    text-align: right;
+}
+
+.product-desc {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: darkgray;
+}
+
+.product-image-td {
+    text-align: left;
+    border-left: 10px solid #f28500;
+    border-right: 1px solid gainsboro;
+}
+
+.product-data-td {
+    padding-top: 5px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+@media (min-width: 600px) {
+    .product-title {
+        font-size: 24px;
+    }
+    .product-price{
+        font-size: 26px;
+    }
+    .product-qty{
+        padding-top: 10px;
+        padding-right: 40px;
+        text-align: right;
+        font-size: 20px;
+    }
+    .del{
+        padding-top: 5px;
+        padding-right: 40px;
+        text-align: right;
+        font-size: 20px;
+    }
+
+    .c1 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin:30px 150px;
+        padding: -20px;
+        text-align: center;
+        /*max-width: 500px;*/
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .c1 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin:30px 170px;
+        padding: -20px;
+        text-align: center;
+        /*max-width: 500px;*/
+    }
+}
+
+.product-extra-td{
+    padding-top: 5px;
+    padding-right: 10px;
+    text-align: right;
+}
+.product-price {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+.checked{
+    color: #f28500;
+    text-shadow: 0 0 3px #ffbf00;
+    font-size: 12px;
+}
+
+.unchecked{
+    color: white;
+    text-shadow: 0 0 3px #222222;
+    font-size: 12px;
 }
 
 /* Bottom nav styling */
@@ -173,11 +307,12 @@
 }
 
 .circle-icon {
-    background: #f28500;
-    color: white;
+    background: white;
+    color: #f28500;
     width: 75px;
     height: 75px;
     border-radius: 50%;
+    border: 1px solid #f28500;
     text-align: center;
     vertical-align: middle;
     margin-right: 18px;
@@ -186,6 +321,10 @@
 }
 
 /* Promotion overview card sliders styling*/
+.imgpromo{
+    max-width: 100px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+}
 
 @media (width: 768px) {
     /* show 3 items */
@@ -262,4 +401,66 @@
         font-size: larger;
     }
 
+}
+
+/*Categories icon overlay styling*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    /*background-color: rgba(255,255,255, 0.9);*/
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 73px;
+        right: 30px;
+    }
+}
+
+/*    second slides*/
+.mySlides {
+    display:none
+}
+.w3-tag, .fa {
+    cursor:pointer
+}
+.w3-tag {
+    height:15px;width:15px;padding:0;margin-top:6px
 }

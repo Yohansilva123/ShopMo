@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="Style/productpage_style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="JavaScript/functions.js" async></script>
+</head>
+<body>
+
+
+<div data-role="page">
+
+    <!--    Categories-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Frozen food</a>
+            <a href="#">Pharmacy</a>
+            <a onclick="window.location.href='Products.html'">Grocery</a>
+            <a href="#">Household</a>
+            <a href="#">Liqour</a>
+            <a href="#">Beverages</a>
+            <a href="#">Homeware</a>
+            <a href="#">chilled</a>
+            <a href="#">Vegitables</a>
+            <a href="#">Meat</a>
+            <a href="#">Fish</a>
+            <a href="#">Fruits</a>
+        </div>
+    </div>
+    <!-- Top Navigation -->
+
+    <div data-role="header" id="top_navigation" data-position="fixed">
+        <i class="fas fa-th" id="category_icon" onclick="openNav()"></i>
+        <div align="center" class="logo">
+            <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" onclick="window.location.href='HomePage.html'">
+            <i class="fa fa-tags" id="promotion_icon" onclick="window.location.href='Promotions.html'"></i>
+        </div>
+
+        <div data-role="navbar" id="search">
+            <ul>
+                <li style="width:100%">
+
+                    <form class="ui-filterable">
+                        <input id="myFilter" data-type="search" placeholder="Search for items..">
+                    </form>
+                </li>
+                <!--                <li id="filter_icon" style="width:15%">-->
+                <!--                    <i class="fas fa-filter"></i>-->
+                <!--                </li>-->
+            </ul>
+        </div>
+    </div>
+
+
+    <!--Main content-->
+    <div data-role="main" class="ui-content">
+
+        <div data-role="main" class="ui-content">
+            <div class="product_image_area">
+                <img class="img-fluid product-img" src="images/rice.jpg" alt="" style="max-width: 380px;">
+
+            </div>
+            <br>
+            <div class="s_product_text">
+                <h3 id="product-title">Daawat Rice 1Kg</h3>
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <h4 id="product-price">LKR 500.00</h4>
+                        </td>
+                        <td>
+                            <div align="right">
+                                <span><i class="fas fa-heart heart"></i></span>
+                                <span><i class="fas fa-share-alt share"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <p id="category-text"><span>Category</span> : Grocery</a></p>
+                <p id="availability-text"><span>Availibility</span> : In Stock</a></p>
+                <br>
+                <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking
+                    for
+                    something that can make your interior look awesome, and at the same time give you the pleasant
+                    warm feeling
+                    during the winter.</p>
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                </div>
+                <div class="product_count" style="text-align: center">
+                    <label style="text-align: left"><b>Quantity:</b></label>
+                    <table class="quantity-table" align="center" style="text-align: left">
+                        <col width="50">
+                        <col width="50">
+                        <col width="50">
+                        <tr>
+                            <td align="right">
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                        class="reduced items-count" id="minus" type="button"><i class="fas fa-minus"></i>
+                                </button>
+
+                            </td>
+                            <td>
+                                <input type="text" name="qty" id="sst" size="1" maxlength="6" value="1"
+                                       title="Quantity:"
+                                       class="input-text qty">
+                            </td>
+                            <td>
+                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                        class="increase items-count" id="plus" type="button"><i class="fas fa-plus"></i>
+                                </button>
+
+                            </td>
+                            <td>
+                            </td>
+                    </table>
+                    <button class="btn info" id="addtocart-btn">Add To Cart</button>
+                    <br>
+                    <button onclick="goBack()" class="btn warning" id="back-btn">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--================End Single Product Area =================-->
+<!--</div>-->
+<!--</div>-->
+
+<!-- Bottom Navigation -->
+<div data-role="footer" style="text-align:center;" data-position="fixed">
+    <div data-role="navbar" id="bottom_nav">
+        <ul>
+            <li id="qrcode_icon" style="width:20%">
+                <i class="fas fa-qrcode"></i>
+            </li>
+            <li id="cart_icon" style="width:20% ">
+                <i class="fas fa-shopping-cart" onclick="window.location.href='CartPage.html'"></i>
+            </li>
+            <li id="home_icon" style="width:20%">
+                <i class="fas fa-home" onclick="window.location.href='HomePage.html'"></i>
+            </li>
+            <li id="user_icon" style="width:20%">
+                <i class="fas fa-user" onclick="window.location.href='MyAccountPage.html'"></i>
+            </li>
+            <li id="other_icon" style="width:20%">
+                <i class="fas fa-ellipsis-v"></i>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
