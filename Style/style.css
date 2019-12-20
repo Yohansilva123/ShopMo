@@ -158,3 +158,72 @@ form{
     background: white;
     text-align: center;
 }
+
+.button-account {
+	padding: 7px 42px;
+	background: transparent;
+	border-color: #fff
+}
+.login_box_area .login_box_img .hover {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	transform: translateY(-50%)
+}
+
+.login_box_area .login_box_img .hover h4 {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px
+}
+
+.login_box_area .login_box_img .hover p {
+	max-width: 390px;
+	margin: 0px auto 28px;
+	color: #fff
+}
+
+.login_box_area .login_box_img .hover .primary-btn {
+	border-radius: 0px;
+	line-height: 38px;
+	text-transform: uppercase
+}
+
+.login_box_area .login_box_img .hover .primary-btn:hover:before {
+	left: 260px
+}
+
+.login_box_area .login_box_img .button:hover {
+	background: #c5322d !important;
+	color: #fff !important;
+	border-color: #c5322d !important
+}
+.login_form .form-group .primary-btn:hover:before {
+	left: 370px
+}
+.button-account:hover {
+	border-color: #fff !important
+}
+.button-register:hover {
+	background: #c5322d;
+	opacity: .7;
+	color: #fff
+}
+.button:hover {
+	border-color: #384aeb;
+	background: transparent;
+	color: #222
+}
+a:hover {
+	text-decoration: none
+}
+.button-account:hover {
+	border-color: #fff !important
+}
+
+.button-account{
+ color:white;
+}

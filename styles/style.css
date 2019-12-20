@@ -1,0 +1,167 @@
+.ui-page {
+    background-image: url("../assets/backgroundlogin.jpg");
+    background-size: cover;
+}
+
+.ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+    background-color: #AA282A;
+    font-family: "PT sans";
+    font-weight: none;
+    font-size: 17px;
+    color: white;
+    margin-top: 8%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#paragraph-login {
+    color: white;
+    margin-left: 25%;
+    margin-top: 18%;
+}
+
+.logo {
+    height: 130px;
+    width: 130px;
+    margin-left: 32%;
+    margin-top: 33%;
+}
+
+.ui-input-text {
+    padding: 5px;
+    margin-top: -5px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.register-link {
+    margin-left: 25%;
+}
+
+
+/* Media query iphone landscape */
+
+@media screen and (orientation:landscape) {
+    .ui-page {
+        background-image: url("../assets/backgroundloginlandscape.jpg");
+        background-size: cover;
+    }
+    .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+        background-color: #AA282A;
+        font-family: "PT sans";
+        font-weight: none;
+        font-size: 17px;
+        height: 16px;
+        color: white;
+        margin-top: 8%;
+        margin-left: 34%;
+        margin-right: 34%;
+        margin-top: 20px;
+    }
+    #paragraph-login {
+        color: white;
+        margin-top: -8px;
+        margin-left: 37%;
+    }
+    .logo {
+        height: 80px;
+        width: 80px;
+        margin-left: 44%;
+        margin-top: 2%;
+    }
+    .ui-input-text {
+        height: 25px;
+        margin-top: -5px;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .register-link {
+        margin-left: 37%;
+        margin-top: 0%;
+    }
+}
+
+
+/* Media query for ipad landscape */
+
+@media screen and (min-width:1024px)and (max-width:1024px) and (orientation:landscape) {
+    .ui-page {
+        background-image: url("../assets/backgroundlogin.jpg");
+        background-size: cover;
+    }
+    .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+        background-color: #AA282A;
+        font-family: "PT sans";
+        font-weight: none;
+        font-size: 17px;
+        height: 25px;
+        color: white;
+        margin-top: 10%;
+        margin-left: 38%;
+        margin-right: 38%;
+        margin-top: 40px;
+    }
+    #paragraph-login {
+        color: white;
+        font-size: 20px;
+        margin-top: -10px;
+        margin-left: 40%;
+    }
+    .logo {
+        height: 180px;
+        width: 180px;
+        margin-left: 40%;
+        margin-top: 12%;
+    }
+    .ui-input-text {
+        height: 35px;
+        margin-top: 5px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    .register-link {
+        margin-left: 41%;
+        margin-top: 0%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:768px) and (orientation:portrait) {
+    .ui-page {
+        background-image: url("../assets/backgroundlogin.jpg");
+        background-size: cover;
+    }
+    .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+        background-color: #AA282A;
+        font-family: "PT sans";
+        font-weight: none;
+        font-size: 17px;
+        height: 25px;
+        color: white;
+        margin-top: 10%;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 60px;
+    }
+    #paragraph-login {
+        color: white;
+        font-size: 20px;
+        margin-top: -10px;
+        margin-left: 37%;
+    }
+    .logo {
+        height: 180px;
+        width: 180px;
+        margin-left: 38%;
+        margin-top: 25%;
+    }
+    .ui-input-text {
+        height: 35px;
+        margin-top: 5px;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .register-link {
+        margin-left: 39%;
+        margin-top: 0%;
+    }
+}

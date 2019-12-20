@@ -279,15 +279,7 @@
 .register_form_inner {
 	padding-top: 70px
 }
-.button-account {
-	padding: 7px 42px;
-	background: transparent;
-	border-color: #fff
-}
 
-.button-account:hover {
-	border-color: #fff !important
-}
 .button {
 	display: inline-block;
 	border: 1px solid #384aeb;
@@ -323,6 +315,7 @@
 	border-color: #384aeb;
 	background: transparent;
 	color: #222
+	
 }
 a:hover {
 	text-decoration: none
@@ -331,9 +324,13 @@ a:hover {
 .button-account {
 	padding: 7px 42px;
 	background: transparent;
-	border-color: #fff
+	border-color: #fff;
+	color: white
 }
 
 .button-account:hover {
-	border-color: #fff !important
+	border-color: #fff !important;
+	color: #fff
 }
+
+
