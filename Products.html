@@ -17,6 +17,8 @@
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="JavaScript/functions.js" async></script>
+    <script src="JavaScript/products.js" async></script>
+
 
 </head>
 <body style="background-color: white">
@@ -56,6 +58,7 @@
                         <div class="card text-center card-product products">
                             <div class="card-product__img">
                                 <img class="card-img" src="images/rice.jpg" alt="" onclick="window.location.href='RiceProductPage.html'">
+                                <!--<span class="product-id">992</span>-->
                             </div>
                             <div>
                                 <span class="fa fa-star checked"></span>
@@ -66,7 +69,31 @@
                                 <h5 class="product-title">Daawat Basmati Rice</h5>
                                 <p class = "promo-item-text"><b>LKR 500.00</b></p>
                                 <p class ="promo-off">10% Off</p>
-                                <p class="product-qty">  1 </p>
+                                <table class="quantity-table" align="center" style="text-align: left">
+                                    <col width="50">
+                                    <col width="50">
+                                    <col width="50">
+                                    <tr>
+                                        <td align="right">
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                    class="reduced items-count" id="minus1" type="button"><i class="fas fa-minus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                            <input type="text" name="qty" id="sst1" size="1" maxlength="6" value="1"
+                                                   title="Quantity:"
+                                                   class="input-text qty">
+                                        </td>
+                                        <td>
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                    class="increase items-count" id="plus1" type="button"><i class="fas fa-plus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                        </td>
+                                </table>
                                 <button class="btn warning shop-item-button" id="cart-btn1">Add to Cart</button>
                             </div>
                         </div>
@@ -75,6 +102,7 @@
                         <div class="card text-center card-product products">
                             <div class="card-product__img">
                                 <img class="card-img" src="images/milk.jpeg" alt="">
+                                <!--<span class="product-id">993</span>-->
                             </div>
                             <div>
                                 <span class="fa fa-star checked"></span>
@@ -85,7 +113,31 @@
                                 <h5 class="product-title">Anchor Milk 5kg</h5>
                                 <p class = "item-text"><b>LKR 600.00</b></p>
                                 <p class ="promo-off">Best Price</p>
-                                <p class="product-qty">  1 </p>
+                                <table class="quantity-table" align="center" style="text-align: left">
+                                    <col width="50">
+                                    <col width="50">
+                                    <col width="50">
+                                    <tr>
+                                        <td align="right">
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                    class="reduced items-count" id="minus2" type="button"><i class="fas fa-minus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                            <input type="text" name="qty" id="sst2" size="1" maxlength="6" value="1"
+                                                   title="Quantity:"
+                                                   class="input-text qty">
+                                        </td>
+                                        <td>
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                    class="increase items-count" id="plus2" type="button"><i class="fas fa-plus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                        </td>
+                                </table>
                                 <button class="btn warning shop-item-button" id="cart-btn2">Add to Cart</button>
                             </div>
                         </div>
@@ -94,6 +146,7 @@
                         <div class="card text-center card-product products">
                             <div class="card-product__img">
                                 <img class="card-img" src="images/noodles.jpg" alt="">
+                                <!--<span class="product-id">994</span>-->
                             </div>
                             <div>
                                 <span class="fa fa-star checked"></span>
@@ -104,7 +157,31 @@
                                 <h5 class="product-title">Magee Noodles 200g</h5>
                                 <p class = "promo-item-text"><b>LKR 100.00</b></p>
                                 <p class ="promo-off">10% Off</p>
-                                <p class="product-qty">  2 </p>
+                                <table class="quantity-table" align="center" style="text-align: left">
+                                    <col width="50">
+                                    <col width="50">
+                                    <col width="50">
+                                    <tr>
+                                        <td align="right">
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                    class="reduced items-count" id="minus3" type="button"><i class="fas fa-minus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                            <input type="text" name="qty" id="sst3" size="1" maxlength="6" value="1"
+                                                   title="Quantity:"
+                                                   class="input-text qty">
+                                        </td>
+                                        <td>
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                    class="increase items-count" id="plus3" type="button"><i class="fas fa-plus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                        </td>
+                                </table>
                                 <button class="btn warning shop-item-button" id="cart-btn3">Add to Cart</button>
                             </div>
                         </div>
@@ -113,6 +190,7 @@
                         <div class="card text-center card-product products">
                             <div class="card-product__img">
                                 <img class="card-img" src="images/pringles.jfif" alt="">
+                                <!--<span class="product-id">995</span>-->
                             </div>
                             <div>
                                 <span class="fa fa-star checked"></span>
@@ -123,7 +201,31 @@
                                 <h5 class="product-title">Pringles 300g</h5>
                                 <p class = "item-text"><b>LKR 600.00</b></p>
                                 <p class ="promo-off">Best Price</p>
-                                <p class="product-qty">  4 </p>
+                                <table class="quantity-table" align="center" style="text-align: left">
+                                    <col width="50">
+                                    <col width="50">
+                                    <col width="50">
+                                    <tr>
+                                        <td align="right">
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                    class="reduced items-count" id="minus4" type="button"><i class="fas fa-minus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                            <input type="text" name="qty" id="sst4" size="1" maxlength="6" value="1"
+                                                   title="Quantity:"
+                                                   class="input-text qty">
+                                        </td>
+                                        <td>
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                    class="increase items-count" id="plus4" type="button"><i class="fas fa-plus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                        </td>
+                                </table>
                                 <button class="btn warning shop-item-button" id="cart-btn4">Add to Cart</button>
                             </div>
                         </div>
@@ -132,6 +234,7 @@
                         <div class="card text-center card-product products">
                             <div class="card-product__img">
                                 <img class="card-img" src="images/sugar.jpg" alt="">
+                                <!--<span class="product-id">996</span>-->
                             </div>
                             <div>
                                 <span class="fa fa-star checked"></span>
@@ -140,9 +243,33 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star unchecked"></span>
                                 <h5 class="product-title">Sugar 500g</h5>
-                                <p class = "item-text"><b>LKR 150.00</b></p>
+                                <p class = "item-text"><b>LKR 150.90</b></p>
                                 <p class ="promo-off">Best Price</p>
-                                <p class="product-qty">  3 </p>
+                                <table class="quantity-table" align="center" style="text-align: left">
+                                    <col width="50">
+                                    <col width="50">
+                                    <col width="50">
+                                    <tr>
+                                        <td align="right">
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                    class="reduced items-count" id="minus5" type="button"><i class="fas fa-minus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                            <input type="text" name="qty" id="sst5" size="1" maxlength="6" value="1"
+                                                   title="Quantity:"
+                                                   class="input-text qty">
+                                        </td>
+                                        <td>
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                    class="increase items-count" id="plus5" type="button"><i class="fas fa-plus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                        </td>
+                                </table>
                                 <button class="btn warning shop-item-button" id="cart-btn5">Add to Cart</button>
                             </div>
                         </div>
@@ -151,6 +278,7 @@
                         <div class="card text-center card-product products">
                             <div class="card-product__img">
                                 <img class="card-img" src="images/sauce.jpg" alt="">
+                                <!--<span class="product-id">997</span>-->
                             </div>
                             <div>
                                 <span class="fa fa-star checked"></span>
@@ -161,7 +289,31 @@
                                 <h5>Heinz Ketchup 500ml</h5>
                                 <p class = "promo-item-text"><b>LKR 800.00</b></p>
                                 <p class ="promo-off">10% Off</p>
-                                <p class="product-qty">  1 </p>
+                                <table class="quantity-table" align="center" style="text-align: left">
+                                    <col width="50">
+                                    <col width="50">
+                                    <col width="50">
+                                    <tr>
+                                        <td align="right">
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                    class="reduced items-count" id="minus6" type="button"><i class="fas fa-minus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                            <input type="text" name="qty" id="sst6" size="1" maxlength="6" value="1"
+                                                   title="Quantity:"
+                                                   class="input-text qty">
+                                        </td>
+                                        <td>
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                    class="increase items-count" id="plus6" type="button"><i class="fas fa-plus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                        </td>
+                                </table>
                                 <button class="btn warning shop-item-button" id="cart-btn6">Add to Cart</button>
                             </div>
                         </div>
@@ -170,6 +322,7 @@
                         <div class="card text-center card-product products">
                             <div class="card-product__img">
                                 <img class="card-img" src="images/chili.jfif" alt="">
+                                <!--<span class="product-id">998</span>-->
                             </div>
                             <div>
                                 <span class="fa fa-star checked"></span>
@@ -180,7 +333,31 @@
                                 <h5 class="product-title">Chilly 71g</h5>
                                 <p class = "promo-item-text"><b>LKR 70.00</b></p>
                                 <p class ="promo-off">10% Off</p>
-                                <p class="product-qty">  1 </p>
+                                <table class="quantity-table" align="center" style="text-align: left">
+                                    <col width="50">
+                                    <col width="50">
+                                    <col width="50">
+                                    <tr>
+                                        <td align="right">
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                    class="reduced items-count" id="minus7" type="button"><i class="fas fa-minus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                            <input type="text" name="qty" id="sst7" size="1" maxlength="6" value="1"
+                                                   title="Quantity:"
+                                                   class="input-text qty">
+                                        </td>
+                                        <td>
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                    class="increase items-count" id="plus7" type="button"><i class="fas fa-plus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                        </td>
+                                </table>
                                 <button class="btn warning shop-item-button" id="cart-btn7">Add to Cart</button>
                             </div>
                         </div>
@@ -189,6 +366,7 @@
                         <div class="card text-center card-product products">
                             <div class="card-product__img">
                                 <img class="card-img" src="images/kitkat.jpg" alt="">
+                                <!--<span class="product-id">999</span>-->
                             </div>
                             <div>
                                 <span class="fa fa-star checked"></span>
@@ -199,7 +377,31 @@
                                 <h5 class="product-title">KitKat 200g</h5>
                                 <p class = "promo-item-text"><b>LKR 300.00</b></p>
                                 <p class ="promo-off">10% Off</p>
-                                <p class="product-qty"> 2 </p>
+                                <table class="quantity-table" align="center" style="text-align: left">
+                                    <col width="50">
+                                    <col width="50">
+                                    <col width="50">
+                                    <tr>
+                                        <td align="right">
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                    class="reduced items-count" id="minus8" type="button"><i class="fas fa-minus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                            <input type="text" name="qty" id="sst8" size="1" maxlength="6" value="1"
+                                                   title="Quantity:"
+                                                   class="input-text qty">
+                                        </td>
+                                        <td>
+                                            <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                    class="increase items-count" id="plus8" type="button"><i class="fas fa-plus"></i>
+                                            </button>
+
+                                        </td>
+                                        <td>
+                                        </td>
+                                </table>
                                 <button class="btn warning shop-item-button" id="cart-btn8">Add to Cart</button>
                             </div>
                         </div>
@@ -231,7 +433,7 @@
                     <i class="fas fa-user" onclick="window.location.href='MyAccountPage.html'"></i>
                 </li>
                 <li id="other_icon" style="width:20%">
-                    <i class="fas fa-ellipsis-v"></i>
+                    <i class="fas fa-heart heart-button" onclick="window.location.href='WishListPage.html'"></i>
                 </li>
 
             </ul>

@@ -12,35 +12,35 @@ function ready() {
         button.addEventListener('click', addToCartClicked)
     }
 
-    // var addToCartButton = document.getElementById("cart_icon");
-    // addToCartButton.onclick = goToCartClicked;
-    goToCartClicked();
-    //textBox();
+    var removeCartItemButtons = document.getElementsByClassName('del-item-button')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+     goToCartClicked();
 }
 
 
 function addToCartClicked(event) {
-//alert("thanks")
+
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('product-title')[0].innerText
     var price = shopItem.getElementsByClassName('promo-item-text')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('card-img')[0].src
-    var quantity = shopItem.getElementsByClassName('product-qty')[0].innerText
-    // addItemToCart(title, price, imageSrc)
-    // updateCartTotal()
-
+    var quantityElement = shopItem.getElementsByClassName('input-text qty')[0]
+    // var quantity = shopItem.getElementsByClassName('product-qty')[0].innerText
+    // var productId = shopItem.getElementsByClassName('product-id')[0].innerText
+    var quantity = quantityElement.value
     let products = [];
 
-    if(localStorage.getItem('products')){
+    if (localStorage.getItem('products')) {
         products = JSON.parse(localStorage.getItem('products'));
     }
-
-    products.push({'productId' : 3, 'title' : title, 'price' : price, 'imagesrc' : imageSrc, 'quantity' : quantity});
-
+    products.push({'productId': 3, 'title': title, 'price': price, 'imagesrc': imageSrc, 'quantity': quantity});
     localStorage.setItem('products', JSON.stringify(products));
 
-
+    goToCartClicked()
     // $('#Remove').click(function(){
     //     let productId = 3;
     //     let storageProducts = JSON.parse(localStorage.getItem('products'));
@@ -49,22 +49,35 @@ function addToCartClicked(event) {
     // });
 }
 
-function goToCartClicked() {
-    var retrievedData = localStorage.getItem('products');
-    // console.log( JSON.parse(retrievedData))
+function removeCartItem(event) {
 
-    var objectArray = JSON.parse(retrievedData);
-     console.log(objectArray.length)
-    for (var i = 0; i < objectArray.length; i++) {
-        addItemsToCart(objectArray[i].title, objectArray[i].price, objectArray[i].imagesrc, objectArray[i].quantity)
-        console.log(objectArray[i].title, objectArray[i].price, objectArray[i].imagesrc, objectArray[i].quantity)
-    }
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
 }
 
-function addItemsToCart (title, price, url, quantity) {
+function goToCartClicked() {
+    var retrievedData = localStorage.getItem('products');
+
+    var total = 0
+    var objectArray = JSON.parse(retrievedData);
+    for (var i = 0; i < objectArray.length; i++) {
+        addItemsToCart(objectArray[i].title, objectArray[i].price, objectArray[i].imagesrc, objectArray[i].quantity)
+
+
+        var cost = parseFloat(objectArray[i].price.replace('LKR', ''))
+        total = total + (cost * objectArray[i].quantity)
+        document.getElementsByClassName('sub-total')[0].innerText = "LKR " + total;
+        document.getElementsByClassName('final-total')[0].innerText = "LKR " + total;
+        console.log("total : " + total)
+        // updateCartTotal(objectArray[i].price,objectArray[i].quantity)
+    }
+
+}
+
+function addItemsToCart(title, price, url, quantity) {
 
     var cartRow = document.createElement('div')
-     cartRow.classList.add('card')
+    cartRow.classList.add('card')
     var cartItems = document.getElementsByClassName('cart-items')[0]
 
 
@@ -84,46 +97,31 @@ function addItemsToCart (title, price, url, quantity) {
                     </td>
 
                     <td class="product-extra-td">
-                        <i class="fa fa-trash del" id="deletebtn1"></i>
+                      
+                        <i class="fa fa-trash del-item-button" id="deletebtn1"></i>
                         <p class="product-qty"> Quantity: ${quantity} </p>
                     </td>
                     </td>
                 </tr>
             </table>
-     `
-            cartRow.innerHTML = cardRowContents
-            cartItems.append(cartRow)
+`
+    cartRow.innerHTML = cardRowContents
+    cartItems.append(cartRow)
+
+    cartRow.getElementsByClassName('del-item-button')[0].addEventListener('click', removeCartItem)
 
 }
 
-// function retrieveData (){
-//
-//         $(document).ready(function(){
-//
-//             var retrievedData = localStorage.getItem('products');
-//             var objectArray = JSON.parse(retrievedData);
-//             alert(objectArray);
-//             $.each(objectArray, function (i) {
-//                 var templateString = '<article class="card"><h2>' + objectArray[i].title + '</h2><p>' + objectArray[i].price + '</p><p>' +
-//                     objectArray[i].imagesrc + '</p><button id="tes">Start</button></article>';
-//                 $('#test12').append(templateString);
-//             })
-//
-//             $("#test12").on("click", function () {
-//                 alert("test");
-//             });
-//         });
-// }
 
-$(document).ready(function(){
-    if($(".c1:visible")){
-        $(".btn").click(function(){
+$(document).ready(function () {
+    if ($(".c1:visible")) {
+        $(".btn").click(function () {
             $(".c1").hide("slow");
         });
     }
 
-    else if($(".c1:hidden")){
-        $(".btn").click(function(){
+    else if ($(".c1:hidden")) {
+        $(".btn").click(function () {
             $(".c1").show("slow");
         });
     }

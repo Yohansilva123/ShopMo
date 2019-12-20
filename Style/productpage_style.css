@@ -128,7 +128,7 @@
 
 /*Main Content*/
 
-#product-title {
+#promo-item-text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
     margin-bottom: 15px;
@@ -218,4 +218,87 @@
     font-size: 25px;
     color: #f28500;
     margin-right: 8px;
+}
+
+
+/*Footer Styling*/
+.mb-4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f28500;
+    font-size: 14px;
+}
+ .mb-3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+footer {
+
+    background-attachment: fixed;
+    background-color:#222;
+    background-size: cover;
+    background-position: bottom;
+}
+footer p {
+    color: #ccc;
+}
+footer a {
+    color: #ccc;
+}
+.social-pet li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-pet li a {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    line-height: 35px;
+    background-color: #f28500;
+    color: #fff;
+}
+.social-pet li:nth-child(2) a {
+    background-color: #f28500;
+}
+.social-pet li:nth-child(3) a {
+    background-color: #f28500;
+}
+.social-pet li:nth-child(4) a {
+    background-color: #f28500;
+}
+.social-pet li a:hover {
+    background-color: #f28500;
+}
+.social-pet li a:hover i {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+footer .input-group-addon {
+    background-color: #0141a2;
+    padding: 10px;
+}
+
+.f-address li {
+    display: inline-block;
+    margin-left: -40px;
+}
+.f-address li i {
+    color: #f28500;
+    font-size: 18px;
+}
+.f-address li a {
+    color: #ccc;
+}
+/*=-Copyright-=*/
+.copyright {
+    background-color: #111;
+    padding: 12px 0;
+    font-size:14px;
 }
