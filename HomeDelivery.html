@@ -106,9 +106,9 @@
                     be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
 
                 <br>
-                <button onclick="goBack()" class="btn info" id="back-btn">Proceed Payment</button>
+                <button onclick="window.location.href='PaymentPage.html'" class="btn info" id="payment-btn">Proceed Payment</button>
                 <br>
-                <button class="btn warning" id="payment-btn">Back</button>
+                <button onclick="goBack()" class="btn warning" id="back-btn">Back</button>
 
             </form>
         </div>
@@ -119,7 +119,7 @@
         <div data-role="navbar" id="bottom_nav">
             <ul>
                 <li id="qrcode_icon" style="width:20%">
-                    <i class="fas fa-qrcode"></i>
+                    <i class="fas fa-qrcode" onclick="window.location.href='qr.html'"></i>
                 </li>
                 <li id="cart_icon" style="width:20% ">
                     <i class="fas fa-shopping-cart" onclick="window.location.href='CartPage.html'"></i>

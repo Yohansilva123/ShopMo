@@ -217,7 +217,7 @@
     margin-bottom: 8px;
 }
 
-.heart{
+.heart-button{
     font-size: 25px;
     color: #6c7075;
     margin-right: 8px;
@@ -227,6 +227,18 @@
     font-size: 25px;
     color: #f28500;
     margin-right: 8px;
+}
+
+.promo-item-text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #428fe5;
+}
+
+.discount{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: red;
 }
 
 /*Categories icon overlay styling*/
