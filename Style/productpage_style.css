@@ -293,20 +293,30 @@
 .container {
     text-align: center;
 }
-
-footer {
-
-    background-attachment: fixed;
-    background-color:#222;
-    background-size: cover;
-    background-position: bottom;
+.page-footer-class{
+    background-color: #222222;
 }
-footer p {
+
+.page-footer-class p{
+    background-color: #222222;
     color: #ccc;
 }
-footer a {
+.page-footer-class a{
     color: #ccc;
 }
+/*footer {*/
+
+    /*background-attachment: scroll;*/
+    /*background-color:#222;*/
+    /*background-size: cover;*/
+    /*background-position: bottom;*/
+/*}*/
+/*footer p {*/
+    /*color: #ccc;*/
+/*}*/
+/*footer a {*/
+    /*color: #ccc;*/
+/*}*/
 .social-pet li {
     display: inline-block;
     margin-right: 10px;
