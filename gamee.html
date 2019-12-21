@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" href="../../styles//jquery.mobile-1.4.5.min.css"/>
+    <script src="../../scripts/libraries/http_code.jquery.com_jquery-1.11.3.js"></script>
+    <script src="../../scripts/libraries/jquery.mobile-1.4.5.min.js"></script>>
+    
+    <style>
+        canvas {
+            border:1px solid #d3d3d3;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+<div data-role="page" id="pageone">
+    <div align="center" class="header">
+        <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60">
+    </div>
+    <!--Top Banner-->
+    <div class="banner">
+        <table>
+            <tr>
+                <td>
+                    <i class="fas fa-shopping-bag" id="promotion_icon"></i>
+                </td>
+                <td>
+                    <div class="slogan">DEBUT OF ULTIMATE MARKETING</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <section class="blog-banner-area" id="category">
+		<div class="container h-100">
+			<div class="blog-banner">
+				<div class="text-center">
+					<h1>Game</h1>
+					<nav aria-label="breadcrumb" class="banner-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Game</li>
+            </ol>
+          </nav>
+				</div>
+			</div>
+    </div>
+    </section>
+
+    <!--Main Content-->
+    <section class="login_box_area section-margin">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<div class="hover">
+							<h4>Leaderboard</h4>
+						</div>
+					</div>
+                </div>
+                
+                
+				<div class="col-lg-6">
+                    <center>
+                        <a href="#" data-role="button" data-theme="d" data-inline="true" style="color:dodgerblue" class="startGame">Start</a>
+                      
+                    </center>
+
+                    <script>
+
+                      $(".startGame").click(function() {
+                         startGame();
+
+                    });
+
+
+                        var myGamePiece;
+                        var myObstacles = [];
+                        var myScore;
+                        
+                        function startGame() {
+                            myGamePiece = new component(30, 30, "red", 10, 120);
+                            myGamePiece.gravity = 0.05;
+                            myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+                            myGameArea.start();
+                        }
+                        
+                        var myGameArea = {
+                            canvas : document.createElement("canvas"),
+                            start : function() {
+                                this.canvas.width = 480;
+                                this.canvas.height = 270;
+                                this.context = this.canvas.getContext("2d");
+                                document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+                                this.frameNo = 0;
+                                this.interval = setInterval(updateGameArea, 20);
+                                },
+                            clear : function() {
+                                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                            }
+                        }
+                        
+                        function component(width, height, color, x, y, type) {
+                            this.type = type;
+                            this.score = 0;
+                            this.width = width;
+                            this.height = height;
+                            this.speedX = 0;
+                            this.speedY = 0;    
+                            this.x = x;
+                            this.y = y;
+                            this.gravity = 0;
+                            this.gravitySpeed = 0;
+                            this.update = function() {
+                                ctx = myGameArea.context;
+                                if (this.type == "text") {
+                                    ctx.font = this.width + " " + this.height;
+                                    ctx.fillStyle = color;
+                                    ctx.fillText(this.text, this.x, this.y);
+                                } else {
+                                    ctx.fillStyle = color;
+                                    ctx.fillRect(this.x, this.y, this.width, this.height);
+                                }
+                            }
+                            this.newPos = function() {
+                                this.gravitySpeed += this.gravity;
+                                this.x += this.speedX;
+                                this.y += this.speedY + this.gravitySpeed;
+                                this.hitBottom();
+                            }
+                            this.hitBottom = function() {
+                                var rockbottom = myGameArea.canvas.height - this.height;
+                                if (this.y > rockbottom) {
+                                    this.y = rockbottom;
+                                    this.gravitySpeed = 0;
+                                }
+                            }
+                            this.crashWith = function(otherobj) {
+                                var myleft = this.x;
+                                var myright = this.x + (this.width);
+                                var mytop = this.y;
+                                var mybottom = this.y + (this.height);
+                                var otherleft = otherobj.x;
+                                var otherright = otherobj.x + (otherobj.width);
+                                var othertop = otherobj.y;
+                                var otherbottom = otherobj.y + (otherobj.height);
+                                var crash = true;
+                                if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+                                    crash = false;
+                                }
+                                return crash;
+                            }
+                        }
+                        
+                        function updateGameArea() {
+                            var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+                            for (i = 0; i < myObstacles.length; i += 1) {
+                                if (myGamePiece.crashWith(myObstacles[i])) {
+                                    return;
+                                } 
+                            }
+                            myGameArea.clear();
+                            myGameArea.frameNo += 1;
+                            if (myGameArea.frameNo == 1 || everyinterval(150)) {
+                                x = myGameArea.canvas.width;
+                                minHeight = 20;
+                                maxHeight = 200;
+                                height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+                                minGap = 50;
+                                maxGap = 200;
+                                gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+                                myObstacles.push(new component(10, height, "green", x, 0));
+                                myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+                            }
+                            for (i = 0; i < myObstacles.length; i += 1) {
+                                myObstacles[i].x += -1;
+                                myObstacles[i].update();
+                            }
+                            myScore.text="SCORE: " + myGameArea.frameNo;
+                            myScore.update();
+                            myGamePiece.newPos();
+                            myGamePiece.update();
+                        }
+                        
+                        function everyinterval(n) {
+                            if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+                            return false;
+                        }
+                        
+                        function accelerate(n) {
+                            myGamePiece.gravity = n;
+                        }
+                        </script>
+                        <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+                        <p>Use the ACCELERATE button to stay in the air</p>
+                        <p>How long can you stay alive?</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <!-- Bottom Navigation -->
+    <div data-role="footer"  data-position="fixed">
+        <div data-role="navbar" id="bottom_nav">
+            <ul>
+                <li id="qrcode_icon" style="width:20%">
+                    <i class="fas fa-qrcode"></i>
+                </li>
+                <li id="cart_icon" style="width:20% ">
+                    <i class="fas fa-shopping-cart"></i>
+                </li>
+                <li id="home_icon" style="width:20%">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li id="user_icon" style="width:20%">
+                    <i class="fas fa-user"></i>
+                </li>
+                <li id="other_icon" style="width:20%">
+                    <i class="fas fa-ellipsis-v"></i>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
