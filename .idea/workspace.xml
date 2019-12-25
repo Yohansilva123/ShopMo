@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f06ec39-db5e-42f5-8fcd-d5c6b504380d" name="Default" comment="latest code">
-      <change afterPath="$PROJECT_DIR$/Style/qr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/CIC.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Icecreamchoco.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Icecreamvanila.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/KotmaleMozerella.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/best promo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/eggo.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/fries.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/keives.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/no fakes.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/products.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loginSuccess.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paymentSuccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Style/wishlist.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/CartPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeliveryPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/DeliveryPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeDelivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomeDelivery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Promotions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Promotions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiceProductPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/RiceProductPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/cartpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/cartpage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/homepage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/homepage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/productpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/productpage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr.html" beforeDir="false" afterPath="$PROJECT_DIR$/qr.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sss/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sss/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WishListPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/WishListPage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +44,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Style" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -80,8 +54,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo" />
       <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\Style" />
+      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo" />
       <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\images" />
       <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\src" />
     </key>
@@ -104,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.paymentSuccess.html">
+  <component name="RunManager" selected="JavaScript Debug.HomePage.html">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -153,9 +127,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.HomePage.html" />
         <item itemvalue="JavaScript Debug.paymentSuccess.html" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.HomePage.html" />
         <item itemvalue="JavaScript Debug.HomeDelivery.html" />
         <item itemvalue="JavaScript Debug.DeliveryPage.html" />
       </list>
@@ -240,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576601188725</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="latest code">
+      <created>1576904276158</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576904276159</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
