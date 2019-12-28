@@ -127,6 +127,16 @@
 }
 
 /*Main Content*/
+.product-id {
+    /*visibility: hidden;*/
+    color: white;
+    font-size: 1px;
+}
+.promo-off{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #ff0000;
+}
 
 #promo-item-text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

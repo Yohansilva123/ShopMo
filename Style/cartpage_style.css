@@ -119,7 +119,6 @@
     border: 10px solid white;
     background: white;
     text-align: center;
-
 }
 
 #cart_icon{
@@ -132,6 +131,11 @@
 }
 
 /*Card views styling*/
+.product-id {
+    /*visibility: hidden;*/
+    color: black;
+    font-size: 1px;
+}
 
 #cart-title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -147,8 +151,6 @@
     padding: -20px;
     text-align: center;
 }
-
-
 
 .product-title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -276,7 +278,7 @@
 
 #tr2 {
     border-top: 20px;
-    text-align: right;
+    text-align: left;
 }
 
 #back-btn {

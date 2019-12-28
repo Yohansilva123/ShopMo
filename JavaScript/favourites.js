@@ -31,19 +31,17 @@ function ready() {
 
 function addToFavouritesClicked (event) {
     console.log("fav clicked")
-    var button = event.target
-    var shopItem = button.parentElement.parentElement
-    var title = document.getElementsByClassName('product-title')[0].innerText
-    var price = document.getElementsByClassName('promo-item-text')[0].innerText
-    var discount = document.getElementsByClassName('discount')[0].innerText
-
+    var title = document.getElementsByClassName('product-title')[0].innerText;
+    var price = document.getElementsByClassName('promo-item-text')[0].innerText;
+    var discount = document.getElementsByClassName('promo-off')[0].innerText;
+    var productId = document.getElementsByClassName('product-id')[0].innerText;
     let favourites = [];
 
     if (localStorage.getItem('favourites')) {
         favourites = JSON.parse(localStorage.getItem('favourites'));
     }
 
-    favourites.push({'title':title,'price':price,'discount':discount});
+    favourites.push({'title':title,'price':price,'discount':discount,'productId':productId});
     localStorage.setItem('favourites', JSON.stringify(favourites));
 
     goToFavouritesClicked();
@@ -53,9 +51,16 @@ function addToFavouritesClicked (event) {
 function removeFavItem(event) {
 
     var buttonClicked = event.target
-    buttonClicked.parentElement.parentElement.parentElement.parentElement.remove()
-}
+    var shopItem = buttonClicked.parentElement.parentElement.parentElement;
+    var id = shopItem.getElementsByClassName('product-id')[0].innerText;
+    alert(id)
+    let favId = id;
+    let storageProducts = JSON.parse(localStorage.getItem('favourites'));
+    let favourites = storageProducts.filter(product => product.productId !== favId);
+    localStorage.setItem('favourites', JSON.stringify(favourites));
 
+    buttonClicked.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove()
+}
 function sendEmail(event) {
     var button = event.target
     var retrievedData = localStorage.getItem('favourites');
@@ -85,13 +90,13 @@ function goToFavouritesClicked(){
     var retrievedData = localStorage.getItem('favourites');
     var objectArray = JSON.parse(retrievedData);
     for (var i = 0; i < objectArray.length; i++) {
-        addItemsToFavourites(objectArray[i].title, objectArray[i].price, objectArray[i].discount)
+        addItemsToFavourites(objectArray[i].title, objectArray[i].price, objectArray[i].discount, objectArray[i].productId);
+
     }
 }
 
 
-function addItemsToFavourites(title, price, discount) {
-
+function addItemsToFavourites(title, price, discount, productId) {
     var favRow = document.createElement('div')
     favRow.classList.add('card')
     var favItems = document.getElementsByClassName('fav-items')[0]
@@ -109,7 +114,7 @@ function addItemsToFavourites(title, price, discount) {
                     <td class="product-data-td">
                         <p class="product-title"><b>${title} </b></p>
                         <p class="product-price">${price}</p>
-                        <p class="discount">${discount}</p>
+                        <p class="promo-off">${discount}</p>
                         <div class="star-rating">
 
                             <span class="fa fa-star checked"></span>
@@ -124,6 +129,7 @@ function addItemsToFavourites(title, price, discount) {
                     <td class="wishlist-icons">
                         <div class="card_area">
                             <a id="heart_btn1" href="#"><i class="fas fa-heart fa-2x delete-fav"></i></a>
+                            <span class="product-id">${productId}</span>
                         </div>
 
                     </td>
@@ -137,16 +143,3 @@ function addItemsToFavourites(title, price, discount) {
     favRow.getElementsByClassName('delete-fav')[0].addEventListener('click', removeFavItem)
 }
 
-$(document).ready(function () {
-    if ($(".c1:visible")) {
-        $(".btn").click(function () {
-            $(".c1").hide("slow");
-        });
-    }
-
-    else if ($(".c1:hidden")) {
-        $(".btn").click(function () {
-            $(".c1").show("slow");
-        });
-    }
-});

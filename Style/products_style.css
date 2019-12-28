@@ -144,11 +144,12 @@
 }
 
 /* Content of Promotions*/
-/*.product-id {*/
-    /*!*visibility: hidden;*!*/
-    /*font-size: xx-small;*/
+.product-id {
+    /*visibility: hidden;*/
+    color: white;
+    font-size: xx-small;
 
-/*}*/
+}
 .row{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
