@@ -8,39 +8,28 @@
     <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src = "https://checkout.stripe.com/checkout.js" ></script>
 
-    <title>Payment</title>
-</head>
-<body>
+    <form id="frmBooking" name="bookingForm" action="post" action="_self">
+        <input id="item_name" name="item_name" type="text" value=”3Tickets" />
+        <input id="item_value" name="item_value" type="text" value="20" />
+        <button id="customButton">Purchase</button>
+    </form>
 
-
-<form id="frmBooking" name="bookingForm" action="post" action="_self">
-    <input id="item_name" name="item_name" type="text" value=”3 Tickets" />
-    <input id="item_value" name="item_value" type="text" value="20" />
-    <button id="customButton">Purchase</button>
-</form>
 
 
 <script type="text/javascript">
     jQuery(function($) {
         var $form = $('#frmBooking');
         var handler = StripeCheckout.configure({
-            key:'pk_test_cp21BcECf4kMMUbSlRlZlsMo',
-            token : function(token) {
+            key:'pk_test_cp21BcECf4kMMUbSlRlZlsMo', token : function(token) {
                 if (token.id) {
-                    $("#thankyouPayment").html("Thank you")
-                }
-                $('#customButton').on('click', function(e) {
-                    handler.open({
-                        name : 'Demo Site',
-                        currency: 'LKR',
-                        description: $('#item_name').val(),
-                        amount: $('#item_value').val()*100
-                    });
-                    $(window).on('popstate', function(){
-                        handler.close();
-                    });
+                    $("#thankyouPayment").html("Thank you") } } })
+
+        $('#customButton').on('click', function(e) {
+            handler.open({
+                name : 'Demo Site', currency: 'LKR', description: $('#item_name').val(), amount: $('#item_value').val()*100 }); $(window).on('popstate', function(){ handler.close();
                 });
-            });
+        });
+    });
 </script>
 
 </body>

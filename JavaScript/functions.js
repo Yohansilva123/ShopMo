@@ -1,6 +1,6 @@
 $(document).ready(function(){
     if($(".c1:visible")){
-        $(".btn").click(function(){
+        $(".hide").click(function(){
             $(".c1").hide("slow");
         });
     }

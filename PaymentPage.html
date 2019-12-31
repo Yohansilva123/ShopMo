@@ -12,7 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src = "https://checkout.stripe.com/checkout.js" ></script>
+
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="JavaScript/payment.js" async></script>
 </head>
 <body>
 
@@ -49,52 +53,30 @@
 
         <div data-role="main" class="ui-content" >
             <form method="post" action="demoform.asp" id="form">
-                <p id="paymentMethod-title"><b>Supported Payment Methods </b></p>
+                <p id="paymentMethod-title"><b>Select Payment Method</b></p>
                 <table align="center">
                     <tr>
                         <td>
-                        <i class="fab fa-cc-visa  fa-3x  fa-border" id="visa_icon" ></i>
-                        </td>
-                        <td>
-                        <i class="fab fa-cc-amex fa-3x  fa-border" id="amex_icon" ></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <i class="fab fa-cc-mastercard fa-3x  fa-border" id="mastercard_icon" ></i>
+                            <i class="far fa-credit-card  fa-3x  fa-border" id="visa_icon" >
+                            <b><p class="pType">CARD</p></b>
+                        </i>
+
                         </td>
                         <td>
                             <!--<i class="fas fa-coins"></i>-->
-                        <i class="fas fa-coins fa-3x  fa-border" id="cash_icon"></i>
+                        <i class="fas fa-coins fa-3x  fa-border" id="cash_icon">
+                            <p class="pType">CASH</p>
+                        </i>
                         </td>
                     </tr>
 
                 </table>
+                <br>
 
-                <p id="paymentDetail-title"><b>Payment Details</b></p>
-                    <label for="cardType" id="cardType-label"></label>
-                    <input type="text" name="cardType" id="cardType" placeholder="Card Type">
-                    <label for="cardNo" id="cardNo-label"></label>
-                    <input type="number" name="cardNo" id="cardNo"  placeholder="Card Number">
-                    <label for="nameInCard" id="nameInCard-label"></label>
-                    <input type="text" name="nameInCard" id="nameInCard"  placeholder="Name On card">
-
-                    <table>
-                        <tr>
-                            <td> <label for="expiryDate" id="expiryDate-label"></label>
-                                <input placeholder="Expiry Date" class="textbox-n" type="text" onfocus="(this.type='date')"
-                                       onblur="(this.type='text')" name="expiryDate" id="expiryDate">
-                            </td>
-                            <td>
-                                <label for="cvv" id="cvv-label"></label>
-                                <input type="number" name="cvv" id="cvv"  placeholder="CVV">
-                            </td>
-                        </tr>
-                    </table>
-
-
-                <label for="rememberOption" id="rememberOption-label">Remember me</label>
-                <input type="checkbox" name="favcolor" id="rememberOption">
+                <div class="paymentDue">
+                <p id="paymentDetail-title"><b>TOTAL DUE</b></p>
+                    <label id="cardType-label"><script>retriveCost()</script></label>
+                </div>
 
                 <br>
                 <button class="btn info" id="back-btn">Back</button>
