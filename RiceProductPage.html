@@ -17,6 +17,10 @@
     <script src="JavaScript/products.js" async></script>
     <script src="JavaScript/favourites.js" async></script>
     <script src="JavaScript/productRating.js" async></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -67,89 +71,219 @@
     <!--Main content-->
     <div data-role="main" class="ui-content">
 
-        <div data-role="main" class="ui-content">
-            <div class="product_image_area">
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
+            <!-- The Grid -->
+            <div class="w3-row-padding">
 
-            </div>
-            <br>
-            <div class="s_product_text">
-                <img class="card-img" src="images/rice.jpg" alt="" style="max-width: 300px;">
-                <h3 class="product-title">Daawat Rice 1Kg</h3>
-                <span class="product-id">992</span>
-                <table style="width: 100%">
-                    <tr>
-                        <td>
-                            <h4 class="promo-item-text">LKR 500.00</h4>
-                            <p class="promo-off">10% Off</p>
+                <!-- Left Column -->
+                <div data-role="main" class="w3-half">
 
-                        </td>
-                        <td>
-                            <div align="right">
-                                <span><i class="fas fa-heart heart-button"
-                                         onclick="window.location.href='WishListPage.html'"></i></span>
-                                <span><i class="fas fa-share-alt share"></i></span>
+                    <div class="w3-white w3-text-grey w3-card -4">
+                        <div class="w3-container">
+                            <h2 class="product-title">Daawat Rice 1Kg</h2>
+                            <span class="product-id">992</span>
+
+                            <img src="images/rice.jpg" style="width:100%" alt="Avatar">
+                        </div>
+                        <div class="w3-container">
+                            <hr>
+                            <table style="width: 100%">
+                                <tr>
+                                    <td>
+                                        <h4 class="promo-item-text">LKR 500.00</h4>
+                                        <p class ="promo-off">10% Off</p>
+
+                                    </td>
+                                    <td>
+                                        <div align="right">
+                                            <span><i class="fas fa-heart heart-button" onclick="window.location.href='WishListPage.html'"></i></span>
+                                            <span><i class="fas fa-share-alt share"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+                            <div class="product_count" style="text-align: center; margin-top: 10px">
+                                <table align="center" style="width: 100%">
+                                    <tr>
+                                        <td>
+                                            <label style="text-align: left"><b>Quantity:</b></label>
+                                        </td>
+                                        <td>
+                                            <table class="quantity-table" align="right">
+                                                <col width="50">
+                                                <col width="50">
+                                                <col width="50">
+                                                <tr>
+                                                    <td align="right">
+                                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                                                class="reduced items-count" id="minus" type="button"><i
+                                                                class="fas fa-minus"></i>
+                                                        </button>
+
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="qty" id="sst" size="1" maxlength="6" value="1"
+                                                               title="Quantity:"
+                                                               class="input-text qty">
+                                                    </td>
+                                                    <td>
+                                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                                                class="increase items-count" id="plus" type="button"><i class="fas fa-plus"></i>
+                                                        </button>
+
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <button class="btn info shop-item-button" id="addtocart-btn">Add To Cart</button>
+                                <button onclick="goBack()" class="btn warning" id="back-btn">Back</button>
+                                <hr>
                             </div>
-                        </td>
-                    </tr>
 
-                </table>
+                        </div>
+                    </div><br>
 
-                <p id="category-text"><span>Category</span> : Grocery</a></p>
-                <p id="availability-text"><span>Availibility</span> : In Stock</a></p>
-
-                <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking
-                    for
-                    something that can make your interior look awesome, and at the same time give you the pleasant
-                    warm feeling
-                    during the winter.</p>
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star unchecked"></span>
-                    <span class="fa fa-star unchecked"></span>
+                    <!-- End Left Column -->
                 </div>
-                <div class="product_count" style="text-align: center">
-                    <label style="text-align: left"><b>Quantity:</b></label>
-                    <table class="quantity-table" align="center" style="text-align: left">
-                        <col width="50">
-                        <col width="50">
-                        <col width="50">
-                        <tr>
-                            <td align="right">
-                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-                                        class="reduced items-count" id="minus" type="button"><i
-                                        class="fas fa-minus"></i>
-                                </button>
 
-                            </td>
-                            <td>
-                                <input type="text" name="qty" id="sst" size="1" maxlength="6" value="1"
-                                       title="Quantity:"
-                                       class="input-text qty">
-                            </td>
-                            <td>
-                                <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-                                        class="increase items-count" id="plus" type="button"><i class="fas fa-plus"></i>
-                                </button>
+                <!-- Right Column -->
+                <div data-role="main" class="w3-half">
 
-                            </td>
-                            <td>
-                            </td>
-                    </table>
-                    <button class="btn info shop-item-button" id="addtocart-btn">Add To Cart</button>
+                    <div class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h3 class="product-title">Description</h3>
+                        <p id="category-text"><span>Category</span> : Grocery</a></p>
+                        <p id="availability-text"><span>Availibility</span> : In Stock</a></p>
+                        <br>
+
+                        <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking
+                            for
+                            something that can make your interior look awesome, and at the same time give you the pleasant
+                            warm feeling
+                            during the winter.</p>
+                        <br>
+                        <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking
+                            for
+                            something that can make your interior look awesome, and at the same time give you the pleasant
+                            warm feeling.</p>
+                        <hr>
+                    </div>
+
+                    <div class="w3-container w3-card w3-white">
+                        <h3 class="product-title">Reviews</h3>
+                        <div style="margin-top: 10px">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star unchecked"></span>
+                            <span class="fa fa-star unchecked"></span>
+                        </div>
+                        <hr>
+
+                        <div class="product-reviews">
+
+                        </div>
+                        <hr>
+                    </div>
+
+                    <!-- End Right Column -->
+                </div>
+
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
+    </div>
+
+<!--    Footer Section-->
+    <div class="page-footer-class" id="page-footer-id">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <!-- Footer -->
+        <footer class="pt-5 pb-4" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">ABOUT US</h5>
+                        <ul class="f-address">
+                            <li>
+                                <div class="row">
+                                    <div class="col-1"><i class="fas fa-map-marker"></i></div>
+                                    <div class="col-10">
+                                        <p class="mb-3">50/B,MAIN ST,COLOMBO</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-1"><i class="far fa-envelope"></i></div>
+                                    <div class="col-10">
+                                        <p class="mb-3">ShopMo1234@Gmail.com</p>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-1"><i class="fas fa-phone-volume"></i></div>
+                                    <div class="col-10">
+                                        <p class="mb-3">+94 77 605 3412</p>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">SERVICES</h5>
+                        <p class="mb-3">DELIVERY AND RETURNS</p>
+                        <p class="mb-3">PRIVACY POLICY</p>
+                        <p class="mb-3">TERMS AND CONDITIONS</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">INFORMATION</h5>
+                        <p class="mb-3">ABOUT US</p>
+                        <p class="mb-3">CONTACT US</p>
+                        <p class="mb-3">SHOPMO ON MOBILE</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">CONNECT WITH US</h5>
+                        <div class="input-group" style="text-align: center">
+                            <img src="images/shopmologo.png" width="55%"  style="margin-left: 70px">
+                        </div>
+                        <div align="center">
+                        <ul class="social-pet mt-4" style="margin-right: 40px">
+                            <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
-            <button onclick="goBack()" class="btn warning" id="back-btn">Back</button>
 
-
-        </div>
-        <div class="product-reviews">
-
-
-        </div>
+        <!-- Copyright -->
+        <section class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="text-center text-white">
+                            &copy; 2019 ShopMo. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </footer>
     </div>
 
     <!-- Bottom Navigation -->
