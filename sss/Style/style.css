@@ -282,12 +282,12 @@
 
 .button {
 	display: inline-block;
-	border: 1px solid #384aeb;
+	border: 1px solid #f28500;
 	border-radius: 30px;
 	color: #222;
 	font-weight: 500;
 	padding: 12px 50px;
-	background: #384aeb;
+	background: #000000;
 	color: #fff;
 	transition: all .4s ease
 }
