@@ -21,28 +21,44 @@
 
 <div data-role="page" >
 
-    <!-- Top Navigation -->
-    <div data-role="header" id="top_navigation" data-position="fixed">
-        <i class="fas fa-th" id="category_icon"></i>
-        <div align="center" class="logo">
-            <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" onclick="window.location.href='HomePage.html'">
-            <i class="fa fa-tags" id="promotion_icon" onclick="window.location.href='Promotions.html'"></i>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Frozen food</a>
+                <a href="#">Pharmacy</a>
+                <a onclick="window.location.href='Products.html'">Grocery</a>
+                <a href="#">Household</a>
+                <a href="#">Liqour</a>
+                <a href="#">Beverages</a>
+                <a href="#">Homeware</a>
+                <a href="#">chilled</a>
+                <a href="#">Vegitables</a>
+                <a href="#">Meat</a>
+                <a href="#">Fish</a>
+                <a href="#">Fruits</a>
+            </div>
         </div>
+        <!-- Top Navigation -->
 
-        <div data-role="navbar" id="search">
-            <ul>
-                <li style="width:85%">
+        <div data-role="header" id="top_navigation" data-position="fixed">
+            <i class="fas fa-th" id="category_icon" onclick="openNav()"></i>
+            <div align="center" class="logo">
+                <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60"
+                     onclick="window.location.href='HomePage.html'">
+                <i class="fa fa-tags" id="promotion_icon" onclick="window.location.href='Promotions.html'"></i>
+            </div>
 
-                    <form class="ui-filterable">
-                        <input id="myFilter" data-type="search" placeholder="Search for items..">
-                    </form>
-                </li>
-                <li id="filter_icon" style="width:15%">
-                    <i class="fas fa-filter"></i>
-                </li>
-            </ul>
+            <div data-role="navbar" id="search">
+                <ul>
+                    <li style="width:100%">
+
+                        <form class="ui-filterable">
+                            <input id="myFilter" data-type="search" placeholder="Search for items..">
+                        </form>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
     <!--Main content-->
     <div data-role="main" class="ui-content">
@@ -55,6 +71,90 @@
         <div>
             <button id="share-fav-list">Email Favourites</button>
         </div>
+    </div>
+
+    <!--    Footer Section-->
+    <div class="page-footer-class" id="page-footer-id">
+        <hr>
+
+        <!-- Footer -->
+        <footer class="pt-5 pb-4" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">ABOUT US</h5>
+                        <ul class="f-address">
+                            <li>
+                                <div class="row">
+                                    <div class="col-1"><i class="fas fa-map-marker"></i></div>
+                                    <div class="col-10">
+                                        <p class="mb-3">50/B,MAIN ST,COLOMBO</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-1"><i class="far fa-envelope"></i></div>
+                                    <div class="col-10">
+                                        <p class="mb-3">ShopMo1234@Gmail.com</p>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-1"><i class="fas fa-phone-volume"></i></div>
+                                    <div class="col-10">
+                                        <p class="mb-3">+94 77 605 3412</p>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">SERVICES</h5>
+                        <p class="mb-3">DELIVERY AND RETURNS</p>
+                        <p class="mb-3">PRIVACY POLICY</p>
+                        <p class="mb-3">TERMS AND CONDITIONS</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">INFORMATION</h5>
+                        <p class="mb-3">ABOUT US</p>
+                        <p class="mb-3">CONTACT US</p>
+                        <p class="mb-3">SHOPMO ON MOBILE</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">CONNECT WITH US</h5>
+                        <div class="input-group" style="text-align: center">
+                            <img src="images/shopmologo.png" width="55%"  style="margin-left: 70px">
+                        </div>
+                        <div align="center">
+                            <ul class="social-pet mt-4" style="margin-right: 40px">
+                                <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <section class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="text-center text-white">
+                                &copy; 2019 ShopMo. All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </div>
     <!-- Bottom Navigation -->
     <div data-role="footer" style="text-align:center;" data-position="fixed">

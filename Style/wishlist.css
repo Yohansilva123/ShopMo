@@ -416,3 +416,95 @@
         right: 30px;
     }
 }
+
+/*Footer Styling*/
+.mb-4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f28500;
+    font-size: 14px;
+}
+.mb-3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+.page-footer-class{
+    background-color: #6c7075;
+}
+
+.page-footer-class p{
+    background-color: #6c7075;
+    color: white;
+}
+.page-footer-class a{
+    color: white;
+}
+/*footer {*/
+
+/*background-attachment: scroll;*/
+/*background-color:#222;*/
+/*background-size: cover;*/
+/*background-position: bottom;*/
+/*}*/
+/*footer p {*/
+/*color: #ccc;*/
+/*}*/
+/*footer a {*/
+/*color: #ccc;*/
+/*}*/
+.social-pet li {
+    display: inline-block;
+    margin-right: 8px;
+}
+.social-pet li a {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    background-color: #f28500;
+    color: #fff;
+}
+.social-pet li:nth-child(2) a {
+    background-color: #f28500;
+}
+.social-pet li:nth-child(3) a {
+    background-color: #f28500;
+}
+.social-pet li:nth-child(4) a {
+    background-color: #f28500;
+}
+.social-pet li a:hover {
+    background-color: #f28500;
+}
+.social-pet li a:hover i {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+footer .input-group-addon {
+    background-color: #0141a2;
+    padding: 10px;
+}
+
+.f-address li {
+    display: inline-block;
+    margin-left: -40px;
+}
+.f-address li i {
+    color: #f28500;
+    font-size: 18px;
+}
+.f-address li a {
+    color: #ccc;
+}
+/*=-Copyright-=*/
+.copyright {
+    background-color: #f28500;
+    padding: 12px 0;
+    font-size:14px;
+}

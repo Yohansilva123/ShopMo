@@ -40,7 +40,7 @@ $(document).ready(function () {
 
 //Timer for FLash sales
 // Set the date
-var countDownDate = new Date("Jan 1, 2020 12:00:00").getTime();
+var countDownDate = new Date("Jan 10, 2020 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
