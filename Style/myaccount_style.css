@@ -191,3 +191,14 @@ margin: 20px;
     max-width: 300px;
 }
 
+/*redeemed points*/
+#total-points-text{
+    font-family: Papyrus;
+    font-size: 20px;
+    font-style: inherit;
+}
+
+#total-points{
+    font-size: 20px;
+    font-family: Papyrus;
+}
