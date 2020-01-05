@@ -116,6 +116,14 @@
     text-align: center;
 
 }
+#cart_icon:focus {
+    color: #f28500;
+    font-size: 20px;
+    border: 10px solid white;
+    background: white;
+    text-align: center;
+
+}
 
 /*Delivery Page Content styling*/
 
@@ -146,7 +154,6 @@
 
 #paymentDetail-title, #paymentMethod-title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
     margin-bottom: 15px;
     font-size: large;
 }
@@ -203,7 +210,7 @@
     border-color: #f28500;
     width: 100%;
     color: #f28500;
-
+    max-width: 300px;
 }
 
 #payment-btn {
@@ -212,7 +219,7 @@
     font-size: large;
     background-color: #428fe5;
     color: white;
-
+    max-width: 300px;
 }
 
 /*Categories icon overlay styling*/

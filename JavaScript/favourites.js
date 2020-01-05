@@ -35,13 +35,14 @@ function addToFavouritesClicked (event) {
     var price = document.getElementsByClassName('promo-item-text')[0].innerText;
     var discount = document.getElementsByClassName('promo-off')[0].innerText;
     var productId = document.getElementsByClassName('product-id')[0].innerText;
+    var imageSrc = document.getElementsByClassName('card-img')[0].src;
     let favourites = [];
 
     if (localStorage.getItem('favourites')) {
         favourites = JSON.parse(localStorage.getItem('favourites'));
     }
 
-    favourites.push({'title':title,'price':price,'discount':discount,'productId':productId});
+    favourites.push({'title':title,'price':price,'discount':discount,'productId':productId, 'imagesrc': imageSrc});
     localStorage.setItem('favourites', JSON.stringify(favourites));
 
     goToFavouritesClicked();
@@ -90,13 +91,13 @@ function goToFavouritesClicked(){
     var retrievedData = localStorage.getItem('favourites');
     var objectArray = JSON.parse(retrievedData);
     for (var i = 0; i < objectArray.length; i++) {
-        addItemsToFavourites(objectArray[i].title, objectArray[i].price, objectArray[i].discount, objectArray[i].productId);
+        addItemsToFavourites(objectArray[i].title, objectArray[i].price, objectArray[i].discount, objectArray[i].productId, objectArray[i].imagesrc);
 
     }
 }
 
 
-function addItemsToFavourites(title, price, discount, productId) {
+function addItemsToFavourites(title, price, discount, productId, imagesrc) {
     var favRow = document.createElement('div')
     favRow.classList.add('card')
     var favItems = document.getElementsByClassName('fav-items')[0]
@@ -109,7 +110,7 @@ function addItemsToFavourites(title, price, discount, productId) {
                 <col width="40">
                 <tr>
                     <td class="product-image-td">
-                        <img src="images/rice.jpg" alt="Rice" style="width:100%">
+                        <img src="${imagesrc}" alt="Rice" style="width:100%">
                     </td>
                     <td class="product-data-td">
                         <p class="product-title"><b>${title} </b></p>

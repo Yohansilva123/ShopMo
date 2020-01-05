@@ -71,24 +71,24 @@
                 </div>
 
                 <!-- Right Column -->
-                <div class="w3-half">
+                <div class="w3-half" align="center">
 
-                    <div class="w3-container w3-white w3-card w3-margin-bottom">
-                        <div data-role="main" class="ui-content" >
+                    <div class="w3-container w3-white w3-card w3-margin-bottom" >
+                        <div data-role="main" class="ui-content">
                         <form method="post" action="demoform.asp" id="form">
-                        <p id="paymentMethod-title"><b>Select Payment Method</b></p>
+                        <p id="paymentMethod-title" ><b>Select Payment Method</b></p>
                             <br>
                         <table align="center">
                         <tr>
                         <td>
-                        <i class="far fa-credit-card  fa-3x  fa-border" id="visa_icon" >
+                        <i class="far fa-credit-card  fa-3x  fa-border" id="visa_icon" onclick="this.style.color = '#428fe5'">
                         <b><p class="pType">CARD</p></b>
                         </i>
 
                         </td>
                         <td>
                         <!--<i class="fas fa-coins"></i>-->
-                        <i class="fas fa-coins fa-3x  fa-border" id="cash_icon">
+                        <i class="fas fa-coins fa-3x  fa-border" id="cash_icon" onclick="this.style.color = '#428fe5'">
                         <p class="pType">CASH</p>
                         </i>
                         </td>
@@ -104,8 +104,8 @@
                         <!--</div>-->
 
                         <br>
-                        <button class="btn info" id="back-btn">Back</button>
-                        <button class="btn warning" id="payment-btn" onclick="window.location.href='paymentSuccess.html'">Checkout</button>
+                            <button class="btn warning" id="payment-btn" onclick="window.location.href='paymentSuccess.html'">Checkout</button>
+                            <button class="btn info" id="back-btn">Back</button>
                         </form>
                         </div>
                     </div>
