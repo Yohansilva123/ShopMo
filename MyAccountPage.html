@@ -14,6 +14,7 @@
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="JavaScript/functions.js" async></script>
+    <script src="JavaScript/qrScanner.js" async></script>
 
     <title>Login</title>
 </head>
@@ -49,11 +50,13 @@
             <input type="password" name="password" id="c-password" placeholder="Password" value="12345">
             <label for="phoneNo" id="numberlabel">Contact Number</label>
             <input type="number" name="phoneNo" id="phoneNo" placeholder="Telephone number" value="0771234567">
+            <br>
+            <p id="total-points-text">Redeemable Points : </p>
+            <p id="total-points"></p>
+
             <button class="btn warning" id="update-btn">Update</button>
             <br>
             <button onclick="goBack()" class="btn info" id="back-btn" >Back</button>
-
-
         </form>
     </div>
 
