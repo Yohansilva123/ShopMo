@@ -2,33 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f06ec39-db5e-42f5-8fcd-d5c6b504380d" name="Default" comment="Changes to product page">
-      <change afterPath="$PROJECT_DIR$/ProductsFrozen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NoodleProductPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Blue-Background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Promo.MP4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/game.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/promobackground.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CartPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/CartPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeliveryPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/DeliveryPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeDelivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomeDelivery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceCreamProductPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/IceCreamProductPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/productRating.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/productRating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KeivesProductPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/KeivesProductPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyAccountPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyAccountPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Promotions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Promotions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RiceProductPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/RiceProductPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style/cartpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/cartpage_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style/deliverypage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/deliverypage_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style/homepage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/homepage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/myaccount_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/myaccount_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/productpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/productpage_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style/products_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/products_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style/promo_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/promo_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/qr.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/qr.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Style/wishlist.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/wishlist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WishListPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/WishListPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Icecreamchoco.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/Icecreamchoco.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Icecreamvanila.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/Icecreamvanila.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KotmaleMozerella.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/KotmaleMozerella.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/keives.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/keives.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qr.html" beforeDir="false" afterPath="$PROJECT_DIR$/qr.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Products.html">
+  <component name="RunManager" selected="JavaScript Debug.PaymentPage.html">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -118,19 +118,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/HomePage.html" useBuiltInWebServerPort="true">
+    <configuration name="HomeDelivery.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/HomeDelivery.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="PaymentPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/PaymentPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="ProductRatingPage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/ProductRatingPage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Products.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/Products.html" useBuiltInWebServerPort="true">
+    <configuration name="game.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/game.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="RiceProductPageTest.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/RiceProductPageTest.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="payment.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/src/public/payment.html" useBuiltInWebServerPort="true">
+    <configuration name="gamee.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/gamee.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
@@ -144,19 +144,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.PaymentPage.html" />
+      <item itemvalue="JavaScript Debug.HomeDelivery.html" />
+      <item itemvalue="JavaScript Debug.game.html" />
+      <item itemvalue="JavaScript Debug.gamee.html" />
       <item itemvalue="JavaScript Debug.ProductRatingPage.html" />
-      <item itemvalue="JavaScript Debug.RiceProductPageTest.html" />
-      <item itemvalue="JavaScript Debug.payment.html" />
-      <item itemvalue="JavaScript Debug.HomePage.html" />
-      <item itemvalue="JavaScript Debug.Products.html" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.Products.html" />
-        <item itemvalue="JavaScript Debug.HomePage.html" />
-        <item itemvalue="JavaScript Debug.payment.html" />
+        <item itemvalue="JavaScript Debug.PaymentPage.html" />
         <item itemvalue="JavaScript Debug.ProductRatingPage.html" />
-        <item itemvalue="JavaScript Debug.RiceProductPageTest.html" />
+        <item itemvalue="JavaScript Debug.gamee.html" />
+        <item itemvalue="JavaScript Debug.game.html" />
+        <item itemvalue="JavaScript Debug.HomeDelivery.html" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +198,7 @@
       <workItem from="1576791033141" duration="28758000" />
       <workItem from="1577287196941" duration="102000" />
       <workItem from="1577509899791" duration="1401000" />
-      <workItem from="1578114176262" duration="8674000" />
+      <workItem from="1578114176262" duration="47788000" />
     </task>
     <task id="LOCAL-00001" summary="latest code">
       <created>1576323687820</created>
@@ -270,7 +270,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577871067760</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changes to product page">
+      <created>1578141314508</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1578141314508</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Changes to QR page">
+      <created>1578200287419</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578200287419</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +306,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="latest code" />
     <MESSAGE value="Changes to product page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to product page" />
+    <MESSAGE value="Changes to QR page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to QR page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

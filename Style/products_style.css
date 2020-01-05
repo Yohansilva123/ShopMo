@@ -176,11 +176,13 @@
 .checked{
     color: #f28500;
     text-shadow: 0 0 3px #ffbf00;
+    font-size: 12px;
 }
 
 .unchecked{
     color: white;
     text-shadow: 0 0 3px #222222;
+    font-size: 12px;
 }
 
 h5{
@@ -189,7 +191,8 @@ h5{
 
 .products{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #cart-btn1, #cart-btn2, #cart-btn3, #cart-btn4, #cart-btn5, #cart-btn6, #cart-btn7, #cart-btn8 {
@@ -206,8 +209,8 @@ h5{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     margin-bottom: -15px;
-    font-size: large;
-    color: #f28500;
+    font-size: 24px;
+    color: #428fe5;
 
 }
 
@@ -276,22 +279,22 @@ h5{
 
 /*Quatity Table styling*/
 #minus1,#minus2,#minus3,#minus4,#minus5,#minus6,#minus7,#minus8{
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-color: #f28500;
     color: #f28500;
     border-radius: 100%;
     margin: 5px;
-    font-size: 12px;
+    font-size: 10px;
 }
 #plus1,#plus2,#plus3,#plus4,#plus5,#plus6,#plus7,#plus8{
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-color: #f28500;
     color: #f28500;
     border-radius: 100%;
     margin: 3px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 #sst1,#sst2,#sst3,#sst4,#sst5,#sst6,#sst7,#sst8{
@@ -397,14 +400,16 @@ h5{
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-bottom: 50px;
 }
 
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     display: block;
     transition: 0.3s;

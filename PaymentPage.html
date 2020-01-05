@@ -20,6 +20,8 @@
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="JavaScript/payment.js" async></script>
+    <script src="JavaScript/productRating.js" async></script>
+
 </head>
 <body>
 
@@ -104,13 +106,145 @@
                         <!--</div>-->
 
                         <br>
-                            <button class="btn warning" id="payment-btn" onclick="window.location.href='paymentSuccess.html'">Checkout</button>
+                            <button class="btn warning" id="payment-btn" >Checkout</button>
                             <button class="btn info" id="back-btn">Back</button>
                         </form>
                         </div>
                     </div>
                 </div>
+    </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div data-role="main" class="ui-content">
+
+                <div data-role="main" class="ui-content">
+                    <div class="product_image_area">
+
+
+                    </div>
+                    <br>
+                    <div class="s_product_text">
+                        <img class="card-img" src="images/rice.jpg" alt="" style="max-width: 300px;">
+                        <h3 class="product-title">Daawat Rice 1Kg</h3>
+                        <span class="product-id">992</span>
+
+                        <div class="rating">
+                    <span id="five-stars" onclick="vote(5);
+                    this.style.color = '#f28500'" data-toggle="tooltip" data-placement="bottom" title="5">&#9734;</span>
+                            <span id="four-stars" onclick="vote(4);
+                    this.style.color = '#f28500'" data-toggle="tooltip" data-placement="bottom" title="4">&#9734;</span>
+                            <span id="three-stars" onclick="vote(3);
+                    this.style.color = '#f28500'" data-toggle="tooltip" data-placement="bottom" title="3">&#9734;</span>
+                            <span id="two-stars" onclick="vote(2);
+                    this.style.color = '#f28500'" data-toggle="tooltip" data-placement="bottom" title="2">&#9734;</span>
+                            <span id="one-star" onclick="vote(1);
+                    this.style.color = '#f28500'" data-toggle="tooltip" data-placement="bottom" title="1">&#9734;</span>
+
+                            <div>
+                                <label for="comments" id="comments-label"></label>
+                                <textarea name="addinfo" id="comments" placeholder="Comments"
+                                          class="product-comments"></textarea>
+
+                            </div>
+                        </div>
+                        <br>
+                        <button onclick="window.location.href='RiceProductPage.html'" class="btn warning submit-rating"
+                                id="back-btn">Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <!--    Footer Section-->
+    <div class="page-footer-class" id="page-footer-id">
+        <hr>
+
+        <!-- Footer -->
+        <footer class="pt-5 pb-4" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">ABOUT US</h5>
+                        <ul class="f-address">
+                            <li>
+                                <div class="row">
+                                    <div class="col-1"><i class="fas fa-map-marker"></i></div>
+                                    <div class="col-10">
+                                        <p class="mb-3">50/B,MAIN ST,COLOMBO</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-1"><i class="far fa-envelope"></i></div>
+                                    <div class="col-10">
+                                        <p class="mb-3">ShopMo1234@Gmail.com</p>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-1"><i class="fas fa-phone-volume"></i></div>
+                                    <div class="col-10">
+                                        <p class="mb-3">+94 77 605 3412</p>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">SERVICES</h5>
+                        <p class="mb-3">DELIVERY AND RETURNS</p>
+                        <p class="mb-3">PRIVACY POLICY</p>
+                        <p class="mb-3">TERMS AND CONDITIONS</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">INFORMATION</h5>
+                        <p class="mb-3">ABOUT US</p>
+                        <p class="mb-3">CONTACT US</p>
+                        <p class="mb-3">SHOPMO ON MOBILE</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                        <h5 class="mb-4">CONNECT WITH US</h5>
+                        <div class="input-group" style="text-align: center">
+                            <img src="images/shopmologo.png" width="55%"  style="margin-left: 70px">
+                        </div>
+                        <div align="center">
+                            <ul class="social-pet mt-4" style="margin-right: 40px">
+                                <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <section class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="text-center text-white">
+                                &copy; 2019 ShopMo. All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
     </div>
 
     <!-- Bottom Navigation -->
@@ -137,7 +271,10 @@
         </div>
     </div>
 
-
 </div>
+
+<script>
+
+</script>
 </body>
 </html>

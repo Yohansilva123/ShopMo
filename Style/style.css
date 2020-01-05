@@ -435,6 +435,16 @@ a:hover {
  color:white;
 }
 
+#qr_title{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	margin-bottom: -15px;
+	margin-top: 10px;
+	color: #428fe5;
+	font-size: 24px;
+
+}
+
 /*Footer Styling*/
 .mb-4 {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
