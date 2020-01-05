@@ -7,7 +7,7 @@ if (document.readyState == 'loading') {
 var totalPoints = 0 ;
 function ready() {
 
-    if(totalPoints!=0){
+    if(totalPoints != 0){
         retrieveTotalPoints();
     }
 }
@@ -73,20 +73,17 @@ function sendTotalToStorage(total){
     }
     totalPoints.push({'totalPoints': total});
     localStorage.setItem('totalPoints', JSON.stringify(totalPoints));
-    alert(JSON.stringify(totalPoints))
+
 
 }
 
 
 function retrieveTotalPoints() {
-   alert("reacheddddddd")
     var retrievedData = localStorage.getItem('totalPoints');
     var objectArray = JSON.parse(retrievedData);
         for (var i = 0; i <objectArray.length; i++) {
             totalPoints =  objectArray[i].totalPoints;
         }
-        alert("totalPoints"+totalPoints)
-
         $("#total-points").append(`<span> ${totalPoints}</span>`);
     $(".point_discount").append(`<span> LKR ${totalPoints}</span>`);
 
