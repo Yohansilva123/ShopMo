@@ -4,6 +4,8 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+var totalPoints = 0;
+
 function ready() {
 
     var addToCartButtons = document.getElementsByClassName('shop-item-button');
@@ -17,6 +19,17 @@ function ready() {
         var button = removeCartItemButtons[i];
         button.addEventListener('click', removeCartItem)
     }
+
+    var applyPromoButton = document.getElementsByClassName('apply-promo-btn');
+    for (var i = 0; i < applyPromoButton.length; i++) {
+        var button = applyPromoButton[i];
+        button.addEventListener('click', applyPromoCode)
+    }
+
+    if (totalPoints != 0) {
+        retrieveTotalPoints();
+    }
+    updateCartTotal();
     goToCartClicked();
 }
 
@@ -37,7 +50,7 @@ function addToCartClicked(event) {
     }
     products.push({'productId': productId, 'title': title, 'price': price, 'imagesrc': imageSrc, 'quantity': quantity});
     localStorage.setItem('products', JSON.stringify(products));
-
+    alert("Item added to cart !!!")
     goToCartClicked();
 }
 
@@ -101,17 +114,54 @@ function addItemsToCart(title, price, url, quantity, productId) {
     cartRow.getElementsByClassName('del-item-button')[0].addEventListener('click', removeCartItem)
 
 }
+var promocode;
+function applyPromoCode(event){
+   alert("apply clicked")
+    promocode= document.getElementsByClassName('promo-code')[0].value;
+    var expectedPromo = 'SM105'
+    var n = promocode.localeCompare(expectedPromo);
+
+    if( n==0 ){
+        $(".code_discount").append(`<span> LKR 100</span>`);
+    }
+}
+
+
+function retrieveTotalPoints() {
+    var retrievedData = localStorage.getItem('totalPoints');
+    var objectArray = JSON.parse(retrievedData);
+    for (var i = 0; i < objectArray.length; i++) {
+        totalPoints = objectArray[i].totalPoints;
+    }
+    $("#total-points").append(`<span> ${totalPoints}</span>`);
+    $(".point_discount").append(`<span> LKR ${totalPoints}</span>`);
+
+}
 
 function updateCartTotal() {
     var retrievedData = localStorage.getItem('products');
 
+    console.log(totalPoints);
     var total = 0
+
     var objectArray = JSON.parse(retrievedData);
     for (var i = 0; i < objectArray.length; i++) {
         var cost = parseFloat(objectArray[i].price.replace('LKR', ''));
         total = total + (cost * objectArray[i].quantity);
         document.getElementsByClassName('sub-total')[0].innerText = "LKR " + total;
-        document.getElementsByClassName('final-total')[0].innerText = "LKR " + total;
+
+        if(total >= totalPoints) {
+            console.log(totalPoints)
+            document.getElementsByClassName('final-total')[0].innerText = "LKR " + (total-totalPoints);
+        } else {
+            document.getElementsByClassName('final-total')[0].innerText = "LKR " + total;
+        }
+
+        if(promocode !=null && total>100){
+            document.getElementsByClassName('final-total')[0].innerText = "LKR " + total;
+        }
+
+
         console.log("total : " + total);
     }
 
