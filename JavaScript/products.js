@@ -116,7 +116,7 @@ function addItemsToCart(title, price, url, quantity, productId) {
 }
 var promocode;
 function applyPromoCode(event){
-   alert("apply clicked")
+  // alert("apply clicked")
     promocode= document.getElementsByClassName('promo-code')[0].value;
     var expectedPromo = 'SM105'
     var n = promocode.localeCompare(expectedPromo);

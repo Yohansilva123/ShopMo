@@ -69,20 +69,50 @@
                 <p id="homeDelivery_title"><b>Home Delivery Information </b></p>
                 <br>
 
-                  <p id="map-title">Please set the marker to the delivery location to locate the address</p>
+                <p id="map-title">Please set the marker to the delivery location to locate the address</p>
 
                 <div id="map" style="max-height: 250px" >
-                <script>
-                    function initMap() {
-                        var colombo = {lat: 6.9271, lng: 79.8612};
-                        var map = new google.maps.Map(
-                            document.getElementById('map'), {zoom: 13, center: colombo});
-                        var marker = new google.maps.Marker({position: colombo, map: map});
-                    }
+                    <script>
+                        var map, infoWindow;
+                        function initMap() {
+                            map = new google.maps.Map(document.getElementById('map'), {
+                                center: {lat: -34.397, lng: 150.644},
+                                zoom: 6
+                            });
+                            infoWindow = new google.maps.InfoWindow;
 
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT_MGk3BYvAUMt0Wcj6gn5zVFPIGUdzfM&callback=initMap"
-                        async defer></script>
+                            // Try HTML5 geolocation.
+                            if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(function(position) {
+                                    var pos = {
+                                        lat: position.coords.latitude,
+                                        lng: position.coords.longitude
+                                    };
+
+                                    infoWindow.setPosition(pos);
+                                    infoWindow.setContent('Delivery location .');
+                                    infoWindow.open(map);
+                                    map.setCenter(pos);
+                                }, function() {
+                                    handleLocationError(true, infoWindow, map.getCenter());
+                                });
+                            } else {
+                                // Browser doesn't support Geolocation
+                                handleLocationError(false, infoWindow, map.getCenter());
+                            }
+                        }
+
+                        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                            infoWindow.setPosition(pos);
+                            infoWindow.setContent(browserHasGeolocation ?
+                                'Error: The Geolocation service failed.' :
+                                'Error: Your browser doesn\'t support geolocation.');
+                            infoWindow.open(map);
+                        }
+
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT_MGk3BYvAUMt0Wcj6gn5zVFPIGUdzfM&callback=initMap"
+                            async defer></script>
                 </div>
 
                 <label for="citylabel" id="citylabel"></label>
@@ -116,7 +146,7 @@
 
     <!--    Footer Section-->
     <div class="page-footer-class" id="page-footer-id">
-    <hr>
+        <hr>
 
         <!-- Footer -->
         <footer class="pt-5 pb-4" id="contact">

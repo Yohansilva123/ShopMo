@@ -79,11 +79,14 @@ function sendTotalToStorage(total) {
 function retrieveTotalPoints() {
     var retrievedData = localStorage.getItem('totalPoints');
     var objectArray = JSON.parse(retrievedData);
-    for (var i = 0; i < objectArray.length; i++) {
-        totalPoints = objectArray[i].totalPoints;
+    if(objectArray.length != 0){
+        for (var i = 0; i < objectArray.length; i++) {
+            totalPoints = objectArray[i].totalPoints;
+        }
+        $("#total-points").append(`<span> ${totalPoints}</span>`);
+        $(".point_discount").append(`<span> LKR ${totalPoints}</span>`);
     }
-    $("#total-points").append(`<span> ${totalPoints}</span>`);
-    $(".point_discount").append(`<span> LKR ${totalPoints}</span>`);
+
 
 }
 
