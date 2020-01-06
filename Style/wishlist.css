@@ -307,7 +307,7 @@
     color: white;
 }
 
-#share-fav-list{
+.share-fav-list{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
     font-size: large;
