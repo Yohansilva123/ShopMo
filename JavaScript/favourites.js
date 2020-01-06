@@ -77,7 +77,7 @@ function sendEmail(event) {
         Host: "smtp.gmail.com",
         Username : "testzupermart@gmail.com",
         Password : "Test@1234",
-        To : 'shenali.2016234@iit.ac.lk',
+        To : 'yohanvidusha@gmail.com',
         From : "shopMo@gmail.com",
         Subject : "Wish List",
         Body : favContent,
