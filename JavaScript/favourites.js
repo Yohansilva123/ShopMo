@@ -68,7 +68,7 @@ function sendEmail(event) {
     var objectArray = JSON.parse(retrievedData);
     var favContent = '';
     objectArray.map(x => {
-        favContent += "Name:" + x.title + ", " + x.price + ", " + x.discount + " || "
+        favContent += "Name: " + x.title + ", Price: " + x.price + ", Discount: " + x.discount + "    ||    "
     })
 
     console.log(favContent)
@@ -79,7 +79,7 @@ function sendEmail(event) {
         Password : "Test@1234",
         To : 'shenali.2016234@iit.ac.lk',
         From : "shopMo@gmail.com",
-        Subject : "Wish List",
+        Subject : "Wish List from ShopMo",
         Body : favContent,
     }).then(
         message => alert("mail sent successfully")
