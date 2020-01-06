@@ -166,3 +166,20 @@ $('#win').on( "mouseover", function() {
 });
 
 
+
+
+function showHide(){
+    $(document).ready(function(){
+        $("#myFilter").click(function(){
+            $(".filter-items").show("slow");
+        });
+    });
+}
+
+function show_sub(cat){
+    cat.querySelector("ul").style.display = (cat.querySelector("ul").style.display == "block") ? "none" : "block";
+};
+
+$('body').on("click", function () {
+    $("#nav ul").style.display="none";
+});

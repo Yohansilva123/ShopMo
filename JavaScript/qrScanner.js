@@ -4,19 +4,19 @@ if (document.readyState == 'loading') {
     ready()
 }
 
-var totalPoints = 0 ;
+var totalPoints = 0;
+
 function ready() {
 
-    if(totalPoints != 0){
+    if (totalPoints != 0) {
         retrieveTotalPoints();
     }
 }
 
-// var coins = JSON.parse(localStorage.getItem('coins'));
 var coins = "";
 var newCoins = 0;
 
-let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+let scanner = new Instascan.Scanner({video: document.getElementById('preview')});
 scanner.addListener('scan', function (content) {
     alert(content);
     $("#redeemedCoins").html(content);
@@ -26,7 +26,7 @@ scanner.addListener('scan', function (content) {
     newCoins = redeemedCoins;
     coins = coins + newCoins;
 
-    if(redeemedCoins!=null){
+    if (redeemedCoins != null) {
         let points = [];
 
         if (localStorage.getItem('points')) {
@@ -50,7 +50,7 @@ Instascan.Camera.getCameras().then(function (cameras) {
     console.error(e);
 });
 
-function redeemCoins(){
+function redeemCoins() {
     var retrievedData = localStorage.getItem('points');
     var total = 0;
     var objectArray = JSON.parse(retrievedData);
@@ -58,14 +58,14 @@ function redeemCoins(){
 
         var addedcoins = parseFloat(objectArray[i].redeemedCoins);
         total = total + addedcoins;
-            console.log("coin totalsssssss => "+ total);
+        console.log("coin totalsssssss => " + total);
 
     }
     sendTotalToStorage(total);
 
 }
 
-function sendTotalToStorage(total){
+function sendTotalToStorage(total) {
     let totalPoints = [];
 
     if (localStorage.getItem('totalPoints')) {
@@ -74,18 +74,17 @@ function sendTotalToStorage(total){
     totalPoints.push({'totalPoints': total});
     localStorage.setItem('totalPoints', JSON.stringify(totalPoints));
 
-
 }
-
 
 function retrieveTotalPoints() {
     var retrievedData = localStorage.getItem('totalPoints');
     var objectArray = JSON.parse(retrievedData);
-        for (var i = 0; i <objectArray.length; i++) {
-            totalPoints =  objectArray[i].totalPoints;
-        }
-        $("#total-points").append(`<span> ${totalPoints}</span>`);
+    for (var i = 0; i < objectArray.length; i++) {
+        totalPoints = objectArray[i].totalPoints;
+    }
+    $("#total-points").append(`<span> ${totalPoints}</span>`);
     $(".point_discount").append(`<span> LKR ${totalPoints}</span>`);
 
 }
+
 
