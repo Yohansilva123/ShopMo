@@ -1,3 +1,147 @@
+/* For portrait*/
+
+@media screen and (orientation: portrait) {
+	/* Top nav styling */
+	#top_navigation {
+		background-color: white;
+		height: 122px;
+		padding-top: 10px;
+	}
+
+	.logo {
+		top: 10px;
+		height: 52px;
+	}
+
+	#category_icon {
+		position: absolute;
+		top: 25px;
+		left: 28px;
+		color: #6c7075;
+		font-size: 25px;
+	}
+
+	#promotion_icon {
+		position: absolute;
+		top: 25px;
+		right: 28px;
+		color: #f28500;
+		font-size: 25px;
+	}
+
+	.ui-filterable {
+		width: auto;
+		margin-left: 25px;
+		box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+		margin-right: 25px;
+	}
+
+	#filter_icon {
+		text-align: center;
+		margin-top: 10px;
+		font-size: 20px;
+		color: #6c7075;
+	}
+}
+
+/* For landscape*/
+
+@media screen and (orientation: landscape) {
+	/* Top nav styling */
+	#top_navigation {
+		background-color: white;
+		height: 105px;
+		padding-top: 10px;
+	}
+
+	.logo {
+		top: 10px;
+		height: 40px;
+	}
+
+	#category_icon {
+		position: absolute;
+		top: 25px;
+		left: 28px;
+		color: #6c7075;
+		font-size: 20px;
+	}
+
+	#promotion_icon {
+		position: absolute;
+		top: 25px;
+		right: 28px;
+		color: #f28500;
+		font-size: 20px;
+	}
+
+	.ui-filterable {
+		width: auto;
+		margin-left: 20px;
+		box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+		margin-right: 20px;
+	}
+
+	#filter_icon {
+		text-align: center;
+		margin-top: 10px;
+		font-size: 20px;
+		color: #6c7075;
+	}
+}
+
+/*Categories icon overlay styling*/
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: white;
+	/*background-color: rgba(255,255,255, 0.9);*/
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 15%;
+	margin-bottom: 50px;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 100px;
+	right: 40px;
+	font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 73px;
+		right: 30px;
+	}
+}
 
 .header {
     padding-top: 30px;
@@ -10,11 +154,6 @@
     background-color: #f28500;
 }
 
-#promotion_icon {
-    color: white;
-    font-size: 80px;
-    text-align: center;
-}
 .slogan{
     color: white;
     font-size: 15px;
@@ -119,7 +258,7 @@
 
 .login_box_area .login_box_img {
 	height: 350px;
-	position: relative
+	position: relative;
 }
 
 @media (min-width: 1000px) {
@@ -145,8 +284,7 @@
 	height: 100%;
 	width: 100%;
 	content: "";
-	background: #384aeb;
-	opacity: .9
+	background: black;
 }
 
 .login_box_area .login_box_img .hover {
@@ -154,6 +292,8 @@
 	top: 50%;
 	left: 0px;
 	text-align: center;
+	font-size: 20px;
+	font-family: Papyrus;
 	width: 100%;
 	transform: translateY(-50%)
 }
@@ -162,7 +302,9 @@
 	font-size: 24px;
 	color: #fff;
 	font-weight: 500;
-	margin-bottom: 15px
+	margin-bottom: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
 .login_box_area .login_box_img .hover p {
@@ -206,7 +348,7 @@
 	text-align: center;
 	margin-bottom: 10px;
 	font-size: larger;
-	color: #f28500;
+	color: #428fe5;
 }
 
 .login_form_inner .login_form {
@@ -440,7 +582,7 @@ a:hover {
 	text-align: center;
 	margin-bottom: -15px;
 	margin-top: 10px;
-	color: #428fe5;
+	color: #f28500;
 	font-size: 24px;
 
 }
@@ -454,6 +596,23 @@ a:hover {
 	width: 100%;
 	max-width: 300px;
 	margin-top: 10px;
+}
+
+.description{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	color: white;
+	margin-outside: 20px;
+}
+
+.h2{
+	color: white;
+}
+
+.scan-code{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	color: #f28500;
 }
 
 /*Footer Styling*/

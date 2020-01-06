@@ -16,40 +16,64 @@
     <script src="JavaScript/qrScanner.js" async></script>
 </head>
 <body>
-<div data-role="page" id="pageone">
-    <div align="center" class="header">
-        <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" onclick="window.location.href='HomePage.html'">
+<div data-role="page" data-position="fixed">
+
+    <!--    Categories-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a  onclick="window.location.href='ProductsFrozen.html'">Frozen food</a>
+            <a onclick="window.location.href='ProductsFrozen.html'">Pharmacy</a>
+            <a onclick="window.location.href='Products.html'">Grocery</a>
+            <a onclick="window.location.href='ProductsFrozen.html'">Household</a>
+            <a onclick="window.location.href='Products.html'">Liqour</a>
+            <a onclick="window.location.href='ProductsFrozen.html'">Beverages</a>
+            <a onclick="window.location.href='Products.html'">Homeware</a>
+            <a onclick="window.location.href='ProductsFrozen.html'">chilled</a>
+            <a onclick="window.location.href='Products.html'">Vegitables</a>
+            <a onclick="window.location.href='ProductsFrozen.html'">Meat</a>
+            <a onclick="window.location.href='Products.html'">Fish</a>
+            <a onclick="window.location.href='ProductsFrozen.html'">Fruits</a>
+        </div>
     </div>
-    <!--Top Banner-->
-    <div class="banner">
-        <table>
-            <tr>
-                <td>
-                    <i class="fas fa-shopping-bag" id="promotion_icon"></i>
-                </td>
-                <td>
-                    <div class="slogan">DEBUT OF ULTIMATE MARKETING</div>
-                </td>
-            </tr>
-        </table>
+    <!-- Top Navigation -->
+
+    <div data-role="header" id="top_navigation" data-position="fixed">
+        <i class="fas fa-th" id="category_icon" onclick="openNav()"></i>
+        <div align="center" class="logo">
+            <img class="logo" src="images/shopmo%20logo.png" alt="Image" height="60" onclick="window.location.href='HomePage.html'">
+            <i class="fa fa-tags" id="promotion_icon" onclick="window.location.href='Promotions.html'"></i>
+        </div>
+
+        <div data-role="navbar" id="search">
+            <ul>
+                <li style="width:100%">
+
+                    <form class="ui-filterable">
+                        <input id="myFilter" data-type="search" placeholder="Search for items..">
+                    </form>
+                </li>
+                <!--                <li id="filter_icon" style="width:15%">-->
+                <!--                    <i class="fas fa-filter"></i>-->
+                <!--                </li>-->
+            </ul>
+        </div>
     </div>
 
-    <section class="blog-banner-area" id="category">
-		<div class="container h-100">
-			<div class="blog-banner">
-				<div class="text-center">
-                    <h2 id="qr_title"><b>QR Scanner</b></h2>
-                    <br>
-<!--					<nav aria-label="breadcrumb" class="banner-breadcrumb">-->
-<!--            <ol class="breadcrumb">-->
-<!--              <li class="breadcrumb-item"><a href="#">Home</a></li>-->
-<!--              <li class="breadcrumb-item active" aria-current="page">QR Scanner</li>-->
-<!--            </ol>-->
-<!--          </nav>-->
-				</div>
-			</div>
-    </div>
-    </section>
+<!--    <section class="blog-banner-area" id="category">-->
+<!--		<div class="container h-100">-->
+<!--			<div class="blog-banner">-->
+<!--				<div class="text-center">-->
+<!--&lt;!&ndash;					<nav aria-label="breadcrumb" class="banner-breadcrumb">&ndash;&gt;-->
+<!--&lt;!&ndash;            <ol class="breadcrumb">&ndash;&gt;-->
+<!--&lt;!&ndash;              <li class="breadcrumb-item"><a href="#">Home</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;              <li class="breadcrumb-item active" aria-current="page">QR Scanner</li>&ndash;&gt;-->
+<!--&lt;!&ndash;            </ol>&ndash;&gt;-->
+<!--&lt;!&ndash;          </nav>&ndash;&gt;-->
+<!--				</div>-->
+<!--			</div>-->
+<!--    </div>-->
+<!--    </section>-->
 
     <!--Main Content-->
     <section class="login_box_area section-margin">
@@ -58,9 +82,9 @@
 				<div class="col-lg-6">
 					<div class="login_box_img">
 						<div class="hover">
-							<h4>Do you have a QR sticker?</h4>
-							<p>Use your QR sricker to get a valueble coupon for amazing prize deductions </p>
-							<a class="button button-account" href="register.html">share now</a>
+							<h2 class="h2">Do you have a QR sticker?</h2>
+                            <br>
+							<p class="description">Use your QR code to earn valuable points to be redeemed any time you wish </p>
 						</div>
 					</div>
                 </div>
@@ -68,8 +92,8 @@
                 
 				<div class="col-lg-6">
 					<div class="login_form_inner">
-						<h3>Scan your QR Code </h3>
-                        <h1>Get Points</h1>
+						<h2 class="scan-code">Scan your QR Code </h2>
+                        <h3>Get Points</h3>
                         <h1 id="redeemedCoins"></h1>
                         <div id="qrScanner">
                             <center>
