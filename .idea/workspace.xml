@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f06ec39-db5e-42f5-8fcd-d5c6b504380d" name="Default" comment="Changes to product page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameShopMo.html" beforeDir="false" afterPath="$PROJECT_DIR$/GameShopMo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/favourites.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/favourites.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Promotions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Promotions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/wishlist.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/wishlist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WishListPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/WishListPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr.html" beforeDir="false" afterPath="$PROJECT_DIR$/qr.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,91 +27,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomePage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HomePage.html">
+      <file leaf-file-name="GameShopMo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GameShopMo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2238">
-              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="95" column="10" lean-forward="true" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
               <folding>
-                <element signature="e#1433#1440#1" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#5600#5606#0" expanded="true" />
-                <element signature="e#5614#5620#0" expanded="true" />
-                <element signature="e#5620#5626#0" expanded="true" />
-                <element signature="e#5634#5640#0" expanded="true" />
-                <element signature="e#5640#5646#0" expanded="true" />
-                <element signature="e#5646#5652#0" expanded="true" />
-                <element signature="e#5678#5684#0" expanded="true" />
-                <element signature="e#5684#5690#0" expanded="true" />
-                <element signature="e#5690#5696#0" expanded="true" />
-                <element signature="e#5703#5709#0" expanded="true" />
-                <element signature="e#5709#5715#0" expanded="true" />
-                <element signature="e#5724#5730#0" expanded="true" />
-                <element signature="e#5731#5737#0" expanded="true" />
-                <element signature="e#5762#5768#0" expanded="true" />
-                <element signature="e#5768#5774#0" expanded="true" />
-                <element signature="e#5781#5787#0" expanded="true" />
-                <element signature="e#5787#5793#0" expanded="true" />
-                <element signature="e#5793#5799#0" expanded="true" />
-                <element signature="e#5811#5817#0" expanded="true" />
-                <element signature="e#5817#5823#0" expanded="true" />
-                <element signature="e#5823#5829#0" expanded="true" />
-                <element signature="e#5833#5839#0" expanded="true" />
-                <element signature="e#5839#5845#0" expanded="true" />
-                <element signature="e#5845#5851#0" expanded="true" />
-                <element signature="e#5851#5857#0" expanded="true" />
-                <element signature="e#5878#5884#0" expanded="true" />
-                <element signature="e#5884#5890#0" expanded="true" />
-                <element signature="e#5890#5896#0" expanded="true" />
-                <element signature="e#5896#5902#0" expanded="true" />
-                <element signature="e#5902#5908#0" expanded="true" />
-                <element signature="e#16603#16609#0" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameShopMo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameShopMo.html">
+      <file leaf-file-name="deliverypage_style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Style/deliverypage_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-537">
-              <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+            <state relative-caret-position="178">
+              <caret line="324" selection-start-line="324" selection-end-line="325" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homepage_style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Style/homepage_style.css">
+      <file leaf-file-name="products_style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Style/products_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="548" column="20" selection-start-line="548" selection-start-column="20" selection-end-line="548" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="favourites.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/JavaScript/favourites.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="70" column="80" selection-start-line="70" selection-start-column="80" selection-end-line="70" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WishListPage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WishListPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wishlist.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Style/wishlist.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="300" lean-forward="true" selection-start-line="300" selection-end-line="300" />
+            <state relative-caret-position="270">
+              <caret line="171" column="20" lean-forward="true" selection-start-line="170" selection-start-column="4" selection-end-line="171" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -153,10 +89,10 @@
         <option value="$PROJECT_DIR$/JavaScript/functions.js" />
         <option value="$PROJECT_DIR$/Style/homepage_style.css" />
         <option value="$PROJECT_DIR$/HomePage.html" />
-        <option value="$PROJECT_DIR$/GameShopMo.html" />
         <option value="$PROJECT_DIR$/Style/wishlist.css" />
         <option value="$PROJECT_DIR$/WishListPage.html" />
         <option value="$PROJECT_DIR$/JavaScript/favourites.js" />
+        <option value="$PROJECT_DIR$/GameShopMo.html" />
       </list>
     </option>
   </component>
@@ -440,7 +376,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1009000" />
+    <option name="totallyTimeSpent" value="3258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="796" extended-state="0" />
@@ -645,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Style/products_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="154" column="20" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RiceProductPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
@@ -724,13 +653,6 @@
     <entry file="file://$PROJECT_DIR$/sss/CartPage copy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-335" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Style/deliverypage_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="306" column="1" lean-forward="true" selection-start-line="306" selection-start-column="1" selection-end-line="306" selection-end-column="1" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/paymentSuccess.html">
@@ -813,31 +735,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameShopMo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-537">
-          <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1061">
           <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Style/homepage_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="548" column="20" selection-start-line="548" selection-start-column="20" selection-end-line="548" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Style/wishlist.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="300" lean-forward="true" selection-start-line="300" selection-end-line="300" />
         </state>
       </provider>
     </entry>
@@ -892,8 +793,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/favourites.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="70" column="80" selection-start-line="70" selection-start-column="80" selection-end-line="70" selection-end-column="80" />
+        <state relative-caret-position="480">
+          <caret line="138" column="20" lean-forward="true" selection-start-line="138" selection-start-column="20" selection-end-line="138" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Style/wishlist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="300" lean-forward="true" selection-start-line="300" selection-end-line="300" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Style/homepage_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="548" column="20" selection-start-line="548" selection-start-column="20" selection-end-line="548" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Style/products_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="171" column="20" lean-forward="true" selection-start-line="170" selection-start-column="4" selection-end-line="171" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Style/deliverypage_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="324" selection-start-line="324" selection-end-line="325" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameShopMo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="95" column="10" lean-forward="true" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
