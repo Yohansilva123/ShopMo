@@ -145,7 +145,7 @@
 	height: 100%;
 	width: 100%;
 	content: "";
-	background: #384aeb;
+	background: black;
 	opacity: .9
 }
 
@@ -155,7 +155,8 @@
 	left: 0px;
 	text-align: center;
 	width: 100%;
-	transform: translateY(-50%)
+	transform: translateY(-50%);
+	font-family: Papyrus;
 }
 
 .login_box_area .login_box_img .hover h4 {
@@ -443,6 +444,28 @@ a:hover {
 	color: #428fe5;
 	font-size: 24px;
 
+}
+
+.description{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	color: white;
+	margin-outside: 20px;
+}
+
+.h2{
+	color: white;
+}
+
+#back-btn {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: large;
+	border-color: #f28500;
+	margin-top: 30px;
+	width: 100%;
+	color: #f28500;
+	max-width: 300px;
+	background-color: black;
 }
 
 /*Footer Styling*/

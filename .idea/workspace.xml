@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f06ec39-db5e-42f5-8fcd-d5c6b504380d" name="Default" comment="Changes to product page">
+      <change afterPath="$PROJECT_DIR$/GameShopMo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Style/game.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CartPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/CartPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/payment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/qrScanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/qrScanner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style/homepage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/homepage_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaymentPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/qr.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/qr.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/game.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qr.html" beforeDir="false" afterPath="$PROJECT_DIR$/qr.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +37,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomePage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomePage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HomePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="60" column="91" lean-forward="true" selection-start-line="60" selection-start-column="91" selection-end-line="60" selection-end-column="91" />
+            <state relative-caret-position="-1840">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+              <folding>
+                <element signature="e#1433#1440#1" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#5600#5606#0" expanded="true" />
+                <element signature="e#5614#5620#0" expanded="true" />
+                <element signature="e#5620#5626#0" expanded="true" />
+                <element signature="e#5634#5640#0" expanded="true" />
+                <element signature="e#5640#5646#0" expanded="true" />
+                <element signature="e#5646#5652#0" expanded="true" />
+                <element signature="e#5678#5684#0" expanded="true" />
+                <element signature="e#5684#5690#0" expanded="true" />
+                <element signature="e#5690#5696#0" expanded="true" />
+                <element signature="e#5703#5709#0" expanded="true" />
+                <element signature="e#5709#5715#0" expanded="true" />
+                <element signature="e#5724#5730#0" expanded="true" />
+                <element signature="e#5731#5737#0" expanded="true" />
+                <element signature="e#5762#5768#0" expanded="true" />
+                <element signature="e#5768#5774#0" expanded="true" />
+                <element signature="e#5781#5787#0" expanded="true" />
+                <element signature="e#5787#5793#0" expanded="true" />
+                <element signature="e#5793#5799#0" expanded="true" />
+                <element signature="e#5811#5817#0" expanded="true" />
+                <element signature="e#5817#5823#0" expanded="true" />
+                <element signature="e#5823#5829#0" expanded="true" />
+                <element signature="e#5833#5839#0" expanded="true" />
+                <element signature="e#5839#5845#0" expanded="true" />
+                <element signature="e#5845#5851#0" expanded="true" />
+                <element signature="e#5851#5857#0" expanded="true" />
+                <element signature="e#5878#5884#0" expanded="true" />
+                <element signature="e#5884#5890#0" expanded="true" />
+                <element signature="e#5890#5896#0" expanded="true" />
+                <element signature="e#5896#5902#0" expanded="true" />
+                <element signature="e#5902#5908#0" expanded="true" />
+                <element signature="e#16603#16609#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameShopMo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GameShopMo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -47,8 +93,8 @@
       <file leaf-file-name="homepage_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Style/homepage_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="548" column="20" lean-forward="true" selection-start-line="548" selection-start-column="20" selection-end-line="548" selection-end-column="20" />
+            <state relative-caret-position="8220">
+              <caret line="548" column="20" selection-start-line="548" selection-start-column="20" selection-end-line="548" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -56,7 +102,7 @@
       <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JavaScript/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="1350">
               <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
             </state>
           </provider>
@@ -74,13 +120,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>input-text qty</find>
-      <find>total</find>
-      <find>myFilter</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -95,6 +134,7 @@
         <option value="$PROJECT_DIR$/JavaScript/functions.js" />
         <option value="$PROJECT_DIR$/Style/homepage_style.css" />
         <option value="$PROJECT_DIR$/HomePage.html" />
+        <option value="$PROJECT_DIR$/GameShopMo.html" />
       </list>
     </option>
   </component>
@@ -107,17 +147,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="796" />
-  </component>
   <component name="ProjectId" id="1UyQzDnmd9vnI7x8ZMgB7q9pnht" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,30 +161,19 @@
               <item name="Shopmo" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shopmo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Shopmo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopmo" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaScript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopmo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopmo" type="462c0819:PsiDirectoryNode" />
-              <item name="Style" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Style" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -158,14 +183,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\Style" />
       <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo" />
+      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\Style" />
       <recent name="$PROJECT_DIR$/Style" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo" />
       <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\Style" />
+      <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo" />
       <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\images" />
       <recent name="C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\workspace\ShopMo\src" />
     </key>
@@ -182,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.PaymentPage.html">
+  <component name="RunManager" selected="JavaScript Debug.GameShopMo.html">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method>
@@ -208,11 +233,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeDelivery.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/HomeDelivery.html" />
+    <configuration name="GameShopMo.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/GameShopMo.html" />
     <configuration name="PaymentPage.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/PaymentPage.html" />
     <configuration name="ProductRatingPage.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/ProductRatingPage.html" />
+    <configuration name="Register.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/Register.html" />
     <configuration name="game.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/game.html" />
-    <configuration name="gamee.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ShopMo/gamee.html" />
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -240,18 +265,18 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.PaymentPage.html" />
-      <item itemvalue="JavaScript Debug.HomeDelivery.html" />
       <item itemvalue="JavaScript Debug.game.html" />
-      <item itemvalue="JavaScript Debug.gamee.html" />
       <item itemvalue="JavaScript Debug.ProductRatingPage.html" />
+      <item itemvalue="JavaScript Debug.GameShopMo.html" />
+      <item itemvalue="JavaScript Debug.Register.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.GameShopMo.html" />
         <item itemvalue="JavaScript Debug.PaymentPage.html" />
-        <item itemvalue="JavaScript Debug.ProductRatingPage.html" />
-        <item itemvalue="JavaScript Debug.gamee.html" />
+        <item itemvalue="JavaScript Debug.Register.html" />
         <item itemvalue="JavaScript Debug.game.html" />
-        <item itemvalue="JavaScript Debug.HomeDelivery.html" />
+        <item itemvalue="JavaScript Debug.ProductRatingPage.html" />
       </list>
     </recent_temporary>
   </component>
@@ -383,7 +408,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11857000" />
+    <option name="totallyTimeSpent" value="219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="796" extended-state="0" />
@@ -419,30 +444,30 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19444445" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="10" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info id="UI Designer" order="1" />
+      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39917126" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
@@ -469,6 +494,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="latest code" />
     <MESSAGE value="Changes to product page" />
@@ -486,13 +514,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Style/deliverypage_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="187" selection-start-line="187" selection-end-line="187" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CartPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -783,22 +804,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1350">
           <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Style/homepage_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="548" column="20" lean-forward="true" selection-start-line="548" selection-start-column="20" selection-end-line="548" selection-end-column="20" />
+        <state relative-caret-position="8220">
+          <caret line="548" column="20" selection-start-line="548" selection-start-column="20" selection-end-line="548" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HomePage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="60" column="91" lean-forward="true" selection-start-line="60" selection-start-column="91" selection-end-line="60" selection-end-column="91" />
+        <state relative-caret-position="-1840">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="e#1433#1440#1" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5600#5606#0" expanded="true" />
+            <element signature="e#5614#5620#0" expanded="true" />
+            <element signature="e#5620#5626#0" expanded="true" />
+            <element signature="e#5634#5640#0" expanded="true" />
+            <element signature="e#5640#5646#0" expanded="true" />
+            <element signature="e#5646#5652#0" expanded="true" />
+            <element signature="e#5678#5684#0" expanded="true" />
+            <element signature="e#5684#5690#0" expanded="true" />
+            <element signature="e#5690#5696#0" expanded="true" />
+            <element signature="e#5703#5709#0" expanded="true" />
+            <element signature="e#5709#5715#0" expanded="true" />
+            <element signature="e#5724#5730#0" expanded="true" />
+            <element signature="e#5731#5737#0" expanded="true" />
+            <element signature="e#5762#5768#0" expanded="true" />
+            <element signature="e#5768#5774#0" expanded="true" />
+            <element signature="e#5781#5787#0" expanded="true" />
+            <element signature="e#5787#5793#0" expanded="true" />
+            <element signature="e#5793#5799#0" expanded="true" />
+            <element signature="e#5811#5817#0" expanded="true" />
+            <element signature="e#5817#5823#0" expanded="true" />
+            <element signature="e#5823#5829#0" expanded="true" />
+            <element signature="e#5833#5839#0" expanded="true" />
+            <element signature="e#5839#5845#0" expanded="true" />
+            <element signature="e#5845#5851#0" expanded="true" />
+            <element signature="e#5851#5857#0" expanded="true" />
+            <element signature="e#5878#5884#0" expanded="true" />
+            <element signature="e#5884#5890#0" expanded="true" />
+            <element signature="e#5890#5896#0" expanded="true" />
+            <element signature="e#5896#5902#0" expanded="true" />
+            <element signature="e#5902#5908#0" expanded="true" />
+            <element signature="e#16603#16609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameShopMo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
         </state>
       </provider>
     </entry>
